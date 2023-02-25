@@ -109,13 +109,16 @@ void mergeSort(int arr[], int s, int e){
 int partition(int arr[], int s, int e){
     int mid = (s+e)/2;
     int count = 0;
-    int pivotValue = arr[s];
+    int pivotValue = arr[s]; // 3
 
     for (int i=1; i <= e; i++){
         if (arr[i] < pivotValue){
             count++;
         }
     }
+
+    // count -> 2
+    // pivotValue -> 3
 
     int pivotIndex = s + count;
     swap(arr[pivotIndex], arr[s]);
@@ -124,7 +127,6 @@ int partition(int arr[], int s, int e){
     int j=e;
     
     while(i < pivotIndex && j > pivotIndex){
-
         while(arr[i] < arr[pivotIndex]){
             i++;
         }
@@ -136,7 +138,6 @@ int partition(int arr[], int s, int e){
         if (i < pivotIndex && j > pivotIndex){
             swap(arr[i], arr[j]);
         }
-
     }
     return pivotIndex;
 }
@@ -147,16 +148,18 @@ void quickSort(int arr[], int s, int e){
     }
 
     int p = partition(arr, s, e);
+    cout << p << endl;
     quickSort(arr, s, p-1);
     quickSort(arr, p+1, e);
 }
 
 int main(){
 
-    int arr[5] = {5, 4, 3, 2, 1};
+    int arr[5] = {3, 1, 4, 2, 6};
     // bubbleSort(arr, 5);
     // selectionSort(arr, 5);
     // mergeSort(arr, 0, 4);
     quickSort(arr, 0, 4);
     printArray(arr, 5);
+    
 }

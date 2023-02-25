@@ -28,6 +28,8 @@ int partition(int s, int e, vector<int> &nums) {
 
     // sort the element such that left half of array is sorted
     while (i < pivotIndex && j > pivotIndex) {
+        cout << "i " << i << " | j " << j << endl;
+
         while (nums[i] < pivotValue) {
             i++;
         }

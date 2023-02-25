@@ -1,6 +1,6 @@
 import os
 
-name = "35. Search Insert Position"
+name = "122. Best Time to Buy and Sell Stock II"
 
 
 obsidian = False

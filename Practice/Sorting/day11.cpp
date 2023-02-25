@@ -36,8 +36,8 @@ void selectionSort(int arr[], int n){
 void merge(int arr[], int s, int e){
     int mid = (s+e)/2;
 
-    int len1 = mid - s + 1;
-    int len2 = e - mid;
+    int len1 = mid - s + 1; // 3
+    int len2 = e - mid; // 2
 
     // create two arrays
     int *arr1 = new int(len1);
@@ -71,6 +71,8 @@ void merge(int arr[], int s, int e){
     while(j < len2){
         arr[mainIndex++] = arr2[j++];
     }
+
+    // cleanup
     delete []arr1;
     delete []arr2;
 }
