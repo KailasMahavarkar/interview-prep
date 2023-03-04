@@ -14,9 +14,9 @@ class Solution {
    public:
     vector<vector<int>> dp;
     int editDistance(string word1, string word2, int m, int n) {
-        if (m == 0)
+        if (m == 0) {
             return n;
-
+        }
         if (n == 0) {
             return m;
         }
@@ -34,7 +34,6 @@ class Solution {
         int replaceResult = editDistance(word1, word2, m - 1, n - 1);
         return dp[m - 1][n - 1] = 1 + min(replaceResult, min(insertResult, deleteResult));
     }
-
     int minDistance(string word1, string word2) {
         dp.resize(word1.length() + 1, vector<int>(word2.length() + 1, -1));
         editDistance(word1, word2, word1.length(), word2.length());
@@ -45,6 +44,7 @@ class Solution {
 int main() {
     string word1 = "sea";
     string word2 = "eat";
-    Solution().minDistance(word1, word2);
+    int ans = Solution().minDistance(word1, word2);
+    cout << ans << endl;
     return 0;
 }

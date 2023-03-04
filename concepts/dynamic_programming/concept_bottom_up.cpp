@@ -1,11 +1,9 @@
 #include <bits/stdc++.h>
-#include "C:/lib/helper.cpp"
 using namespace std;
 
 int main(){
     int n = 14;
     vector<int> dp(n+1, -1);
-
 
     dp[1] = 1;
     dp[0] = 0;

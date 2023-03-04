@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include "C:/lib/helper.cpp"
 using namespace std;
 
 
