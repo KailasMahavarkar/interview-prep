@@ -1,7 +1,5 @@
 import os
-
-name = "28. Find the Index of the First Occurrence in a String"
-
+name = "142. Linked List Cycle II"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"

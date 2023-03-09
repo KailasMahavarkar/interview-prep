@@ -48,20 +48,20 @@ void printDP(string msg, vector<vector<int>> &dp) {
 //         }
 
 //         // lookup in dp
-//         if (dp[n - 1][w] != -1) {
-//             return dp[n - 1][w];
+//         if (dp[n][w] != -1) {
+//             return dp[n][w];
 //         }
 
 //         // weight of item is more than current capacity
-//         if (wt[n - 1] > w) {
-//             dp[n - 1][w] = knapsackHelper(w, wt, val, n - 1);
+//         if (wt[n] > w) {
+//             dp[n][w] = knapsackHelper(w, wt, val, n - 1);
 //         } else {
 //             int pickCase = val[n - 1] + knapsackHelper(w - wt[n - 1], wt, val, n - 1);
 //             int unpickCase = knapsackHelper(w, wt, val, n - 1);
-//             dp[n - 1][w] = max(pickCase, unpickCase);
+//             dp[n][w] = max(pickCase, unpickCase);
 //         }
 
-//         return dp[n - 1][w];
+//         return dp[n][w];
 //     }
 //     int knapSack(int W, int wt[], int val[], int n) {
 //         dp.resize(n + 1, vector<int>(W + 1, -1));
