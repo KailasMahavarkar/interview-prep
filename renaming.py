@@ -1,5 +1,5 @@
 import os
-name = "109. Convert Sorted List to Binary Search Tree"
+name = "33. Search in Rotated Sorted Array"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"
