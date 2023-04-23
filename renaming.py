@@ -1,5 +1,5 @@
 import os
-name = "105. Construct Binary Tree from Preorder and Inorder Traversal"
+name = "1416. Restore The Array"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"

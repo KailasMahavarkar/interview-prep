@@ -74,26 +74,23 @@ class Solution {
             int levelSize = que.size();
             int level = 0;
 
-            for (int i = 0; i < levelSize; i++) {
-                auto p = que.front();
-                que.pop();
+            auto p = que.front();
+            que.pop();
 
-                TreeNode* node = p.first;
+            TreeNode* node = p.first;
 
-                int v = p.second.first;   // vertical
-                int l = p.second.second;  // level
+            int v = p.second.first;   // vertical
+            int l = p.second.second;  // level
 
-                mp[v][l].insert(node->val);
+            mp[v][l].insert(node->val);
 
-                if (node->left) {
-                    que.push({node->left, {v - 1, l + level}});
-                }
-
-                if (node->right) {
-                    que.push({node->right, {v + 1, l + level}});
-                }
+            if (node->left) {
+                que.push({node->left, {v - 1, l + 1}});
             }
-            level += 1;
+
+            if (node->right) {
+                que.push({node->right, {v + 1, l + 1}});
+            }
         }
 
         // verticalMap will be pair<int, map<int, multiset<int>>>
@@ -104,7 +101,7 @@ class Solution {
             for (auto levelMap : verticalMap.second) {
                 cols.insert(cols.end(), levelMap.second.begin(), levelMap.second.end());
             }
-            sort(cols.begin(), cols.end(), greater<int>());
+            // sort(cols.begin(), cols.end(), greater<int>());
             answer.push_back(cols);
         }
 

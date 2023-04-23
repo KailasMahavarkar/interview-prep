@@ -11,14 +11,13 @@ class Solution {
         if (i < 0 || i >= row || j < 0 || j >= col || visited[i][j] || grid[i][j] == '0') {
             return;
         }
-
         visited[i][j] = true;
 
         // all 8 directions
-        vector<vector<int>> delta = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};
-
-        for (auto d : delta) {
-            dfs(grid, visited, i + d[0], j + d[1]);
+        for (int p = -1; p <= 1; p++) {
+            for (int q = -1; q <= 1; q++) {
+                dfs(grid, visited, i + p, j + q);
+            }
         }
     }
 
@@ -30,7 +29,7 @@ class Solution {
         int count = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                if (!visited[i][j]) {
+                if (!visited[i][j] && grid[i][j] == '1') {
                     dfs(grid, visited, i, j);
                     count++;
                 }
@@ -43,10 +42,10 @@ class Solution {
 
 int main() {
     vector<vector<char>> grid = {
-        {'1', '1', '1', '1', '0'},
-        {'1', '1', '0', '1', '0'},
+        {'1', '1', '1', '0', '0'},
         {'1', '1', '0', '0', '0'},
-        {'0', '0', '0', '0', '0'}};
+        {'1', '1', '0', '0', '0'},
+        {'0', '0', '0', '1', '1'}};
 
     Solution sol;
     cout << sol.numIslands(grid) << endl;

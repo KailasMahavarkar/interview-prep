@@ -12,44 +12,44 @@ void printDP(string msg, vector<vector<bool>>& dp) {
     cout << endl;
 }
 
-// recursion + dp
-// class Solution {
-//    public:
-//     int target;
-//     vector<vector<bool>> dp;
-//     bool isSubsetSumHelper(vector<int> arr, int sum, int n) {
-//         if (sum == 0) {
-//             return true;
-//         }
-//         if (n == 0) {
-//             return false;
-//         }
+recursion + dp
+class Solution {
+   public:
+    int target;
+    vector<vector<bool>> dp;
+    bool isSubsetSumHelper(vector<int> arr, int sum, int n) {
+        if (sum == 0) {
+            return true;
+        }
+        if (n == 0) {
+            return false;
+        }
 
-//         if (dp[n - 1][sum] != 0) {
-//             return dp[n - 1][sum];
-//         }
+        if (dp[n - 1][sum] != 0) {
+            return dp[n - 1][sum];
+        }
 
-//         // if last element is more than target ignore it and move to next
-//         if (arr[n - 1] > sum) {
-//             dp[n][sum] = isSubsetSumHelper(arr, sum, n - 1);
-//         } else {
-//             bool pickCase = isSubsetSumHelper(arr, sum - arr[n - 1], n - 1);
-//             bool unpickCase = isSubsetSumHelper(arr, sum, n - 1);
-//             dp[n][sum] = pickCase || unpickCase;
-//         }
+        // if last element is more than target ignore it and move to next
+        if (arr[n - 1] > sum) {
+            dp[n][sum] = isSubsetSumHelper(arr, sum, n - 1);
+        } else {
+            bool pickCase = isSubsetSumHelper(arr, sum - arr[n - 1], n - 1);
+            bool unpickCase = isSubsetSumHelper(arr, sum, n - 1);
+            dp[n][sum] = pickCase || unpickCase;
+        }
 
-//         return dp[n][sum];
-//     }
-//     bool isSubsetSum(vector<int> arr, int sum) {
-//         target = sum;
-//         dp.resize(arr.size() + 1, vector<bool>(sum + 1, false));
+        return dp[n][sum];
+    }
+    bool isSubsetSum(vector<int> arr, int sum) {
+        target = sum;
+        dp.resize(arr.size() + 1, vector<bool>(sum + 1, false));
 
-//         // printDP("before", dp);
-//         bool ans = isSubsetSumHelper(arr, sum, arr.size());
-//         // printDP("after", dp);
-//         return ans;
-//     }
-// };
+        // printDP("before", dp);
+        bool ans = isSubsetSumHelper(arr, sum, arr.size());
+        // printDP("after", dp);
+        return ans;
+    }
+};
 
 // dp + bottom up
 class Solution {
