@@ -1,5 +1,5 @@
 import os
-name = "1416. Restore The Array"
+name = "1046. Last Stone Weight"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"

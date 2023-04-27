@@ -12,7 +12,7 @@ void printDP(string msg, vector<vector<int>> &dp) {
     cout << endl;
 }
 
-// Method 2: (tabulation) bottom-up
+// Method: (tabulation) bottom-up
 class Solution {
    public:
     int result = 0;
@@ -40,7 +40,7 @@ class Solution {
 
         return dp[n][m];
     }
-    string printLongestCommonSubsequence(string S1, string S2, int n, int m) {
+    string printShortestCommonSubsequence(string S1, string S2, int n, int m) {
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, -1));
 
         // base case
@@ -73,12 +73,28 @@ class Solution {
                 lcs += S1[i - 1];
                 i--, j--;
             } else {
-                if (dp[i][j - 1] > dp[i - 1][j])
+    
+                if (dp[i][j - 1] > dp[i - 1][j]){
+                    lcs.push_back(S2[j - 1]);
                     j--;
-                else
+                }
+                else{
+                    lcs.push_back(S1[i - 1]);
                     i--;
+                }
             }
         }
+
+        while(i > 0){
+            lcs.push_back(S1[i - 1]);
+            i--;
+        }
+
+        while(j > 0){
+            lcs.push_back(S2[j - 1]);
+            j--;
+        }
+
         reverse(lcs.begin(), lcs.end());
         return lcs;
     }
@@ -92,7 +108,7 @@ int main() {
     int m = s2.length();
 
     Solution sol;
-    string ans = sol.printLongestCommonSubsequence(s1, s2, n, m);
+    string ans = sol.printShortestCommonSubsequence(s1, s2, n, m);
 
     cout << ans << endl;
     return 0;
