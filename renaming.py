@@ -1,5 +1,5 @@
 import os
-name = "1046. Last Stone Weight"
+name = "1498. Number of Subsequences That Satisfy the Given Sum Condition"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"
