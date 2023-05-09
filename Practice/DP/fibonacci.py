@@ -1,10 +1,3 @@
-# fibonacci using normal code
-
-from pyrsistent import s
-from scipy.fftpack import ss_diff
-from urllib3 import Retry
-
-
 def fibo(n: int):
     series = [1, 1]
     n1 = 1

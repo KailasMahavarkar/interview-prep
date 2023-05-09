@@ -73,43 +73,77 @@ void levelOrderTree(TreeNode* root) {
 
 class Solution {
    public:
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
-        if (!root) {
-            return new TreeNode(val);
+    TreeNode* deleteNode(TreeNode* root, int key) {
+        if (root == NULL) return NULL;
+
+        // when key is found
+        if (root->val == key) {
+            return helper(root);
         }
 
+        // this is savepoint since later we will traverse root
         TreeNode* curr = root;
-        while (true) {
-            if (val >= curr->val) {
-                // go right
-                if (curr->right == NULL) {
-                    curr->right = new TreeNode(val);
+
+        // use this snapshot as reference | delete node 5
+        // https://i.imgur.com/iZtn0Te.png
+        // playlist: https://youtu.be/kouxiP_H5WE?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&t=598
+
+        while (root != NULL) {
+            if (key > root->val) {
+                // search right
+                // Note: notice the (root->right->val)
+                if (root->right != NULL && root->right->val == key) {
+                    // delete node
+                    root->right = helper(root->right);
                     break;
                 } else {
-                    curr = curr->right;
+                    root = root->right;
                 }
             } else {
-                // go left
-                if (curr->left == NULL) {
-                    curr->left = new TreeNode(val);
+                // search left
+                if (root->left != NULL && root->left->val == key) {
+                    // delete node
+                    root->left = helper(root->left);
                     break;
                 } else {
-                    curr = curr->left;
+                    root = root->left;
                 }
             }
         }
-        return root;
+
+        return curr;
+    }
+
+    TreeNode* helper(TreeNode* root) {
+        if (root->left == NULL) {
+            return root->right;
+        }
+        if (root->right == NULL) {
+            return root->left;
+        }
+
+        TreeNode* rightChild = root->right;
+        TreeNode* lastRight = findLastRight(root->left);
+        lastRight->right = rightChild;
+        return root->left;
+    }
+
+    TreeNode* findLastRight(TreeNode* root) {
+        if (root->right == NULL) {
+            return root;
+        }
+        return findLastRight(root->right);
     }
 };
 
 int main() {
-    vector<int> vec = {4, 2, 7, 1, 3};
+    vector<int> vec = {5, 3, 6, 2, 4, -1, 7};
 
     // convert vector to tree
     TreeNode* root = vectorToTree(vec);
 
     Solution sol;
-    root = sol.insertIntoBST(vectorToTree(vec), 5);
+    root = sol.deleteNode(vectorToTree(vec), 3);
     levelOrderTree(root);
     cout << endl;
 }

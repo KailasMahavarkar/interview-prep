@@ -73,43 +73,32 @@ void levelOrderTree(TreeNode* root) {
 
 class Solution {
    public:
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
-        if (!root) {
-            return new TreeNode(val);
-        }
+    TreeNode* solve(TreeNode* root, int& k) {
+        if (root == NULL)
+            return NULL;
 
-        TreeNode* curr = root;
-        while (true) {
-            if (val >= curr->val) {
-                // go right
-                if (curr->right == NULL) {
-                    curr->right = new TreeNode(val);
-                    break;
-                } else {
-                    curr = curr->right;
-                }
-            } else {
-                // go left
-                if (curr->left == NULL) {
-                    curr->left = new TreeNode(val);
-                    break;
-                } else {
-                    curr = curr->left;
-                }
-            }
-        }
-        return root;
+        TreeNode* left = solve(root->left, k);
+        if (left != NULL)
+            return left;
+        k--;
+        if (k == 0)
+            return root;
+
+        return solve(root->right, k);
+    }
+    TreeNode* kthSmallest(TreeNode* root, int k) {
+        return solve(root, k);
     }
 };
 
 int main() {
-    vector<int> vec = {4, 2, 7, 1, 3};
+    vector<int> vec = {5, 3, 6, 2, 4, -1, 7};
 
     // convert vector to tree
     TreeNode* root = vectorToTree(vec);
 
     Solution sol;
-    root = sol.insertIntoBST(vectorToTree(vec), 5);
+    root = sol.kthSmallest(vectorToTree(vec), 3);
     levelOrderTree(root);
     cout << endl;
 }

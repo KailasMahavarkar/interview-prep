@@ -73,43 +73,40 @@ void levelOrderTree(TreeNode* root) {
 
 class Solution {
    public:
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
+    /*
+        if both p and q are less than curr,
+        then the LCA must be in the left subtree of the current node,
+        so the function recurses on the left subtree.
+
+        If neither of these conditions is true,
+        then it means that p and q are on different sides of the current node
+    */
+
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (!root) {
-            return new TreeNode(val);
+            return NULL;
         }
 
-        TreeNode* curr = root;
-        while (true) {
-            if (val >= curr->val) {
-                // go right
-                if (curr->right == NULL) {
-                    curr->right = new TreeNode(val);
-                    break;
-                } else {
-                    curr = curr->right;
-                }
-            } else {
-                // go left
-                if (curr->left == NULL) {
-                    curr->left = new TreeNode(val);
-                    break;
-                } else {
-                    curr = curr->left;
-                }
-            }
+        int curr = root->val;
+        if (curr < p->val && curr < q->val) {
+            return lowestCommonAncestor(root->right, p, q);
+        }
+        if (curr > p->val && curr > q->val) {
+            return lowestCommonAncestor(root->left, p, q);
         }
         return root;
     }
 };
 
 int main() {
-    vector<int> vec = {4, 2, 7, 1, 3};
+    vector<int> tree = {6, 2, 8, 0, 4, 7, 9, -1, -1, 3, 5};
+    TreeNode* root = vectorToTree(tree);
 
-    // convert vector to tree
-    TreeNode* root = vectorToTree(vec);
-
-    Solution sol;
-    root = sol.insertIntoBST(vectorToTree(vec), 5);
     levelOrderTree(root);
-    cout << endl;
+    Solution s;
+
+    TreeNode* res = s.lowestCommonAncestor(root, root->left, root->right);
+    cout << res->val << endl;
+
+    return 0;
 }

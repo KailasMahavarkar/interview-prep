@@ -1,5 +1,5 @@
 import os
-name = "1498. Number of Subsequences That Satisfy the Given Sum Condition"
+name = "54. Spiral Matrix"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"

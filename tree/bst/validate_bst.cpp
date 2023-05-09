@@ -73,43 +73,31 @@ void levelOrderTree(TreeNode* root) {
 
 class Solution {
    public:
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
-        if (!root) {
-            return new TreeNode(val);
-        }
+    bool isValidBST(TreeNode* root) {
+        return isValidBST(root, LONG_MIN, LONG_MAX);
+    }
 
-        TreeNode* curr = root;
-        while (true) {
-            if (val >= curr->val) {
-                // go right
-                if (curr->right == NULL) {
-                    curr->right = new TreeNode(val);
-                    break;
-                } else {
-                    curr = curr->right;
-                }
-            } else {
-                // go left
-                if (curr->left == NULL) {
-                    curr->left = new TreeNode(val);
-                    break;
-                } else {
-                    curr = curr->left;
-                }
-            }
+    bool isValidBST(TreeNode* root, long minVal, long maxVal) {
+        if (!root) {
+            return true;
         }
-        return root;
+        if (root->val >= maxVal || root->val <= minVal) {
+            return false;
+        }
+        bool checkLeft = isValidBST(root->left, minVal, root->val);
+        bool checkRight = isValidBST(root->right, root->val, maxVal);
+        return checkLeft && checkRight;
     }
 };
 
 int main() {
-    vector<int> vec = {4, 2, 7, 1, 3};
+    vector<int> vec = {5, 3, 6, 2, 4, -1, 7};
 
     // convert vector to tree
     TreeNode* root = vectorToTree(vec);
 
     Solution sol;
-    root = sol.insertIntoBST(vectorToTree(vec), 5);
+    root = sol.kthSmallest(vectorToTree(vec), 3);
     levelOrderTree(root);
     cout << endl;
 }

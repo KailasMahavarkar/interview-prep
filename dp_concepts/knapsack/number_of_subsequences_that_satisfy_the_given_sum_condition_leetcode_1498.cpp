@@ -34,7 +34,6 @@ int numberOfWays(int i, int sum, int n, vector<int> &num, vector<vector<int>> &d
     }
 
     // Return the value if we already have calculated.
-
     if (dp[i][sum] != -1) {
         return dp[i][sum];
     }
