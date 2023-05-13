@@ -1,28 +1,43 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution{
-public:
-    bool isCycleDFS(vector<int> adj[], int u, int parent, vector<bool> &visited){
-        visited[u] = true;
+class Solution {
+   public:
+    vector<bool> visited;
+    bool isCycleDFS(vector<int> adj[], int current, int parent) {
+        // mark node visited
+        visited[current] = true;
 
-        for (int &v: adj[u]){
-            if (v == parent) continue;
+        // from that current node visit next neighbour if its not visited
+        for (int &v : adj[current]) {
+            // skip parent position since we came from that point
+            // if we go back it will be considered as cycle even though its not
+            if (v == parent) {
+                continue;
+            }
 
-            if (visited[v]){
+            if (visited[v]) {
+                // we found cycle since node is visited twice
                 return true;
             }
-            if (isCycleDFS(adj, v, u, visited)){
+
+            if (isCycleDFS(adj, v, current)) {
                 return true;
             }
         }
+
         return false;
     }
-    bool isCyclic(int V, vector<int> adj[]){
-        vector<bool> visited(V, 0);
-        for (int i=0; i < V; i++){
-            if (!visited[i] && isCycleDFS(adj, i, -1, visited)){
-                return true;
+    bool isCycle(int V, vector<int> adj[]) {
+        visited.resize(V, false);
+
+        // we are assuming graphs are component bases thus this loop is required
+        for (int i = 0; i < V; i++) {
+            // when node is not visited
+            if (!visited[i]) {
+                if (isCycleDFS(adj, i, -1)) {
+                    return true;
+                }
             }
         }
         return false;

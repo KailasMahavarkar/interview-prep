@@ -1,5 +1,5 @@
 import os
-name = "1035. Uncrossed Lines"
+name = "2466. Count Ways To Build Good Strings"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"

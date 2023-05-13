@@ -1,12 +1,11 @@
 from typing import List
 from collections import defaultdict
-import json
-
 
 
 class Solution:
     def __init__(self) -> None:
         self.visited = defaultdict(bool)
+        
     def isCycleDFS(self, adj, curr, parent):
         self.visited[curr] = True
   

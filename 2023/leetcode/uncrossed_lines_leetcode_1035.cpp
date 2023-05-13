@@ -29,7 +29,7 @@ class SolutionMemo {
             // we draw line and move on
             dp[i][j] = 1 + solve(i + 1, j + 1, nums1, nums2);
         } else {
-            // we have to options
+            // we have two options
             // we can fix i or we can fix j at each position of i and j
 
             int fix_i = solve(i, j + 1, nums1, nums2);
