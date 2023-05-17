@@ -1,35 +1,77 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution {
+// Method 1: using DFS
+class SolutionOne {
    public:
-    int n;
-    void dfs(vector<vector<int>>& isConnected, int curr, vector<bool>& visited) {
-        if (visited[curr]) return;
+    int n = 0;
+    void DFS(int u, vector<vector<int>> &adj, vector<bool> &visited) {
+        visited[u] = true;
 
-        visited[curr] = true;
-        for (int i = 0; i < n; i++) {
-            if (!visited[i] && isConnected[curr][i] == 1) {
-                dfs(isConnected, i, visited);
+        for (int v = 0; v < n; v++) {
+            if (adj[u][v] == 1 && !visited[v]) {
+                DFS(v, adj, visited);
             }
         }
     }
-    int findCircleNum(vector<vector<int>>& isConnected) {
+    int findCircleNum(vector<vector<int>> &isConnected) {
         n = isConnected.size();
         vector<bool> visited(n, false);
-        int result = 0;
+        int count = 0;
+
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
-                dfs(isConnected, i, visited);
-                result++;
+                count++;
+                DFS(i, isConnected, visited);
             }
         }
-        return result;
+
+        return count;
+    }
+};
+
+// Method 2: using BFS
+class Solution {
+   public:
+    int n;
+    void BFS(int u, vector<vector<int>> &adj, vector<bool> &visited) {
+        queue<int> que;
+        que.push(u);
+        visited[u] = true;
+
+        while (!que.empty()) {
+            int curr = que.front();
+            que.pop();
+
+            for (int v = 0; v < n; v++) {
+                if (adj[u][v] == 1 && !visited[v]) {
+                    visited[v] = true;
+                    que.push(v);
+                }
+            }
+        }
+    }
+    int findCircleNum(vector<vector<int>> &isConnected) {
+        n = isConnected.size();
+        vector<bool> visited(n, false);
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                count++;
+                BFS(i, isConnected, visited);
+            }
+        }
+
+        return count;
     }
 };
 
 int main() {
-    vector<vector<int>> connections = {{1, 1, 0}, {1, 1, 0}, {0, 0, 1}};
+    vector<vector<int>> connections = {
+        {1, 1, 0},
+        {1, 1, 0},
+        {0, 0, 1}};
     Solution obj;
     cout << obj.findCircleNum(connections) << endl;
     return 0;

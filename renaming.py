@@ -1,5 +1,5 @@
 import os
-name = "2466. Count Ways To Build Good Strings"
+name = "24. Swap Nodes in Pairs"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"
