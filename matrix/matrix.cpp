@@ -1,12 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// row wise traversal --> row col -> matrix[row][col]
+// col wise traversal --> col row -> matrix[row][col]
+
 void printMatrix(vector<vector<int>> mat) {
     int rows = mat.size();
     int cols = mat[0].size();
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            cout << mat[i][j] << " ";
+    for (int row = 0; row < rows; row++) {
+        for (int col = 0; col < cols; col++) {
+            cout << mat[row][col] << " ";
         }
         cout << endl;
     }
@@ -16,9 +19,9 @@ void printMatrix(vector<vector<int>> mat) {
 void printMatrixColwise(vector<vector<int>> mat) {
     int rows = mat.size();
     int cols = mat[0].size();
-    for (int i = 0; i < cols; i++) {
-        for (int j = 0; j < rows; j++) {
-            cout << mat[j][i] << " ";
+    for (int col = 0; col < cols; col++) {
+        for (int row = 0; row < rows; row++) {
+            cout << mat[row][col] << " ";
         }
         cout << endl;
     }

@@ -1,5 +1,5 @@
 import os
-name = "24. Swap Nodes in Pairs"
+name = "1161. Maximum Level Sum of a Binary Tree"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"
