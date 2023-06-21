@@ -54,14 +54,6 @@ public:
 };
 
 
-class Solution{
-    public:
-        int maxSumSubMatrix(vector<vector<int>>& matrix, int k){
-           
-        }
-};
-
-
 int main(){
     vector<vector<int>> sample = {
         {3, 3}, 

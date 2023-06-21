@@ -1,5 +1,5 @@
 import os
-name = "1161. Maximum Level Sum of a Binary Tree"
+name = "695. Max Area of Island"
 
 obsidian = False
 obsidian_path = "E:\onedrive\obsidian"
