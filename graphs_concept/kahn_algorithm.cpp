@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Kahn's Algorithm
+// Time Complexity: O(V+E)
+// Space Complexity: O(V)
+
+// What is Kahn's Algorithm?
+// Its nothing but topological sorting using BFS
+
 class Solution {
    public:
     vector<int> topoSort(int V, vector<int> adj[]) {
@@ -44,8 +51,14 @@ class Solution {
 
 int main() {
     Solution sol;
-    vector<int> arr[] = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}};
-    vector<int> ans = sol.topoSort(4, arr);
+    int V = 5;
+    vector<int> arr[V] = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}};
+    vector<int> ans = sol.topoSort(V, arr);
+
+    cout << "Topological Sorting Order: ";
+    for (int &node : ans) {
+        cout << node << " ";
+    }
 
     return 0;
 }

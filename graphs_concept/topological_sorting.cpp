@@ -42,14 +42,13 @@ class Solution {
 };
 
 int main() {
-    int V = 6;
-    vector<int> adj[V] = {{1, 2}, {2, 3}, {4}, {4, 5}, {}, {}};
-
     Solution sol;
-    vector<int> result = sol.topoSort(V, adj);
+    int V = 5;
+    vector<int> arr[V] = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}};
+    vector<int> ans = sol.topoSort(V, arr);
 
     cout << "Topological Sorting Order: ";
-    for (int node : result) {
+    for (int &node : ans) {
         cout << node << " ";
     }
 
