@@ -19,6 +19,7 @@ class Solution {
         // you have to think in terms of recursion
         // during recursion child nodes enter ho chuka h single parent ke liye
         // next time parent ko bhi enter karwana padega stack me
+        // Also, we are pushing parent after all children since stack reverses the order
         st.push(u);
     }
     vector<int> topoSort(int V, vector<int> adj[]) {
@@ -40,3 +41,14 @@ class Solution {
     }
 };
 
+int main() {
+    Solution sol;
+    vector<int> adj[5] = {{1, 2}, {2, 3}, {3, 4}, {4, 5}, {5, 1}};
+    vector<int> ans = sol.topoSort(5, adj);
+
+    for (int &i : ans) {
+        cout << i << " ";
+    }
+
+    return 0;
+}

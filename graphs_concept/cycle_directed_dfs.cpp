@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// cycle can only be possible if 
+// 1) current is in inRecursion
+// 2) we get true as answer from child dfs calls 
+
 class Solution {
    public:
     vector<bool> visited;
