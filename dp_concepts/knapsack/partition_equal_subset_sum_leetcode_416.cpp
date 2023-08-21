@@ -11,6 +11,56 @@ void printDP(string msg, vector<vector<bool>>& dp) {
     }
     cout << endl;
 }
+
+// Recursion + Memo
+class SolutionMemo {
+public:
+    int target;
+    vector<vector<bool>> dp;
+    bool isSubsetSumHelper(vector<int> arr, int sum, int n) {
+        // base case for success
+        // we found collection of elements that sum up to 0
+        if (sum == 0) {
+            return true;
+        }
+
+        // base case for success
+        // when n reached 0 it means we have exhausted all elements
+        if (n == 0) {
+            return false;
+        }
+
+        if (dp[n][sum]) {
+            return true;
+        }
+
+        // if last element is more than target ignore it and move to next
+        if (arr[n - 1] > sum) {
+            dp[n][sum] = isSubsetSumHelper(arr, sum, n - 1);
+        } else {
+            bool pickCase = isSubsetSumHelper(arr, sum - arr[n - 1], n - 1);
+            bool unpickCase = isSubsetSumHelper(arr, sum, n - 1);
+            dp[n][sum] = pickCase || unpickCase;
+        }
+
+        return dp[n][sum];
+    }
+    bool canPartition(vector<int>& nums) {
+        int total = 0;
+        for (int i=0; i<nums.size(); i++){
+            total += nums[i];
+        }
+
+        if (total % 2 == 1){
+            return false;
+        }
+
+        dp.resize(nums.size() + 1, vector<bool>(total + 1, false));
+        bool ans = isSubsetSumHelper(nums, total / 2, nums.size());
+        return ans;
+    }
+};
+
 class Solution {
    public:
     bool subsetSum(vector<int>& nums, int sum) {

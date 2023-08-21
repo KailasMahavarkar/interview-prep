@@ -12,15 +12,20 @@ void printDP(string msg, vector<vector<bool>>& dp) {
     cout << endl;
 }
 
-recursion + dp
+// recursion + dp
 class Solution {
    public:
     int target;
     vector<vector<bool>> dp;
     bool isSubsetSumHelper(vector<int> arr, int sum, int n) {
+        // base case for success
+        // we found collection of elements that sum up to 0 
         if (sum == 0) {
             return true;
         }
+
+        // base case for failure
+        // when n reached 0 it means we have exhausted all elements
         if (n == 0) {
             return false;
         }

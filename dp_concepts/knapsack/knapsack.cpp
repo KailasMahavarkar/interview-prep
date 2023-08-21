@@ -22,7 +22,7 @@ class SolutionRecursive {
         }
 
         // agar last weight jyada ho toh select nai kar sakte kuch bhi
-        if (wt[n - 1] > w) {
+        if (wt[n] > w) {
             return knapsackHelper(w, wt, val, n - 1);
         } else {
             // do option honge -> pick or dont pick item
@@ -53,7 +53,7 @@ class SolutionMemo {
         }
 
         // weight of item is more than current capacity
-        if (wt[n] > w) {
+        if (wt[n-1] > w) {
             dp[n][w] = knapsackHelper(w, wt, val, n - 1);
         } else {
             int pickCase = val[n - 1] + knapsackHelper(w - wt[n - 1], wt, val, n - 1);

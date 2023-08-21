@@ -1,19 +1,25 @@
 import os
-name = "695. Max Area of Island"
+name = "1615. Maximal Network Rank"
 
 obsidian = False
+create_cpp = True
+create_python = False
+create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"
-cpp_path = os.path.join(obsidian_path, 'cpp')
-leetcode_path = os.path.join(cpp_path, 'leetcode')
+root_path = os.path.abspath(os.path.dirname(__file__))
+obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
+obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
+leetcode_path = os.path.join(root_path, 'leetcode')
+
 
 if not obsidian_path:
     print("Obsidian Path does not exist")
     exit(1)
 
-if not leetcode_path:
+if not obsidian_leetcode_path:
     # create path
-    os.mkdir(cpp_path)
-    os.mkdir(leetcode_path)
+    os.mkdir(obsidian_cpp_path)
+    os.mkdir(obsidian_leetcode_path)
 
 
 parts = name.split('.')
@@ -27,8 +33,7 @@ if obsidian:
         canvas_name = "canvas_" + folder + ".excalidraw"
         note_name = "note_" + folder
 
-        problem_path = os.path.join(leetcode_path, folder)
-
+        problem_path = os.path.join(obsidian_leetcode_path, folder)
         canvas_path = os.path.join(problem_path, canvas_name)
         note_path = os.path.join(problem_path, note_name)
 
@@ -50,19 +55,21 @@ if obsidian:
                 f.write("")
 
 
-t1 = p2 + p1 + '.py'
-t2 = p2 + p1 + '.cpp'
-t3 = p2 + p1 + '.js'
+python = (p2 + p1 + '.py')[1:]
+cpp = (p2 + p1 + '.cpp')[1:]
+javascript = (p2 + p1 + '.js')[1:]
+
+for lang in [create_cpp, create_python, create_javascript]:
+    if lang:
+        check_exists = os.path.exists(os.path.join(leetcode_path, cpp))
+        if not check_exists:
+            with open(os.path.join(leetcode_path, cpp), 'w') as f:
+                f.write("")
+        else:
+            print("File already exists")
+
+for x in [python, cpp, javascript]:
+    print(x[1:])
 
 
-if (t1.startswith("_")):
-    print(t1[1:])
-
-if (t2.startswith("_")):
-    print(t2[1:])
-
-if (t3.startswith("_")):
-    print(t3[1:])
-    print(t3[1:][:-3])
-    print(t3[1:][:-3] + ".excalidraw")
 

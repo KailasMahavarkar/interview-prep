@@ -1,44 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Node
-{
-public:
+class Node {
+   public:
     int data;
-    Node *next = NULL;
+    Node* next = NULL;
 
-    Node(int data)
-    {
+    Node(int data) {
         this->data = data;
         this->next = NULL;
     }
 
-    ~Node()
-    {
-        if (this->next != NULL)
-        {
+    ~Node() {
+        if (this->next != NULL) {
             delete this->next;
             this->next = NULL;
         }
     }
 };
 
-void insertNode(Node *&tail, int element, int data)
-{
-
+void insertNode(Node*& tail, int element, int data) {
     // empty list h
-    if (tail == NULL)
-    {
-        Node *temp = new Node(data);
+    if (tail == NULL) {
+        Node* temp = new Node(data);
         tail = temp;
         temp->next = temp;
     }
     // list me 1 element h
-    else
-    {
+    else {
         Node* curr = tail;
 
-        while(curr->data != element){
+        while (curr->data != element) {
             curr = curr->next;
         }
 
@@ -49,73 +41,66 @@ void insertNode(Node *&tail, int element, int data)
     }
 }
 
-
-void deleteNode(Node* &tail, int data){
-    if (tail == NULL){
+void deleteNode(Node*& tail, int data) {
+    if (tail == NULL) {
         cout << "list is empty, recheck it" << endl;
         return;
-    }else{
+    } else {
         // list is not empty and element is present in linked list
         Node* prev = tail;
         Node* curr = prev->next;
 
-        while(curr->data != data){
+        while (curr->data != data) {
             prev = curr;
             curr = curr->next;
         }
 
         prev->next = curr->next;
 
-        if (tail == curr){
+        if (tail == curr) {
             tail = prev;
         }
 
         curr->next = NULL;
         delete curr;
     }
-
 }
 
-void printLL(Node* tail){
-
-    if (tail == NULL){
+void printLL(Node* tail) {
+    if (tail == NULL) {
         cout << "list is empty, recheck it" << endl;
         return;
     }
 
     Node* temp = tail;
 
-    while(tail->next != temp){
-        cout << tail ->data << " ";
+    while (tail->next != temp) {
+        cout << tail->data << " ";
         tail = tail->next;
     }
     cout << tail->data << endl;
 }
 
-
-bool isCircular(Node* head){
+bool isCircular(Node* head) {
     if (head == NULL)
         return true;
 
     Node* temp = head->next;
 
-
     // temp != NULL -> non-circular case
-    // temp != head -> circular case         
-    while(temp != head && temp != NULL){
+    // temp != head -> circular case
+    while (temp != head && temp != NULL) {
         temp = temp->next;
     }
 
-    if (temp == head){
+    if (temp == head) {
         return true;
     }
     return false;
 }
 
-
-bool detectLoop(Node* head){
-    
-    if (head == NULL){
+bool detectLoop(Node* head) {
+    if (head == NULL) {
         return false;
     }
 
@@ -123,9 +108,9 @@ bool detectLoop(Node* head){
 
     Node* temp = head;
 
-    while(temp != NULL){
-        // cycle is present 
-        if (visited[temp] == true){
+    while (temp != NULL) {
+        // cycle is present
+        if (visited[temp] == true) {
             return 1;
         }
         visited[temp] = true;
@@ -135,10 +120,7 @@ bool detectLoop(Node* head){
     return false;
 }
 
-
-int main()
-{
-
+int main() {
     Node* tail = NULL;
     insertNode(tail, 0, 3);
     insertNode(tail, 3, 5);
@@ -147,12 +129,11 @@ int main()
 
     bool answer = isCircular(tail);
 
-    if (answer){
+    if (answer) {
         cout << "its circular" << endl;
-    }else{
+    } else {
         cout << "its not ciruclar" << endl;
     }
 
     // printLL(tail);
-
 }

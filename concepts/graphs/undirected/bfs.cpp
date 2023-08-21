@@ -1,15 +1,10 @@
-//{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
 class Solution {
   public:
-
     void BFS(unordered_map<int, vector<int>>& adj, int curr, vector<bool>& visited, vector<int>& result){
         queue<int> que;
-
-
         que.push(curr);
         visited[curr] = true;
         result.push_back(curr);
@@ -25,11 +20,9 @@ class Solution {
                     result.push_back(child);
                 }
             }
-
         }
     }
 
-    // Function to return Breadth First Traversal of given graph.
     vector<int> bfsOfGraph(int V, vector<int> mp[]) {
         unordered_map<int, vector<int>> adj;
         for (int curr=0; curr < V; curr++){
@@ -45,33 +38,21 @@ class Solution {
     }
 };
 
-//{ Driver Code Starts.
+
 int main() {
-    int tc;
-    cin >> tc;
-    while (tc--) {
-        int V, E;
-        cin >> V >>
-
-            E;
-
-        vector<int> adj[V];
-
-        for (int i = 0; i < E; i++) {
-            int u, v;
-            cin >> u >> v;
-            adj[u].push_back(v);
-            // 		adj[v].push_back(u);
+    vector<vector<int>> vec = {{2, 3, 1}, {0}, {0, 4}, {0}, {2}};
+    
+    vector<int> adj[5];
+    for (int i = 0; i < vec.size(); i++) {
+        for (int j = 0; j < vec[i].size(); j++) {
+            adj[i].push_back(vec[i][j]);
         }
-        // string s1;
-        // cin>>s1;
-        Solution obj;
-        vector<int> ans = obj.bfsOfGraph(V, adj);
-        for (int i = 0; i < ans.size(); i++) {
-            cout << ans[i] << " ";
-        }
-        cout << endl;
     }
-    return 0;
+
+    Solution sol;
+    vector<int> ans = sol.bfsOfGraph(5, adj);
+
+    for (auto &x : ans) {
+        cout << x << " ";
+    }
 }
-// } Driver Code Ends
