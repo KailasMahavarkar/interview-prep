@@ -8,55 +8,32 @@ void printVector(vector<int> nums) {
     cout << endl;
 }
 
-int partition(int s, int e, vector<int> &nums) {
-    int count = 0;
-    int pivotValue = nums[s];
+int partition(int low, int high, vector<int> &nums) {
+    int pivotValue = nums[low];
+    int i = low;
+    int j = high;
 
-    // count all elements less than pivot
-    for (int i = s + 1; i < nums.size(); i++) {
-        if (nums[i] < pivotValue) {
-            count++;
-        }
-    }
-
-    // swap the first element with [counter + s]
-    int pivotIndex = s + count;
-    swap(nums[pivotIndex], nums[s]);
-
-    int i = s;
-    int j = e;
-
-    // sort the element such that left half of array is sorted
-    while (i < pivotIndex && j > pivotIndex) {
-        while (nums[i] < pivotValue) {
+    while (i < j) {
+        while (nums[i] <= pivotValue && i < high) {
             i++;
         }
-        while (nums[j] > pivotValue) {
+
+        while (nums[j] > pivotValue && j > low) {
             j--;
         }
 
-        // both pointers are 'stale' -> not moving thus swap
-        // before swapping check if prev condition is violated
-        // since we moved i and j | there is possibility the j is on pivot
-        if (i < pivotIndex && j > pivotIndex) {
-            swap(nums[i], nums[j]);
-            i++;
-            j--;
-        }
+        if (i < j) swap(nums[i], nums[j]);
     }
-
-    return pivotIndex;
+    swap(nums[low], nums[j]);
+    return j;
 }
 
-void quickSort(int s, int e, vector<int> &nums) {
-    if (s >= e) {
-        return;
+void quickSort(int low, int high, vector<int> &nums) {
+    if (low < high) {
+        int pIndex = partition(low, high, nums);
+        quickSort(low, pIndex - 1, nums);
+        quickSort(pIndex + 1, high, nums);
     }
-
-    int p = partition(s, e, nums);
-    // cout << p << endl;
-    quickSort(s, p - 1, nums);
-    quickSort(p + 1, e, nums);
 }
 
 int main() {

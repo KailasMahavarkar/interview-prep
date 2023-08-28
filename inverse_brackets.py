@@ -15,6 +15,6 @@ def inverse_brackets(str=""):
     return str.strip()
 
 
-testcase = """[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]"""
+testcase = """[[-10,-8],[-4,7],[-5,0],[-6,-4],[1,7],[6,10],[8,9],[9,10]]"""
 
 print(inverse_brackets(testcase))

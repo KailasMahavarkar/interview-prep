@@ -10,17 +10,14 @@ void selection_sort(int arr[], int n) {
             }
         }
 
-        // agar minIndex is not same as i index, then only sort
-        // meaning if pointer is at i and minIndex is i we dont need to sort.
-        // if condition is for optimization
-        if (minIndex != i) {
+        if (arr[minIndex] != arr[i]) {
             swap(arr[minIndex], arr[i]);
         }
     }
 }
 
 int main() {
-    int arr[3] = {3, 2, 1};
+    int arr[3] = {2, 1, 4, 0, 5};
     selection_sort(arr, 3);
 
     for (int i = 0; i < 3; i++) {

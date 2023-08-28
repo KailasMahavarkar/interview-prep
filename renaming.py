@@ -1,10 +1,10 @@
 import os
-name = "1615. Maximal Network Rank"
+name = "646. Maximum Length of Pair Chain"
 
 obsidian = False
 create_cpp = True
 create_python = False
-create_javascript = False
+create_javascript = True
 obsidian_path = "E:\onedrive\obsidian"
 root_path = os.path.abspath(os.path.dirname(__file__))
 obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
@@ -69,7 +69,7 @@ for lang in [create_cpp, create_python, create_javascript]:
             print("File already exists")
 
 for x in [python, cpp, javascript]:
-    print(x[1:])
+    print(x)
 
 
 
