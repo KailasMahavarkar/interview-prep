@@ -1,5 +1,5 @@
 import os
-name = "646. Maximum Length of Pair Chain"
+name = "138. Copy List with Random Pointer"
 
 obsidian = False
 create_cpp = True
@@ -10,6 +10,25 @@ root_path = os.path.abspath(os.path.dirname(__file__))
 obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
 obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
 leetcode_path = os.path.join(root_path, 'leetcode')
+
+
+def file_format_writer(leetcode):
+    companies_str = ''
+    return '''
+        /*
+            Leetcode Link           : https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+            Company Tags            : {}
+        */
+
+        /*
+            references:
+            
+        */
+
+        //Approach-1 (Using Greedy approach similar to Jump Game-II)
+        //TC : O(n)
+        //SC : O(1)
+    '''
 
 
 if not obsidian_path:
@@ -70,6 +89,3 @@ for lang in [create_cpp, create_python, create_javascript]:
 
 for x in [python, cpp, javascript]:
     print(x)
-
-
-
