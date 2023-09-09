@@ -1,5 +1,5 @@
 import os
-name = "138. Copy List with Random Pointer"
+name = "49. Group Anagrams"
 
 obsidian = False
 create_cpp = True
