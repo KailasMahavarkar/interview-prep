@@ -1,5 +1,5 @@
 import os
-name = "49. Group Anagrams"
+name = "1647. Minimum Deletions to Make Character Frequencies Unique"
 
 obsidian = False
 create_cpp = True
