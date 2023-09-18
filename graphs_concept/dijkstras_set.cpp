@@ -4,24 +4,29 @@ using namespace std;
 class Solution {
    public:
     vector<int> dijkstra(int V, vector<vector<int>> adj[], int S) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+        set<pair<int, int>> st;
         vector<int> result(V, INT_MAX);
 
         result[S] = 0;
-        pq.push({0, S});  // souce se source tak pohoch ne me 0 lag rha h
+        st.insert({0, S});  // souce se source tak pohoch ne me 0 lag rha h
 
-        while (!pq.empty()) {
-            int cost = pq.top().first;
-            int node = pq.top().second;
-            pq.pop();
+        while (!st.empty()) {
+            auto &it = *st.begin();
+            int cost = it.first;
+            int node = it.second;
+            st.erase(it);
 
             for (auto &x : adj[node]) {
                 int subnode = x[0];
                 int curr_cost = x[1];
 
                 if (cost + curr_cost < result[subnode]) {
+                    if (result[subnode] != INT_MAX) {
+                        st.erase({result[subnode], subnode});
+                    }
+
                     result[subnode] = cost + curr_cost;
-                    pq.push({cost + curr_cost, subnode});
+                    st.insert({cost + curr_cost, subnode});
                 }
             }
         }

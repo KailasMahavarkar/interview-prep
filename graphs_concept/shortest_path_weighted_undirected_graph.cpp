@@ -49,19 +49,18 @@ class Solution {
             }
         }
 
-        vector<int> path;
         int destNode = n;
         if (result[destNode] == INT_MAX) {
             return {-1};
         }
 
-        while (parent[node] != node) {
-            path.push_back(node);
-            node = parent[node];
+        vector<int> path;
+        while (parent[destNode] != destNode) {
+            path.push_back(destNode);
+            destNode = parent[destNode];
         }
 
         path.push_back(1);
-
         reverse(begin(path), end(path));
         return path;
     }
