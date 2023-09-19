@@ -1,3 +1,6 @@
+
+testcase = """[[0,0,0],[1,1,0],[1,1,0]]"""
+
 def inverse_brackets(str=""):
     type = ''
     for x in str:
@@ -14,7 +17,5 @@ def inverse_brackets(str=""):
         return str.replace('{', '[').replace('}', "]").strip()
     return str.strip()
 
-
-testcase = """["eat","tea","tan","ate","nat","bat"]"""
 
 print(inverse_brackets(testcase))
