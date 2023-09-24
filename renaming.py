@@ -1,5 +1,5 @@
 import os
-name = "799. Champagne Tower"
+name = "1584. Min Cost to Connect All Points"
 
 obsidian = False
 create_cpp = True
