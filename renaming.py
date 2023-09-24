@@ -1,10 +1,10 @@
 import os
-name = "1647. Minimum Deletions to Make Character Frequencies Unique"
+name = "799. Champagne Tower"
 
 obsidian = False
 create_cpp = True
 create_python = False
-create_javascript = True
+create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"
 root_path = os.path.abspath(os.path.dirname(__file__))
 obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
