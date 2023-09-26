@@ -1,5 +1,5 @@
 import os
-name = "1584. Min Cost to Connect All Points"
+name = "316. Remove Duplicate Letters"
 
 obsidian = False
 create_cpp = True
