@@ -1,8 +1,8 @@
 import os
-name = "316. Remove Duplicate Letters"
+name = "1020. Number of Enclaves"
 
 obsidian = False
-create_cpp = True
+create_cpp = False
 create_python = False
 create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"

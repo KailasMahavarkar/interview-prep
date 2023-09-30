@@ -1,7 +1,8 @@
 
-testcase = """[[1,1,1],[1,1,0],[1,0,1]]"""
+testcase = """[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]"""
 
-def inverse_brackets(str=""):
+
+def inverse_brackets(str="", inverseQuotes=False):
     type = ''
     for x in str:
         if x == '{':
@@ -12,10 +13,19 @@ def inverse_brackets(str=""):
             break
 
     if (type == '['):
-        return str.replace('[', '{').replace(']', "}").strip()
+        str = str.replace('[', '{').replace(']', "}").strip()
     if (type == '{'):
-        return str.replace('{', '[').replace('}', "]").strip()
+        str = str.replace('{', '[').replace('}', "]").strip()
+
+    if inverseQuotes:
+        if str.find('"') != -1:
+            return str.replace('"', "'").strip()
+        else:
+            return str.replace("'", '"').strip()
+
     return str.strip()
 
 
-print(inverse_brackets(testcase))
+print(inverse_brackets(
+    testcase, inverseQuotes=True
+))

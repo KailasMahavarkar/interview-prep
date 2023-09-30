@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Why do we use bellman_ford?
+// >> shortest path from source to all vertices in a graph
+
 class Solution {
    public:
     vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
