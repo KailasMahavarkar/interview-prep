@@ -1,5 +1,5 @@
 import os
-name = "1020. Number of Enclaves"
+name = "GFG. Alien Dictionary"
 
 obsidian = False
 create_cpp = False
