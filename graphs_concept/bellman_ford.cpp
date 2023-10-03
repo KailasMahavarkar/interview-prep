@@ -42,5 +42,9 @@ int main() {
     vector<vector<int>> edges = {{0, 1, 5}, {1, 0, 3}, {1, 2, -1}, {2, 0, 1}};
     Solution sol;
     vector<int> ans = sol.bellman_ford(3, edges, 2);
-    cout << "ans --> " << ans << endl;
+
+    for (auto& x : ans) {
+        cout << x << " ";
+    }
+    cout << endl;
 }
