@@ -1,5 +1,5 @@
 import os
-name = "GFG. Alien Dictionary"
+name = "GFG. Shortest path in Directed Acyclic Graph"
 
 obsidian = False
 create_cpp = False
