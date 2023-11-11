@@ -2,7 +2,7 @@ import os
 name = "5. Longest Palindromic Substring"
 
 obsidian = False
-create_cpp = False
+create_cpp = True
 create_python = False
 create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"
