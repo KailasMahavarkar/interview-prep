@@ -1,5 +1,5 @@
 import os
-name = "GFG. Shortest path in Directed Acyclic Graph"
+name = "5. Longest Palindromic Substring"
 
 obsidian = False
 create_cpp = False
@@ -16,13 +16,12 @@ def file_format_writer(leetcode):
     companies_str = ''
     return '''
         /*
-            Leetcode Link           : https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
-            Company Tags            : {}
+            Leetcode Link  : https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
+            Company Tags   : {}
         */
 
         /*
             references:
-            
         */
 
         //Approach-1 (Using Greedy approach similar to Jump Game-II)
@@ -61,10 +60,8 @@ if obsidian:
 
         # copy content from "excalidraw.md" to new file to canvas_path
         if not os.path.exists(canvas_path):
-
             # create a local copy of file "excalidraw.md" using os module
             # rename it and move it to location canvas_path
-
             with open(canvas_path, 'w') as f:
                 f.write("")
 
