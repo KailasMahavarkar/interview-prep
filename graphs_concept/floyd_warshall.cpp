@@ -1,9 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Company Tags                : Samsung
+    GfG Link                    : https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1
+*/
+
 class Solution {
    public:
-    void shortest_distance(vector<vector<int>>& matrix) {
+    vector<vector<int>> shortest_distance(vector<vector<int>>& grid) {
         int n = grid.size();
 
         for (int i = 0; i < n; i++) {
@@ -27,10 +32,10 @@ class Solution {
                     grid[i][j] = -1;
             }
         }
+
+        return grid;
     }
-}
-}
-;
+};
 
 int main() {
     vector<vector<int>> edges = {{0, 1, 43}, {1, 0, 6}, {-1, -1, 0}};
