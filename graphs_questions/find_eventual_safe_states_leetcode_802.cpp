@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution {
+// Method 1: Cycle Detection in directed graph
+class SolutionOne {
    public:
     vector<bool> inRecursion;
     vector<bool> visited;
@@ -41,6 +42,48 @@ class Solution {
         }
 
         return safeNodes;
+    }
+};
+
+// Method 2: Kahn's Algorithm (topological sort)
+class Solution {
+   public:
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        int V = graph.size();
+        vector<int> indegree(V, 0);
+        queue<int> que;
+        vector<int> result;
+
+        unordered_map<int, vector<int>> adj;
+
+        for (int u = 0; u < V; u++) {
+            for (auto& v : graph[u]) {
+                adj[v].push_back(u);
+                indegree[u]++;
+            }
+        }
+
+        for (int i = 0; i < V; i++) {
+            if (indegree[i] == 0) {
+                que.push(i);
+            }
+        }
+
+        while (!que.empty()) {
+            int curr = que.front();
+            result.push_back(curr);
+            que.pop();
+
+            for (auto& v : adj[curr]) {
+                indegree[v]--;
+
+                if (indegree[v] == 0) {
+                    que.push(v);
+                }
+            }
+        }
+
+        return result;
     }
 };
 

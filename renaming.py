@@ -1,8 +1,8 @@
 import os
-name = "5. Longest Palindromic Substring"
+name = "778. Swim in Rising Water"
 
 obsidian = False
-create_cpp = True
+create_cpp = False
 create_python = False
 create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"
