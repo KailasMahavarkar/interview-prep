@@ -1,8 +1,10 @@
 import os
-name = "778. Swim in Rising Water"
+name = "1877. Minimize Maximum Pair Sum in Array"
 
+problem_link='https://leetcode.com/problems/minimize-maximum-pair-sum-in-array'
+companies_str='amazon'
 obsidian = False
-create_cpp = False
+create_cpp = True
 create_python = False
 create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"
@@ -12,21 +14,22 @@ obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
 leetcode_path = os.path.join(root_path, 'leetcode')
 
 
-def file_format_writer(leetcode):
-    companies_str = ''
-    return '''
-        /*
-            Leetcode Link  : https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/
-            Company Tags   : {}
-        */
+def file_format_writer(problem_link, companies_str):
+    companies_str = companies_str.replace(" ", "").replace("|", ",").replace("__", "_")
+    return f'''#include <bits/stdc++.h>
+using namespace std;
 
-        /*
-            references:
-        */
+/*
+    Problem Link  : {problem_link}
+    Company Tags   : {companies_str}
+    references:
+*/
 
-        //Approach-1 (Using Greedy approach similar to Jump Game-II)
-        //TC : O(n)
-        //SC : O(1)
+//Approach-1 ()
+//TC : O()
+//SC : O()
+
+
     '''
 
 
@@ -80,7 +83,11 @@ for lang in [create_cpp, create_python, create_javascript]:
         check_exists = os.path.exists(os.path.join(leetcode_path, cpp))
         if not check_exists:
             with open(os.path.join(leetcode_path, cpp), 'w') as f:
-                f.write("")
+                text_to_write = file_format_writer(problem_link=problem_link, companies_str=companies_str)
+                if create_cpp:
+                    f.write(file_format_writer(problem_link=problem_link, companies_str=companies_str))
+                else:
+                    f.write("")
         else:
             print("File already exists")
 
