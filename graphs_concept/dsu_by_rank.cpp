@@ -39,15 +39,6 @@ int main() {
     sol.unionSet(parent, rank, 1, 2);
     sol.unionSet(parent, rank, 3, 1);
 
-    // sol.unionSet(parent, rank, 2, 0);
-
-    // sol.unionSet(parent, rank, 2, 3);
-    // sol.unionSet(parent, rank, 4, 5);
-    // sol.unionSet(parent, rank, 6, 7);
-    // sol.unionSet(parent, rank, 0, 2);
-    // sol.unionSet(parent, rank, 4, 6);
-    // sol.unionSet(parent, rank, 0, 4);
-
     // print rank of each node
     for (int i = 0; i < parent.size(); i++) {
         cout << "rank of " << i << " is " << rank[i] << endl;
