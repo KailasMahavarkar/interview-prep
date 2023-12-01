@@ -1,8 +1,8 @@
 import os
-name = "1877. Minimize Maximum Pair Sum in Array"
+name = "899. Orderly Queue"
 
-problem_link='https://leetcode.com/problems/minimize-maximum-pair-sum-in-array'
-companies_str='amazon'
+problem_link='https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/'
+companies_str=''
 obsidian = False
 create_cpp = True
 create_python = False
@@ -21,8 +21,8 @@ using namespace std;
 
 /*
     Problem Link  : {problem_link}
-    Company Tags   : {companies_str}
-    references:
+    Company Tags  : {companies_str}
+    references    :
 */
 
 //Approach-1 ()
