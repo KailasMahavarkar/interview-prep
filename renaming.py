@@ -1,7 +1,7 @@
 import os
-name = "899. Orderly Queue"
+name = "68. Text Justification"
 
-problem_link='https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/description/'
+problem_link='https://leetcode.com/problems/text-justification/'
 companies_str=''
 obsidian = False
 create_cpp = True
@@ -29,6 +29,9 @@ using namespace std;
 //TC : O()
 //SC : O()
 
+int main(){"{"}
+
+{"}"}
 
     '''
 
