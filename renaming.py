@@ -1,7 +1,7 @@
 import os
-name = "68. Text Justification"
+name = "2264. Largest 3-Same-Digit Number in String"
 
-problem_link='https://leetcode.com/problems/text-justification/'
+problem_link='https://leetcode.com/problems/largest-3-same-digit-number-in-string/'
 companies_str=''
 obsidian = False
 create_cpp = True

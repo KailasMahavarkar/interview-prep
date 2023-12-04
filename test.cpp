@@ -13,38 +13,25 @@ void printDP(vector<vector<int>> dp) {
 class Solution {
    public:
     vector<vector<int>> dp;
-    int editDistance(string word1, string word2, int m, int n) {
-        if (m == 0)
-            return n;
+    void solve(vector<string> words) {
+        int start = 0;
 
-        if (n == 0) {
-            return m;
+        while (start < words.size()) {
+            int end = start;
+            int lineLength = 0;
+
+            while (end < words.size() && lineLength + words[end].length() + end - start <= 16) {
+                lineLength += words[end].length();
+                end++;
+            }
+
+            start = end;
         }
-
-        if (dp[m - 1][n - 1] != -1) {
-            return dp[m - 1][n - 1];
-        }
-
-        if (word1[m - 1] == word2[n - 1]) {
-            return dp[m - 1][n - 1] = editDistance(word1, word2, m - 1, n - 1);
-        }
-
-        int insertResult = editDistance(word1, word2, m, n - 1);
-        int deleteResult = editDistance(word1, word2, m - 1, n);
-        int replaceResult = editDistance(word1, word2, m - 1, n - 1);
-        return dp[m - 1][n - 1] = 1 + min(replaceResult, min(insertResult, deleteResult));
-    }
-
-    int minDistance(string word1, string word2) {
-        dp.resize(word1.length() + 1, vector<int>(word2.length() + 1, -1));
-        editDistance(word1, word2, word1.length(), word2.length());
-        return dp[word1.length() - 1][word2.length() - 1];
     }
 };
 
 int main() {
-    string word1 = "sea";
-    string word2 = "eat";
-    Solution().minDistance(word1, word2);
+    vector<string> words = {"A", "B", "C", "D", "E", "F", "G", "H", "I"};
+    Solution().solve(words);
     return 0;
 }
