@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : https://leetcode.com/problems/sort-colors/description/
+    Company Tags   : None
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (Normal)
+// TC : O(N)
+// SC : O(N)
+
 void sortColors(vector<int>& nums) {
     int count0 = 0, count1 = 0, count2 = 0;
     for (int i = 0; i < nums.size(); i++) {

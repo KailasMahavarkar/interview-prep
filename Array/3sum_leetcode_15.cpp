@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : https://leetcode.com/problems/3sum/description/
+    Company Tags   : Many
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (set + sorting + two pointer)
+// TC : O(n^2)
+// SC : O(n)
+
 class Solution {
    public:
     vector<vector<int>> threeSum(vector<int> &nums) {
@@ -43,22 +54,18 @@ class Solution {
         return result;
     }
 };
+int main() {
+    vector<int> nums = {-1, 0, 1, 2, -1, -4};
 
-void printVVI(vector<vector<int>> &arr) {
-    for (int i = 0; i < arr.size(); i++) {
-        for (int j = 0; j < arr[i].size(); j++) {
-            cout << arr[i][j] << " ";
+    Solution s;
+    vector<vector<int>> result = s.threeSum(nums);
+
+    for (int i = 0; i < result.size(); i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << result[i][j] << " ";
         }
         cout << endl;
     }
-}
-
-int main() {
-    vector<int> nums = {12, 3, 4, 1, 6, 9};
-    int target = 25;
-
-    vector<vector<int>> result = findTriplets(nums, nums.size(), target);
-    printVVI(result);
 
     return 0;
 }

@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : Unknown
+    Company Tags   : None
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (two pointer)
+// TC : O(n)
+// SC : O(1)
+
 void pairedSum(int sum, vector<int> arr, vector<pair<int, int>> &answer) {
     int s = 0;
     int e = arr.size() - 1;
@@ -12,7 +23,7 @@ void pairedSum(int sum, vector<int> arr, vector<pair<int, int>> &answer) {
 
         if (arr[s] + arr[e] < sum) {
             s++;
-        }else{
+        } else {
             e--;
         }
     }
@@ -24,8 +35,9 @@ int main() {
     sort(arr.begin(), arr.end());
     pairedSum(6, arr, answer);
 
-    for (auto x: answer){
-        cout << "(" << x.first << " " << x.second << ")"  << " ";
-    } cout << endl;
-
+    for (auto x : answer) {
+        cout << "(" << x.first << " " << x.second << ")"
+             << " ";
+    }
+    cout << endl;
 }

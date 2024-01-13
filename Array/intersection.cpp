@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : None
+    Company Tags   : None
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (Normal)
+// TC : O(n)
+// SC : O(1)
+
 int main() {
     vector<int> arr1 = {2, 3, 4, 4, 7};
     vector<int> arr2 = {0, 4, 4, 5};

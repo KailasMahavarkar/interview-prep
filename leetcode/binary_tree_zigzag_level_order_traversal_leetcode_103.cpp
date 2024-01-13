@@ -2,7 +2,6 @@
 using namespace std;
 
 // Definition for a binary tree TreeNode.
-
 struct TreeNode {
     int val;
     TreeNode *left;

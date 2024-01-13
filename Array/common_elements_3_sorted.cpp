@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : https://www.geeksforgeeks.org/problems/common-elements1132/1
+    Company Tags   : vmware, microsoft, maq software
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (3 pointer)
+// TC : O(n + m + k)
+// SC : O(n + m + k)
+
 class Solution {
    public:
     vector<int> commonElements(int arr1[], int arr2[], int arr3[], int n1, int n2, int n3) {
@@ -38,8 +49,7 @@ int main() {
         arr1, arr2, arr3,
         sizeof(arr1) / sizeof(arr1[0]),
         sizeof(arr2) / sizeof(arr2[0]),
-        sizeof(arr3) / sizeof(arr3[0])
-    );
+        sizeof(arr3) / sizeof(arr3[0]));
     for (int i = 0; i < result.size(); i++) {
         cout << result[i] << " ";
     }

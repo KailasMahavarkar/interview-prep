@@ -1,10 +1,10 @@
 import os
-name = "2264. Largest 3-Same-Digit Number in String"
+name = "53. Encode and Decode TinyURL"
 
-problem_link='https://leetcode.com/problems/largest-3-same-digit-number-in-string/'
-companies_str=''
+problem_link = 'https://leetcode.com/problems/longest-substring-without-repeating-characters/description/'
+companies_str = ''
 obsidian = False
-create_cpp = True
+create_cpp = False
 create_python = False
 create_javascript = False
 obsidian_path = "E:\onedrive\obsidian"
@@ -15,19 +15,21 @@ leetcode_path = os.path.join(root_path, 'leetcode')
 
 
 def file_format_writer(problem_link, companies_str):
-    companies_str = companies_str.replace(" ", "").replace("|", ",").replace("__", "_")
+    companies_str = companies_str.replace(
+        " ", "").replace("|", ",").replace("__", "_")
     return f'''#include <bits/stdc++.h>
 using namespace std;
 
 /*
-    Problem Link  : {problem_link}
-    Company Tags  : {companies_str}
-    references    :
+    Problem Link   : {problem_link}
+    Company Tags   : None
+    Youtube Link   : None
+    Custom  Link   : None
 */
 
-//Approach-1 ()
-//TC : O()
-//SC : O()
+// Approach-1 (Normal)
+// TC : O()
+// SC : O()
 
 int main(){"{"}
 
@@ -86,13 +88,17 @@ for lang in [create_cpp, create_python, create_javascript]:
         check_exists = os.path.exists(os.path.join(leetcode_path, cpp))
         if not check_exists:
             with open(os.path.join(leetcode_path, cpp), 'w') as f:
-                text_to_write = file_format_writer(problem_link=problem_link, companies_str=companies_str)
+                text_to_write = file_format_writer(
+                    problem_link=problem_link, companies_str=companies_str)
                 if create_cpp:
-                    f.write(file_format_writer(problem_link=problem_link, companies_str=companies_str))
+                    f.write(file_format_writer(
+                        problem_link=problem_link, companies_str=companies_str))
                 else:
                     f.write("")
         else:
             print("File already exists")
 
+
+print(file_format_writer(problem_link=problem_link, companies_str=companies_str))
 for x in [python, cpp, javascript]:
     print(x)

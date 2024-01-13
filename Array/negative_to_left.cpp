@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : Unknown
+    Company Tags   : FAANG
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (Normal)
+// TC : O(n)
+// SC : O(n)
+
 class Solution {
    public:
     void segregateElements(int arr[], int n) {
