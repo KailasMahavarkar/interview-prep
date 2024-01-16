@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Link   : https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+    Company Tags   : FAANG
+    Youtube Link   : None
+    Custom  Link   : None
+*/
+
+// Approach-1 (Greedy)
+// TC : O(n)
+// SC : O(1)
+
 class Solution {
    public:
     int maxProfit(vector<int>& prices) {
