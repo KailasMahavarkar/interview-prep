@@ -5,6 +5,7 @@ class Solution {
    public:
     int accumulator = 0;
     int steps = 0;
+    
     pair<int, int> balancePair(int numA, int numB) {
         if (numA < numB) {
             swap(numA, numB);
@@ -41,13 +42,26 @@ class Solution {
         return make_pair(numA, numB);
     }
 
+    int square(int num) {
+        int pow = 0, res = 0;
+        int tmp = num;
+        while (tmp) {
+            if (tmp & 1) {
+                res += (num << pow);
+            }
+            pow++;
+            tmp = tmp >> 1;
+        }
+        return res;
+    }
+
     int multiply(int numA, int numB) {
         if (numA == 0 || numB == 0) {
             return 0;
         }
 
         if (numA == numB) {
-            return pow(numA, 2);
+            return square(numA);
         }
 
         if (numA == 2 && numB == 2) {
@@ -60,13 +74,13 @@ class Solution {
         int minN = min(numA, numB);
 
         steps++;
-        return pow(minN, 2) + multiply(minN, maxN - minN);
+        return square(minN) + multiply(minN, maxN - minN);
     }
 };
 
 int main() {
     Solution sol;
-    pair<int, int> ans = sol.balancePair(8, 8);
+    pair<int, int> ans = sol.balancePair(9, 20);
 
     int balancedNumA = ans.first;
     int balancedNumB = ans.second;
