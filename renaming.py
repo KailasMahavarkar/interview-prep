@@ -1,7 +1,7 @@
 import os
-name = "53. Encode and Decode TinyURL"
+name = "312. Burst Balloons"
 
-problem_link = 'https://leetcode.com/problems/longest-substring-without-repeating-characters/description/'
+problem_link = 'https://leetcode.com/problems/burst-balloons/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
