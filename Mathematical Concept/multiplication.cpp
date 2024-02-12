@@ -5,7 +5,7 @@ class Solution {
    public:
     int accumulator = 0;
     int steps = 0;
-    
+
     pair<int, int> balancePair(int numA, int numB) {
         if (numA < numB) {
             swap(numA, numB);
@@ -55,7 +55,7 @@ class Solution {
         return res;
     }
 
-    int multiply(int numA, int numB) {
+    int solve(int numA, int numB) {
         if (numA == 0 || numB == 0) {
             return 0;
         }
@@ -74,20 +74,17 @@ class Solution {
         int minN = min(numA, numB);
 
         steps++;
-        return square(minN) + multiply(minN, maxN - minN);
+        return square(minN) + solve(minN, maxN - minN);
+    }
+
+    int multiply(int numA, int numB) {
+        pair<int, int> ans = balancePair(numA, numB);
+        return accumulator + solve(ans.first, ans.second);
     }
 };
 
 int main() {
     Solution sol;
-    pair<int, int> ans = sol.balancePair(9, 20);
-
-    int balancedNumA = ans.first;
-    int balancedNumB = ans.second;
-    int answer = sol.accumulator + sol.multiply(balancedNumA, balancedNumB);
-
-    cout << "balancedNumA --> " << balancedNumA << endl;
-    cout << "balancedNumB --> " << balancedNumB << endl;
+    int answer = sol.accumulator + sol.multiply(9, 5);
     cout << "answer --> " << answer << endl;
-    cout << "steps --> " << sol.steps << endl;
 }
