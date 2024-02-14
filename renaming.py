@@ -1,7 +1,7 @@
 import os
-name = "312. Burst Balloons"
+name = "1425. Constrained Subsequence Sum"
 
-problem_link = 'https://leetcode.com/problems/burst-balloons/description/'
+problem_link = 'https://leetcode.com/problems/constrained-subsequence-sum/'
 companies_str = ''
 obsidian = False
 create_cpp = False
