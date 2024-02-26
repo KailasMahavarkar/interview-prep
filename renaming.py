@@ -1,7 +1,7 @@
 import os
-name = "1425. Constrained Subsequence Sum"
+name = "1642. Furthest Building You Can Reach"
 
-problem_link = 'https://leetcode.com/problems/constrained-subsequence-sum/'
+problem_link = 'https://leetcode.com/problems/furthest-building-you-can-reach/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
@@ -25,6 +25,7 @@ using namespace std;
     Company Tags   : None
     Youtube Link   : None
     Custom  Link   : None
+    Similarities   : None
 */
 
 // Approach-1 (Normal)
