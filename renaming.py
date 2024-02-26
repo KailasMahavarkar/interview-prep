@@ -1,5 +1,5 @@
 import os
-name = "1642. Furthest Building You Can Reach"
+name = "1642. Grinding Geek"
 
 problem_link = 'https://leetcode.com/problems/furthest-building-you-can-reach/description/'
 companies_str = ''
