@@ -18,6 +18,7 @@ class SolutionMemo {
     int result = 0;
     vector<vector<int>> dp;
     int LCS(string s1, string s2, int n, int m) {
+        }
         // when either string1 or string2 is empty
         if (n == 0 || m == 0) {
             return 0;
@@ -31,12 +32,16 @@ class SolutionMemo {
         LCS(s1, s2, n - 1, m);
         LCS(s1, s2, n, m - 1);
 
+        // our answer can only exists within this range
+        // why? since we have made all possible recursive calls where for where 1st char of both string does not match
+        // now if it matches... we can say 1 + solve(..)
+        // since this was done after previous recursive calls... it guranteed to have valid answer as long as we
+        // keep track of current maximum... which when recursion rolls back its global maximum
         if (s1[n - 1] == s2[m - 1]) {
             dp[n][m] = 1 + LCS(s1, s2, n - 1, m - 1);
             result = max(result, dp[n][m]);
         } else {
             dp[n][m] = 0;
-        }
 
         return dp[n][m];
     }
@@ -114,7 +119,7 @@ int main() {
     int n = s1.length();
     int m = s2.length();
 
-    Solution sol;
+    SolutionMemo sol;
     int ans = sol.longestCommonSubstr(s1, s2, n, m);
 
     cout << ans << endl;

@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Problem is also called: lastStoneWeightII (leetcode)
+// Video explaination: https://www.youtube.com/watch?v=FB0KUhsxXGY
+
 void printDP(string msg, vector<vector<bool>>& dp) {
     cout << msg << " " << endl;
     for (int i = 0; i < dp.size(); i++) {
@@ -12,28 +15,32 @@ void printDP(string msg, vector<vector<bool>>& dp) {
     cout << endl;
 }
 
+class SolutionMemo {
+   public:
+    int t[31][5051];
+    int minDiffSubset(vector<int>& stones, int n, int s1, int sum) {
+        if (n == 0)
+            return abs(sum - 2 * s1);
+
+        if (t[n][s1] != -1)
+            return t[n][s1];
+
+        int take = minDiffSubset(stones, n - 1, s1 + stones[n - 1], sum);
+        int dont_take = minDiffSubset(stones, n - 1, s1, sum);
+
+        return t[n][s1] = min(take, dont_take);
+    }
+    int minimumDifference(vector<int>& nums) {
+        memset(t, -1, sizeof(t));
+        int sum = accumulate(begin(nums), end(nums), 0);
+        int n = nums.size();
+        return minDiffSubset(nums, n, 0, sum);
+    }
+};
 class Solution {
    public:
     vector<vector<bool>> dp;
     vector<int> isSubsetSum(vector<int>& nums, int n, int sum) {
-        // if (n == 0) {
-        //     return false;
-        // }
-
-        // // target is found
-        // if (sum == 0) {
-        //     return true;
-        // }
-
-        // // when prev value is more than sum available
-        // if (nums[n - 1] > sum) {
-        //     return isSubsetSum(nums, n - 1, sum);
-        // } else {
-        //     int pick = isSubsetSum(nums, n - 1, sum - nums[n - 1]);
-        //     int unpick = isSubsetSum(nums, n - 1, sums);
-        //     return pick || unpick;
-        // }
-
         // initalize dp
         dp.resize(n + 1, vector<bool>(sum + 1, false));
 
@@ -66,8 +73,6 @@ class Solution {
             }
         }
 
-        printDP("after dp:", dp);
-
         return ans;
     }
     int minimumDifference(vector<int>& nums) {
@@ -79,7 +84,6 @@ class Solution {
         }
 
         vector<int> ans = isSubsetSum(nums, n, sum);
-
         int minn = INT_MAX;
         for (int i = 0; i < ans.size(); i++) {
             minn = min(minn, sum - (2 * ans[i]));
