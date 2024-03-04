@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-    Problem Link   : https://leetcode.com/problems/constrained-subsequence-sum/
+    Problem Link   : https://leetcode.com/problems/constrained-subsequence-sum/description/
     Company Tags   : None
     Youtube Link   : None
     Custom  Link   : None
