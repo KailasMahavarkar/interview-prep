@@ -1,7 +1,7 @@
 import os
-name = "1642. Grinding Geek"
+name = "1187. Make Array Strictly Increasing"
 
-problem_link = 'https://leetcode.com/problems/furthest-building-you-can-reach/description/'
+problem_link = 'https://leetcode.com/problems/longest-string-chain/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
