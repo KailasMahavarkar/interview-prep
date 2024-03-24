@@ -1,7 +1,7 @@
 import os
-name = "1187. Make Array Strictly Increasing"
+name = "1458. Max Dot Product of Two Subsequences"
 
-problem_link = 'https://leetcode.com/problems/longest-string-chain/description/'
+problem_link = 'https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

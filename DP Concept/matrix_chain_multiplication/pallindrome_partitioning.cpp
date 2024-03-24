@@ -44,7 +44,7 @@ class SolutionMemo {
 
         // k has to go till j-1 reason is (k+1) will be wrong otherwise
         for (int k = i; k < j; k++) {
-            int leftHalf = solve(str, i, k);
+            // int leftHalf = solve(str, i, k);
             int rightHalf = solve(str, k + 1, j);
             // 1 isliye since "KiK" pallindrome me 'K' already pallindrome hoga
             local_min = min(1 + leftHalf + rightHalf, local_min);
