@@ -1,7 +1,7 @@
 import os
-name = "1458. Max Dot Product of Two Subsequences"
+name = "2962. Count Subarrays Where Max Element Appears at Least K Times"
 
-problem_link = 'https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/'
+problem_link = 'https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

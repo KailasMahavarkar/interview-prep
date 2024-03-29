@@ -13,9 +13,6 @@ using namespace std;
 // TC : O()
 // SC : O()
 
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
    public:
     vector<vector<int>> dp;
@@ -60,12 +57,19 @@ class Solution {
         dp.resize(word1.length() + 1, vector<int>(word2.length() + 1, -1));
         return editDistance(word1, word2, word1.length(), word2.length());
     }
+
+    float similarityPercentage(string word1, string word2) {
+        int distance = minDistance(word1, word2);
+        int max_length = max(word1.length(), word2.length());
+        float similarity = 1.0 - (distance / max_length);
+        return similarity * 100.0;
+    }
 };
 
 int main() {
-    string word1 = "DOG";
+    string word1 = "DIG";
     string word2 = "DIG";
     Solution sol;
-    int answer = sol.minDistance(word1, word2);
+    int answer = sol.similarityPercentage(word1, word2);
     cout << "answer --> " << answer << endl;
 }
