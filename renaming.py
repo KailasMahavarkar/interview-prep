@@ -1,7 +1,7 @@
 import os
-name = "2962. Count Subarrays Where Max Element Appears at Least K Times"
+name = "363. Max Sum of Rectangle No Larger Than K"
 
-problem_link = 'https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/'
+problem_link = 'https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
