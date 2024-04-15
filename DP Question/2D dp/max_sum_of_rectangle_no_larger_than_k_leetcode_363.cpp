@@ -9,13 +9,10 @@ using namespace std;
     Similarities   : None
 */
 
-// Approach-1 (Normal)
-// TC : O()
-// SC : O()
-#include <climits>
-#include <vector>
-using namespace std;
-
+// Approach-1 (Normal -> 2D kadane's)
+// TC : O(rows * cols * kadane's)
+// SC : O(rows)
+// Note: TC for this is amotized (since for case maxSum <= k we also have n^2 operation)
 class Solution {
    public:
     // https://assets.leetcode.com/users/images/537bd0e6-e55f-4a40-9a1f-5adbee9ab06f_1598675784.1868393.png
@@ -45,8 +42,7 @@ class Solution {
 
                 if (maxSum <= k) {
                     result = max(result, maxSum);
-                }
-                else {
+                } else {
                     for (int i = 0; i < cols; ++i) {
                         int sum = 0;
                         for (int j = i; j < rows; ++j) {
