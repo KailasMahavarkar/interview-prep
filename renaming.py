@@ -1,7 +1,7 @@
 import os
-name = "363. Max Sum of Rectangle No Larger Than K"
+name = "456. 132 Pattern"
 
-problem_link = 'https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/description/'
+problem_link = 'https://leetcode.com/problems/maximal-square/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
