@@ -16,7 +16,7 @@ class Solution {
         vector<int> power(n, 0);
         power[0] = 1;
         for (int i = 1; i < n; i++) {
-            power[i] = (power[i - 1] * 2) % MOD;
+            power[i] = (power[i - 1] << 1) % MOD;
         }
 
         // 3. code story

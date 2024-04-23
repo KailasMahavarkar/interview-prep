@@ -1,7 +1,7 @@
 import os
-name = "456. 132 Pattern"
+name = "152. Maximum Product Subarray"
 
-problem_link = 'https://leetcode.com/problems/maximal-square/description/'
+problem_link = 'https://leetcode.com/problems/maximum-product-subarray/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
