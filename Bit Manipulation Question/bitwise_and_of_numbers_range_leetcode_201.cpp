@@ -8,21 +8,35 @@ using namespace std;
     Custom  Link   : None
 */
 
-// Approach-1 (Normal)
-// TC : O()
-// SC : O()
-
+// Approach-1 (Normal) -> using right shift
+// TC : O(n)
+// SC : O(1)
 class Solution {
    public:
     int rangeBitwiseAnd(int left, int right) {
-        string bits = "00000000000000000000000000000000";
+        int count = 0;
 
-        for (int i = left; i < right; i++) {
-            int andOP = 0;
-            for (int i = 0; i < 31; i++) {
-                
-            }
+        while (left != right) {
+            left >>= 1;
+            right >>= 1;
+            count++;
         }
+
+        return (left << count);
+    }
+};
+
+// Approach-2 (Normal) -> using bit clear concept
+// TC : O(n)
+// SC : O(1)
+class Solution {
+   public:
+    int rangeBitwiseAnd(int left, int right) {
+        while (right > left) {
+            right = right & (right - 1);  // n & (n - 1)
+        }
+
+        return right;
     }
 };
 

@@ -1,7 +1,7 @@
 import os
-name = "152. Maximum Product Subarray"
+name = "1915. Number of Wonderful Substrings"
 
-problem_link = 'https://leetcode.com/problems/maximum-product-subarray/description/'
+problem_link = 'https://leetcode.com/problems/number-of-wonderful-substrings/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
