@@ -1,7 +1,7 @@
 import os
-name = "1915. Number of Wonderful Substrings"
+name = "2441. Largest Positive Integer That Exists With Its Negative"
 
-problem_link = 'https://leetcode.com/problems/number-of-wonderful-substrings/description/'
+problem_link = 'https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
