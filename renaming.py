@@ -1,7 +1,7 @@
 import os
-name = "1915. Number of Wonderful Substrings"
+name = "2487. Remove Nodes From Linked List"
 
-problem_link = 'https://leetcode.com/problems/number-of-wonderful-substrings/description/'
+problem_link = 'https://leetcode.com/problems/remove-nodes-from-linked-list/description'
 companies_str = ''
 obsidian = False
 create_cpp = False
