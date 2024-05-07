@@ -1,7 +1,7 @@
 import os
-name = "2487. Remove Nodes From Linked List"
+name = "2816. Double a Number Represented as a Linked List"
 
-problem_link = 'https://leetcode.com/problems/remove-nodes-from-linked-list/description'
+problem_link = 'https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/description'
 companies_str = ''
 obsidian = False
 create_cpp = False
