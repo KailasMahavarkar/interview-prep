@@ -13,7 +13,7 @@ class Node{
     }
 
     // destructor
-    ~Node(){
+    ~Node(){ 
         // mem free
         if (this->next != NULL){
             delete this->next; // clean up chain after current node
