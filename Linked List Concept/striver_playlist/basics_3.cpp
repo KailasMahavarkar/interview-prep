@@ -25,7 +25,6 @@ ListNode* vectorToDLL(vector<int>& arr) {
     ListNode* prev = head;
 
     for (int i = 1; i < arr.size(); i++) {
-
         // create a new node that is floating in space -> call it temp
         ListNode* temp = new ListNode(arr[i]);
 
@@ -36,10 +35,47 @@ ListNode* vectorToDLL(vector<int>& arr) {
         // now this new prev will be current temp
         // so we move pointer of prev->next to temp (our new previous)
         prev->next = temp;
-        
 
         prev = prev->next;
     }
+
+    return head;
+}
+
+ListNode* deleteHeadDLL(ListNode* head) {
+    if (head == nullptr || head->next == nullptr) {
+        return nullptr;
+    }
+
+    ListNode* temp = head;
+    head = head->next;
+
+    temp->back = nullptr;
+    temp->next = nullptr;
+    delete temp;
+
+    head->back = nullptr;
+
+    return head;
+}
+
+ListNode* deleteTailDLL(ListNode* head) {
+    if (head == nullptr || head->next == nullptr) {
+        return nullptr;
+    }
+
+    ListNode* temp = head;
+    while (temp->next->next != nullptr) {
+        temp = temp->next;
+    }
+
+    // temp must be pointing at last element in linked list
+    ListNode* tail = temp->next;
+    temp->next = nullptr;
+
+    // de-refer tail's pointers
+    tail->back = nullptr;
+    tail->next = nullptr;
 
     return head;
 }
@@ -54,6 +90,7 @@ void printDLL(ListNode* head) {
 
 int main() {
     vector<int> arr = {3, 2, 0, 1};
+
     ListNode* ll = vectorToDLL(arr);
-    printDLL(ll);
+    printDLL(deleteTailDLL(ll));
 }

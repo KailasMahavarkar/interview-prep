@@ -1,7 +1,7 @@
 import os
-name = "2816. Double a Number Represented as a Linked List"
+name = "2373. Largest Local Values in a Matrix"
 
-problem_link = 'https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/description'
+problem_link = 'https://leetcode.com/problems/largest-local-values-in-a-matrix/description'
 companies_str = ''
 obsidian = False
 create_cpp = False
