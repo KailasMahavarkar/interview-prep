@@ -1,7 +1,7 @@
 import os
-name = "2373. Largest Local Values in a Matrix"
+name = "1325. Delete Leaves With a Given Value"
 
-problem_link = 'https://leetcode.com/problems/largest-local-values-in-a-matrix/description'
+problem_link = 'https://leetcode.com/problems/delete-leaves-with-a-given-value/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

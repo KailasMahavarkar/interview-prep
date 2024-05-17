@@ -21,6 +21,10 @@ class ListNode {
 };
 
 ListNode* vectorToDLL(vector<int>& arr) {
+    if (arr.size() == 0) {
+        return nullptr;
+    }
+
     ListNode* head = new ListNode(arr[0]);
     ListNode* prev = head;
 
@@ -64,23 +68,117 @@ ListNode* deleteTailDLL(ListNode* head) {
         return nullptr;
     }
 
-    ListNode* temp = head;
-    while (temp->next->next != nullptr) {
-        temp = temp->next;
+    ListNode* tail = head;
+    while (tail->next != nullptr) {
+        tail = tail->next;
     }
 
     // temp must be pointing at last element in linked list
-    ListNode* tail = temp->next;
-    temp->next = nullptr;
-
-    // de-refer tail's pointers
+    ListNode* newTail = tail->back;
+    newTail->next = nullptr;
     tail->back = nullptr;
-    tail->next = nullptr;
+
+    delete tail;
 
     return head;
 }
 
+ListNode* deleteKthNodeDLL(ListNode* head, int k) {
+    if (head == nullptr) return head;
+
+    int count = 0;
+    ListNode* kthNode = head;
+
+    while (kthNode != nullptr) {
+        count++;
+        if (count == k) break;
+        kthNode = kthNode->next;
+    }
+
+    // I must be at kth node
+    ListNode* prev = kthNode->back;
+    ListNode* nxt = kthNode->next;
+
+    if (prev == nullptr && nxt == nullptr) {
+        delete kthNode;
+        return nullptr;
+    } else if (prev == nullptr) {
+        return deleteHeadDLL(head);
+    } else if (nxt == nullptr) {
+        return deleteTailDLL(head);
+    } else {
+        prev->next = nxt;
+        nxt->back = prev;
+
+        kthNode->next = nullptr;
+        kthNode->back = nullptr;
+
+        delete kthNode;
+        return head;
+    }
+}
+
+ListNode* insertBeforeHead(ListNode* head, int x) {
+    if (head == nullptr) {
+        return new ListNode(x);
+    }
+
+    ListNode* newHead = new ListNode(x, nullptr, head);
+    head->back = newHead;
+    return newHead;
+}
+
+ListNode* insertBeforeTail(ListNode* head, int x) {
+    if (head == nullptr) {
+        ListNode* newHead = new ListNode(x, nullptr, head);
+        return newHead;
+    }
+
+    ListNode* temp = head;
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+
+    ListNode* prev = temp->back;
+
+    // temp must be pointing at last node at this point
+    ListNode* newHead = new ListNode(x, prev, temp);
+    temp->back = newHead;
+    prev->next = newHead;
+
+    return head;
+}
+
+ListNode* insertBeforeKthNode(ListNode* head, int k, int x) {
+    if (head == nullptr || k == 1) {
+        return insertBeforeHead(head, x);
+    }
+
+    int count = 0;
+    ListNode* temp = head;
+    while (temp->next != nullptr) {
+        count++;
+        if (count == k) {
+            break;
+        }
+        temp = temp->next;
+    }
+
+    // we must be standint at node
+    ListNode* prev = temp->back;
+
+    // temp must be pointing at last node at this point
+    ListNode* newHead = new ListNode(x, prev, temp);
+    temp->back = newHead;
+    prev->next = newHead;
+    return head;
+}
+
 void printDLL(ListNode* head) {
+    if (head == nullptr) {
+        cout << "ll is empty" << endl;
+        return;
+    }
     while (head != nullptr) {
         cout << head->data << " ";
         head = head->next;
@@ -90,7 +188,7 @@ void printDLL(ListNode* head) {
 
 int main() {
     vector<int> arr = {3, 2, 0, 1};
-
     ListNode* ll = vectorToDLL(arr);
-    printDLL(deleteTailDLL(ll));
+    ListNode* newLL = insertBeforeKthNode(ll, 1, 8);
+    printDLL(newLL);
 }
