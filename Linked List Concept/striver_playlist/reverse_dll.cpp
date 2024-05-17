@@ -73,16 +73,16 @@ class Solution {
     // SC: O(1)
     ListNode* reverseDLLOptimal(ListNode* head) {
         ListNode* temp = head;
-        ListNode* swap = nullptr;
+        ListNode* prev = nullptr;
         while (temp != nullptr) {
-            swap = temp->back;
+            prev = temp->back;
             temp->back = temp->next;
-            temp->next = swap;
+            temp->next = prev;
             // temp.next is actually temp.back now so to move forward we do it opposite
             temp = temp->back;
         }
-        swap = swap->back;
-        return swap;
+        prev = prev->back;
+        return prev;
     }
 };
 
