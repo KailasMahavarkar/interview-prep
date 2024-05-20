@@ -20,6 +20,8 @@ def file_format_writer(problem_link, companies_str):
     return f'''#include <bits/stdc++.h>
 using namespace std;
 
+#pragma GCC optimize("O3,unroll-loops")
+
 /*
     Problem Link   : {problem_link}
     Company Tags   : None
