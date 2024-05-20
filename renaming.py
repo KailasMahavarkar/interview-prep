@@ -1,7 +1,7 @@
 import os
-name = "1325. Delete Leaves With a Given Value"
+name = "78. Subsets"
 
-problem_link = 'https://leetcode.com/problems/delete-leaves-with-a-given-value/description/'
+problem_link = 'https://leetcode.com/problems/subsets/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
@@ -19,7 +19,6 @@ def file_format_writer(problem_link, companies_str):
         " ", "").replace("|", ",").replace("__", "_")
     return f'''#include <bits/stdc++.h>
 using namespace std;
-
 #pragma GCC optimize("O3,unroll-loops")
 
 /*
