@@ -1,6 +1,6 @@
 # About repository ✨
 
-Hello👋 and welcome to my competitive programming related repository "interview-prep"! Here I will post my solutions for various programming problems 🧩 presented in Leetcode, GFG and others.
+Hello👋 and welcome to my competitive-programming/interview-prep related repository "interview-prep"! Here I will post my solutions for various programming problems 🧩 presented in Leetcode, GFG and others.
 
 My solutions may be ineffective, complex or confusing, since I, like many others, are constantly learning, including how to effectively solve hard programming problems💫. Most of my solutions will be presented in C++ or Python, since this is the language I know best 😊.
 
@@ -38,5 +38,7 @@ Example:
 ```
 
 P.S. The file for one solution may contain several "Solution" classes (several methods have been found) or a re-solution of the problem (if the first solution was not optimal).
+
+I always try to write the driver code for the solution, so you can easily test the solution on your own test cases. If you have any questions or suggestions, feel free to write to me📧.
 
 There May Exists some custom developed algorithms Which I could not find over internet, they are developed by me, and I will mention them in the file itself.
