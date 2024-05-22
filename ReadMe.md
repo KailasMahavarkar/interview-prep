@@ -7,7 +7,7 @@ My solutions may be ineffective, complex or confusing, since I, like many others
 I will be grateful🍀 if you give my repository a "⭐" if you find it interesting or useful. More detailed information on each section can be found below. Happy coding💻!
 
 **Owner😇: [KailasMahavarkar](https://github.com/KailasMahavarkar)**  
-**License📃: BSD 3-Clause License - see the [LICENSE](LICENSE) file for details**
+**License📃: BSD 3-Clause License - see the [LICENSE](LICENSE.txt) file for details**
 
 ****
 
