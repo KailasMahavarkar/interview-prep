@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// This file contains custom-developed algorithms that are proprietary and have been uniquely created by the author. 
+// These algorithms may not be available or documented elsewhere on the internet.
+
 class Solution {
    public:
     int accumulator = 0;
