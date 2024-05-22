@@ -12,8 +12,6 @@ I will be grateful🍀 if you give my repository a "⭐" if you find it interest
 ****
 
 ## Leetcode 🎩
-
-Here you can find solutions for these types of problems: dailys, contests (those that I managed to solve), study plans (such as the top 150 interviews) and just problems that I solved out of boredom😴.  
 My Leetcode account: [link](https://leetcode.com/KailasMahavarkar/)  
 The Leetcode solutions folder is structured📋 somehow like this:
 
