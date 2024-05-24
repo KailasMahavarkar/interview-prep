@@ -8,10 +8,11 @@ using namespace std;
     Youtube Link   : None
     Custom  Link   : None
     Similarities   : None
+    Recursion      : https://i.imgur.com/bO4VDQe.png
 */
 
 // Approach-1 (Normal)
-// TC : O(n)
+// TC : O(2^n)
 // SC : O(n)
 class Solution {
    public:
@@ -20,12 +21,14 @@ class Solution {
         answer.push_back(temp);
 
         for (int i = idx; i < nums.size(); i++) {
-            if (i == idx || nums[i] != nums[i - 1]) {
-                temp.push_back(nums[i]);
-                solve(nums, temp, i + 1);
-                temp.pop_back();
+            if (i > idx && nums[i] == nums[i - 1]) {
+                continue;
             }
+            temp.push_back(nums[i]);
+            solve(nums, temp, i + 1);
+            temp.pop_back();
         }
+        return;
     }
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
         sort(nums.begin(), nums.end());

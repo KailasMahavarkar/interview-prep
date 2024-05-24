@@ -1,7 +1,7 @@
 import os
-name = "78. Subsets"
+name = "131. Palindrome Partitioning"
 
-problem_link = 'https://leetcode.com/problems/subsets/description/'
+problem_link = 'https://leetcode.com/problems/palindrome-partitioning/description'
 companies_str = ''
 obsidian = False
 create_cpp = False

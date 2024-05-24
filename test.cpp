@@ -1,36 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
+#pragma GCC optimize("O3,unroll-loops")
 
-class Solution {
-   public:
-    int bitsetPuzzle(vector<int>& arr) {
-        bitset<8> bs;
+void backtrack(const string &s, int idx, vector<string> &curr, vector<vector<string>> &result) {
+    // Adding current list of substrings to the result
+    result.push_back(curr);
 
-        bs[1] = 1;
-        bs[4] = 1;
-        bs[5] = 1;
+    // Loop through the string starting from the given index
+    for (int i = idx; i < s.size(); i++) {
+        if (i == idx) {
+            // Generate substrings and add them to the current list
+            curr.push_back(s.substr(idx, i - idx + 1));
 
-        // bitset to int
-        int ans = (int)bs.to_ulong();
-        cout << "ans --> " << ans << endl;
+            // Recursively call the backtrack function to continue the process
+            backtrack(s, i + 1, curr, result);
 
-        // int to bitset
-        int num = 50;
-        bs = num;
-
-        cout << "new bitset -->" << bs << endl;
-
-        // bitset to int
-        int ans2 = (int)bs.to_ulong();
-        cout << "ans2 --> " << ans2 << endl;
-
-        return -1;
+            // Remove the last added substring to backtrack and explore other possibilities
+            curr.pop_back();
+        }
     }
-};
+}
+
+vector<vector<string>> allSubstrings(const string &s) {
+    vector<vector<string>> result;
+    vector<string> curr;
+    backtrack(s, 0, curr, result);
+    return result;
+}
 
 int main() {
-    vector<int> arr = {4, 3, 5, 2};
-    Solution sol;
-    int ans = sol.bitsetPuzzle(arr);
-    cout << "ans --> " << ans << endl;
+    string s = "bac";
+    vector<vector<string>> result = allSubstrings(s);
+
+    // Print all substrings
+    for (const auto &subset : result) {
+        for (const auto &str : subset) {
+            cout << "\"" << str << "\" ";
+        }
+        cout << endl;
+    }
+
+    return 0;
 }
