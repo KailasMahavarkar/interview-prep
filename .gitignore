@@ -44,3 +44,6 @@ index.py
 inverse_brackets.py
 renaming.py
 learning.py
+
+
+__pycache__/*
