@@ -1,25 +1,29 @@
 from typing import List
 
-def solve(answer:List[List[int]], nums: List[int], idx: int):
-    if idx >= len(nums):
-        answer.append(nums[:])
-        return
+def backtrack(nums, start):
+    result = []
+    if start == len(nums) - 1:
+        result.append(nums[:])
+        return result
     
-    for i in range(idx, len(nums)):
-        nums[idx], nums[i] = nums[i], nums[idx]
-        solve(answer, nums, idx + 1)
-        nums[idx], nums[i] = nums[i], nums[idx]
+    for i in range(start, len(nums)):
+        nums[start], nums[i] = nums[i], nums[start]
+        sub_permutations = backtrack(nums, start + 1)
 
+        for sub_permutation in sub_permutations:
+            result.append(sub_permutation[:])
+        
+        nums[start], nums[i] = nums[i], nums[start]
+    return result
 
-def permute(nums: List[int]) -> List[List[int]]:
-    answer = []
-    solve(answer, nums, 0)
-    return answer
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        return backtrack(nums, 0)
 
 
 if __name__ == "__main__":
     print(
-        permute(
+        Solution().permute(
             nums=[1,2,3]
         )
     )
