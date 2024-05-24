@@ -1,7 +1,6 @@
 from typing import List
 
 # This code works for both permutations 1 and 2
-
 def backtrack(result, nums, idx):
     if idx == len(nums) - 1:
         result.append(nums[:])
