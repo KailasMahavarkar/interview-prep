@@ -2,7 +2,7 @@ from typing import List
 
 
 def solve(answer: List[List[int]], nums: List[int], idx: int):
-    if idx >= len(nums):
+    if idx == len(nums):
         answer.append(nums[:])
         return
 
@@ -25,3 +25,5 @@ if __name__ == "__main__":
             nums=[1, 2, 3]
         )
     )
+
+

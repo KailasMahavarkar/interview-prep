@@ -1,7 +1,7 @@
 from typing import List
 
 def solve(nums: List[int], temp: List[int], idx: int, result: List[int]):
-    if (idx == len(nums)):
+    if idx == len(nums):
         result.append(temp[:])
         return
 

@@ -46,4 +46,4 @@ renaming.py
 learning.py
 
 
-__pycache__/*
+**/__pycache__/*

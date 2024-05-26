@@ -1,7 +1,6 @@
 from typing import List
 
 # This code works for both permutations 1 and 2
-
 def backtrack(result, nums, idx):
     if idx == len(nums) - 1:
         result.append(nums[:])
@@ -27,6 +26,6 @@ class Solution:
 if __name__ == "__main__":
     print(
         Solution().permute(
-            nums=[1, 2, 2]
+            nums=[1, 2, 3, 4, 5, 6]
         )
     )

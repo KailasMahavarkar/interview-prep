@@ -1,6 +1,5 @@
 from typing import List
 
-
 def solve(nums: List[int], temp: List[int], idx: int, answer: List[List[int]]):
     answer.append(temp[:])
 
@@ -16,7 +15,8 @@ def subset_1_iterative(nums: List[int]) -> List[List[int]]:
     solve(nums, [], 0, answer)
     return answer
 
+
 if __name__ == "__main__":
     print(
-        subset_1_iterative([1, 2, 3])
+        subset_1_iterative([1, 2, 3, 4])
     )
