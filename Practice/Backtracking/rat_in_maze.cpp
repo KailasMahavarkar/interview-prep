@@ -1,125 +1,94 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<vector<int>> vvi;
-typedef vector<string> vs;
-typedef vector<int> vi;
-
-void printVVI(vvi matrix){
-    // Displaying the 2D vector
-    for (int i = 0; i < matrix.size(); i++) {
-        for (int j = 0; j < matrix[i].size(); j++)
-            cout << matrix[i][j] << " ";
-        cout << endl;
-    }
-}
-
-void printVVS(vs strArray){
+void printVVS(vector<string> strArray) {
     // Displaying the 2D vector
     for (int i = 0; i < strArray.size(); i++) {
-            cout << strArray[i] << " ";
-    } cout << endl;
-}
-
-bool isSafe(vvi m,int n, int x, int y, vvi visited){
-
-    // if (x,y) has NOT outsize matrix
-    if ((x >= 0 && x < n) && (y >= 0 && y < n)){
-        // 1 means path is open
-        // 0 means path is closed
-        if (m[x][y] == 1){
-            // 1 means already visited
-            // 0 means not visited
-            if (visited[x][y] == 0){
-                return true;
-            }
-        }
+        cout << strArray[i] << " ";
     }
-    return false;
+    cout << endl;
 }
 
-void solve(vvi m,int n, vs &ans, string path, int x, int y,vvi visited){
+bool isSafe(vector<vector<int>> m, int n, int x, int y, vector<vector<int>> visited) {
+    return (x >= 0 && x < n && y >= 0 && y < n && m[x][y] == 1 && visited[x][y] == 0);
+}
+
+void solve(vector<vector<int>> m, int n, vector<string> &ans, string path, int x, int y, vector<vector<int>> visited) {
     // base case
     // if we reached end of destination
-    if (x == n-1 && y == n - 1){
+    if (x == n - 1 && y == n - 1) {
         ans.push_back(path);
         return;
     }
 
     visited[x][y] = 1;
 
-    // movement for down
-    int newX = x+1;
-    int newY = y;
-    if (isSafe(m, n, newX, newY, visited)){
-        path.push_back('D');
-        solve(m, n, ans, path, newX, newY, visited);
-        path.pop_back();
-    }
+    vector<vector<int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    vector<pair<char, pair<int, int>>> directions = {
+        {'D', {1, 0}},   // Down
+        {'L', {0, -1}},  // Left
+        {'R', {0, 1}},   // Right
+        {'U', {-1, 0}}   // Up
+    };
 
-    // movement for left
-    newX = x;
-    newY = y - 1;
-    if (isSafe(m, n, newX, newY, visited)){
-        path.push_back('L');
-        solve(m, n, ans, path, newX, newY, visited);
-        path.pop_back();
-    }
+    for (auto &pair : directions) {
+        char key = pair.first;
 
-    // movement for right
-    newX = x;
-    newY = y + 1;
-    if (isSafe(m, n, newX, newY, visited)){
-        path.push_back('R');
-        solve(m, n, ans, path, newX, newY, visited);
-        path.pop_back();
-    }
-    
-    // movement for up
-    newX = x - 1;
-    newY = y;
-    if (isSafe(m, n, newX, newY, visited)){
-        path.push_back('U');
-        solve(m, n, ans, path, newX, newY, visited);
-        path.pop_back();
+        int newX = pair.second.first + x;
+        int newY = pair.second.second + y;
+
+        if (isSafe(m, n, newX, newY, visited)) {
+            path.push_back(key);
+            solve(m, n, ans, path, newX, newY, visited);
+            path.pop_back();
+        }
     }
 
     // backtrack
     visited[x][y] = 0;
 }
 
-
 // m -> maze
 // n -> size of maze 2d size | if n is 4 = 4x4 matrix
-vs findPath(vvi maze){
+vector<string> findPath(vector<vector<int>> maze) {
     int n = maze.size();
 
     // initialize with 0
-    vvi visited(n, vi(n));
-    int srcX = 0;
-    int srcY = 0;
-    vs ans;
+    vector<vector<int>> visited(n, vector<int>(n));
+    vector<string> ans;
     string path = "";
 
-    if (maze[0][0] == 0){
+    if (maze[0][0] == 0) {
         return ans;
     }
 
-    solve(maze, n, ans, path, srcX, srcY, visited);
+    solve(maze, n, ans, path, 0, 0, visited);
     sort(ans.begin(), ans.end());
 
     return ans;
-
 }
 
-int main(){
-    vvi maze = {
-        {1,0,0,0},
-        {1,1,0,1}, 
-        {1,1,0,0}, 
-        {0,1,1,1}
-    };
-    vs ans = findPath(maze);
+int main() {
+    vector<vector<int>> maze = {
+        {1, 0, 0, 0},
+        {1, 1, 0, 1},
+        {1, 1, 0, 0},
+        {0, 1, 1, 1}};
+    vector<string> ans = findPath(maze);
     printVVS(ans);
-
 }
+
+
+// why is direction mapped different? like {'D', {1, 0}} ?
+// the choice of coordinates might appear a bit counter intuitive at first glance. Let's break it down:
+// In the Cartesian coordinate system:
+// The x-axis typically represents horizontal movement (left and right).
+// The y-axis typically represents vertical movement (up and down).
+// However, in the context of this code:
+
+// The maze is represented as a 2D grid where each cell can be accessed using coordinates (x, y),
+// where x represents the row index and y represents the column index.
+
+// In the maze representation, movement in the positive x-direction (+1 along the x-axis)
+// indeed represents moving downwards because the origin (0,0) is typically at the top-left corner of the maze.
+// So, as you move along the positive x-direction, you're moving downwards in the maze grid.
