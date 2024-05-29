@@ -1,7 +1,7 @@
 import os
-name = "131. Palindrome Partitioning"
+name = "1404. Number of Steps to Reduce a Number in Binary Representation to One"
 
-problem_link = 'https://leetcode.com/problems/palindrome-partitioning/description'
+problem_link = 'https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one'
 companies_str = ''
 obsidian = False
 create_cpp = False
