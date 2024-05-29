@@ -82,15 +82,15 @@ vector<int> printMatrixDiagnoalUp(vector<vector<int>> &mat) {
 }
 
 int main() {
-    // vector<vector<int>> mat = {
-    //     {1, 2, 3, 4},
-    //     {5, 6, 7, 8},
-    //     {10},
-    //     {14, 15, 16, 17}};
+    vector<vector<int>> mat = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {10},
+        {14, 15, 16, 17}};
 
-    vector<vector<int>> mat = {{6},
-                               {8},
-                               {6, 1, 6, 16}};
+    // vector<vector<int>> mat = {{6},
+    //                            {8},
+    //                            {6, 1, 6, 16}};
 
     vector<int>
         diagonalUp = printMatrixDiagnoalUp(mat);

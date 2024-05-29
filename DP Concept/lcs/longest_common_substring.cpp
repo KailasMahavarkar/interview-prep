@@ -18,7 +18,6 @@ class SolutionMemo {
     int result = 0;
     vector<vector<int>> dp;
     int LCS(string s1, string s2, int n, int m) {
-        }
         // when either string1 or string2 is empty
         if (n == 0 || m == 0) {
             return 0;
@@ -43,7 +42,8 @@ class SolutionMemo {
         } else {
             dp[n][m] = 0;
 
-        return dp[n][m];
+            return dp[n][m];
+        }
     }
     int longestCommonSubstr(string S1, string S2, int n, int m) {
         dp.resize(n + 1, vector<int>(m + 1, -1));
