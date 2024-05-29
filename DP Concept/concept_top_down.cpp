@@ -20,7 +20,5 @@ int main(){
     vector<int> dp(n+1, -1);
 
     int answer = fib(n, dp);
-    printVector("dp -->", dp);
-
     cout << "answer --> " << answer << endl;
 }
