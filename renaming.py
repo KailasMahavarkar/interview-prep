@@ -1,5 +1,5 @@
 import os
-name = "51. N-Queens"
+name = ". Find the size of Largest Subset with positive Bitwise AND"
 
 problem_link = 'https://leetcode.com/problems/n-queens/'
 companies_str = ''
