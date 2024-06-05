@@ -1,7 +1,6 @@
 import os
-name = ". Find the size of Largest Subset with positive Bitwise AND"
-
-problem_link = 'https://leetcode.com/problems/n-queens/'
+problem_name = "1002. Find Common Characters"
+problem_link = 'https://leetcode.com/problems/find-common-characters/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
@@ -14,7 +13,22 @@ obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
 leetcode_path = os.path.join(root_path, 'leetcode')
 
 
-def file_format_writer(problem_link, companies_str):
+def file_format_writer(problem_name, problem_link, companies_str):
+    is_leetcode = "leetcode.com" in problem_link
+
+    if is_leetcode:
+        p_arr = problem_link.split("problems")[1].split("description")[0].replace("/", "").split("-")
+        if (type(p_arr) == list):
+            is_valid_leetcode = True
+            for x in p_arr:
+                if x not in problem_name.lower():
+                    is_valid_leetcode = False
+                    break
+            if not is_valid_leetcode:
+                print("Invalid Leetcode Problem")
+                exit(1)
+
+
     companies_str = companies_str.replace(
         " ", "").replace("|", ",").replace("__", "_")
     return f'''#include <bits/stdc++.h>
@@ -50,7 +64,7 @@ if not obsidian_leetcode_path:
     os.mkdir(obsidian_leetcode_path)
 
 
-parts = name.split('.')
+parts = problem_name.split('.')
 p1 = "_leetcode_" + parts[0]
 p2 = parts[1].lower().replace(" ", '_').replace("|", "").replace("__", "_")
 
@@ -91,9 +105,11 @@ for lang in [create_cpp, create_python, create_javascript]:
         if not check_exists:
             with open(os.path.join(leetcode_path, cpp), 'w') as f:
                 text_to_write = file_format_writer(
+                    problem_name=problem_name,
                     problem_link=problem_link, companies_str=companies_str)
                 if create_cpp:
                     f.write(file_format_writer(
+                        problem_name=problem_name,
                         problem_link=problem_link, companies_str=companies_str))
                 else:
                     f.write("")
@@ -101,6 +117,6 @@ for lang in [create_cpp, create_python, create_javascript]:
             print("File already exists")
 
 
-print(file_format_writer(problem_link=problem_link, companies_str=companies_str))
+print(file_format_writer(problem_name=problem_name,problem_link=problem_link, companies_str=companies_str))
 for x in [python, cpp, javascript]:
     print(x)
