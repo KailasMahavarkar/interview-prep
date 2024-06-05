@@ -11,82 +11,63 @@ using namespace std;
 */
 
 // Approach-1 (Normal)
-// TC : O()
-// SC : O()
-
+// TC : O(N!)
+// SC : O(N ^ 2)
 class Solution {
    public:
     int N;
     vector<vector<string>> result;
-    vector<pair<int, int>> directions = {
-        {-1, 2},
-        {-1, -2},
-        {-2, -1},
-        {-2, 1},
-        {1, 2},
-        {1, -2},
-        {2, -1},
-        {2, 1}};
 
-    set<int> occupied_row;
-    set<int> occupied_col;
-
-    bool isSafe(int x, int y, int row, int col) {
-        bool isBoundaryValid = x >= 0 && x < N && y >= 0 && y < N;
-        if (!isBoundaryValid) {
-            return false;
-        }
-
-        // left diagonal
-        for (int i = 0; i < N; i++) {
-            
-        }
-
-        // right diagonal
-
-        // rows
-
-        // cols
-    }
-
-    void solve(int n, int x, int y, vector<string> &temp) {
-        if (n == 0) {
-            result.push_back(temp);
-        }
-
-        temp[x][y] = 'Q';
-
-        for (auto &dir : directions) {
-            int _x = x + dir.first;
-            int _y = y + dir.second;
-
-            if (isSafe(_x, _y) && temp[_x][_y] == '.') {
-                solve(n - 1, _x, _y, temp);
+    bool isSafe(vector<string> &board, int row, int col) {
+        for (int i = 0; i < row; ++i) {
+            if (board[i][col] == 'Q') {
+                return false;
             }
         }
 
-        temp[x][y] = '.';
+        int i, j;
+
+        i = row, j = col;
+        while (i >= 0 && j >= 0) {
+            if (board[i][j] == 'Q') {
+                return false;
+            }
+            i--;
+            j--;
+        }
+
+        i = row, j = col;
+        while (i >= 0 && j < N) {
+            if (board[i][j] == 'Q') {
+                return false;
+            }
+            i--;
+            j++;
+        }
+
+        return true;
+    }
+
+    void solve(int row, vector<string> &board) {
+        if (row == N) {
+            result.push_back(board);
+            return;
+        }
+
+        for (int col = 0; col < N; ++col) {
+            if (isSafe(board, row, col)) {
+                board[row][col] = 'Q';
+                solve(row + 1, board);
+                board[row][col] = '.';
+            }
+        }
     }
 
     vector<vector<string>> solveNQueens(int n) {
         N = n;
-
-        // create a nxn grid
-        vector<string> temp;
-        for (int i = 0; i < n; i++) {
-            string s = "";
-            for (int j = 0; j < n; j++) {
-                s += '.';
-            }
-            temp.push_back(s);
-        }
-
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                solve(n, i, j, temp);
-            }
-        }
-
+        result.clear();
+        vector<string> board(N, string(N, '.'));
+        solve(0, board);
         return result;
     }
 };
