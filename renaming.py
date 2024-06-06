@@ -1,6 +1,6 @@
 import os
-problem_name = "1002. Find Common Characters"
-problem_link = 'https://leetcode.com/problems/find-common-characters/description/'
+problem_name = "846. Hand of Straights"
+problem_link = 'https://leetcode.com/problems/hand-of-straights/'
 companies_str = ''
 obsidian = False
 create_cpp = False
