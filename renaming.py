@@ -1,6 +1,6 @@
 import os
-problem_name = "846. Hand of Straights"
-problem_link = 'https://leetcode.com/problems/hand-of-straights/'
+problem_name = "2192. All Ancestors of a Node in a Directed Acyclic Graph"
+problem_link = 'https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

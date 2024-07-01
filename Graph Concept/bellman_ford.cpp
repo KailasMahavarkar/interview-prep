@@ -4,6 +4,9 @@ using namespace std;
 // Why do we use bellman_ford?
 // >> shortest path from source to all vertices in a graph
 
+// Time Complexity: O(V * E)  <- connected graph
+// Time Complexity: O(V² * E) <- disconnected graph
+// Space Complexity: O(V)
 class Solution {
    public:
     vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {

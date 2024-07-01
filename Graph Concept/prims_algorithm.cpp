@@ -3,6 +3,8 @@ using namespace std;
 
 typedef pair<int, int> P;
 
+// Time Complexity: O(E log V)
+// Space Complexity: O(V + E)
 class Solution {
    public:
     int spanningTree(int V, vector<vector<int>> adj[]) {
