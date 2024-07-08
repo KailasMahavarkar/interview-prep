@@ -1,6 +1,6 @@
 import os
-problem_name = "2192. All Ancestors of a Node in a Directed Acyclic Graph"
-problem_link = 'https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/'
+problem_name = "560. Subarray Sum Equals K"
+problem_link = 'https://leetcode.com/problems/subarray-sum-equals-k/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

@@ -1,4 +1,4 @@
-testcase = """[[0,3],[0,4],[1,3],[2,4],[2,7],[3,5],[3,6],[3,7],[4,6]]"""
+testcase = """["X","Y","."],["Y",".","."]"""
 
 
 def inverse_brackets(str="", inverseQuotes=False):
