@@ -1,6 +1,6 @@
 import os
-problem_name = "560. Subarray Sum Equals K"
-problem_link = 'https://leetcode.com/problems/subarray-sum-equals-k/description/'
+problem_name = "225. Implement Stack using Queues"
+problem_link = 'https://leetcode.com/problems/implement-stack-using-queues/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
