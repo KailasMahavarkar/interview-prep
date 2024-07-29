@@ -1,6 +1,6 @@
 import os
-problem_name = "225. Implement Stack using Queues"
-problem_link = 'https://leetcode.com/problems/implement-stack-using-queues/description/'
+problem_name = "1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance"
+problem_link = 'https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description'
 companies_str = ''
 obsidian = False
 create_cpp = False
