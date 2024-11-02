@@ -1,6 +1,6 @@
 import os
-problem_name = "1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance"
-problem_link = 'https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description'
+problem_name = "271. Encode and Decode Strings"
+problem_link = 'https://leetcode.com/problems/encode-and-decode-strings/'
 companies_str = ''
 obsidian = False
 create_cpp = False
