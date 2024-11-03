@@ -1,6 +1,6 @@
 import os
-problem_name = "271. Encode and Decode Strings"
-problem_link = 'https://leetcode.com/problems/encode-and-decode-strings/'
+problem_name = "15. 3Sum"
+problem_link = 'https://leetcode.com/problems/3sum/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
