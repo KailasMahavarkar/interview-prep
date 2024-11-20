@@ -1,12 +1,12 @@
 import os
-problem_name = "15. 3Sum"
-problem_link = 'https://leetcode.com/problems/3sum/description/'
+problem_name = "76. Minimum Window Substring"
+problem_link = 'https://leetcode.com/problems/minimum-window-substring/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
 create_python = False
 create_javascript = False
-obsidian_path = "E:\onedrive\obsidian"
+obsidian_path = "E:\\onedrive\\obsidian"
 root_path = os.path.abspath(os.path.dirname(__file__))
 obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
 obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
