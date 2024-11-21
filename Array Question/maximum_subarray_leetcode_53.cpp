@@ -26,17 +26,11 @@ class Solution {
                 gmax = lmax;
             }
 
-            // lmax = max(lmax, 0)
-            if (lmax > gmax) {
-                gmax = lmax;
-            }
-
             // Reset local maximum to 0 if it becomes negative
             if (lmax < 0) {
                 lmax = 0;
             }
         }
-
         return gmax;
     }
 };
@@ -46,6 +40,5 @@ int main() {
     vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
 
     cout << sol.maxSubArray(nums) << endl;
-
     return 0;
 }
