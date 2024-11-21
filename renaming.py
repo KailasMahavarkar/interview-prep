@@ -1,6 +1,6 @@
 import os
-problem_name = "76. Minimum Window Substring"
-problem_link = 'https://leetcode.com/problems/minimum-window-substring/description/'
+problem_name = "704. Binary Search"
+problem_link = 'https://leetcode.com/problems/binary-search/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
