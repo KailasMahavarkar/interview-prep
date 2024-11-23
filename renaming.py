@@ -1,6 +1,6 @@
 import os
-problem_name = "704. Binary Search"
-problem_link = 'https://leetcode.com/problems/binary-search/description/'
+problem_name = "69. Sqrt(x)"
+problem_link = 'https://leetcode.com/problems/sqrtx/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

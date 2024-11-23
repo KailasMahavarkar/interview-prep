@@ -47,3 +47,7 @@ learning.py
 
 
 **/__pycache__/*
+
+
+# export java files
+*.class
