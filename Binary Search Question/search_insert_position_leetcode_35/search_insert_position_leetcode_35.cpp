@@ -11,8 +11,8 @@ using namespace std;
 */
 
 // Approach-1 (BruteForce)
-// TC : O(1)
-// SC : O(n)
+// TC : O(n)
+// SC : O(1)
 class SolutionBruteForce {
    public:
     int searchInsert(vector<int>& nums, int target) {
@@ -28,9 +28,35 @@ class SolutionBruteForce {
     }
 };
 
+// Approach-2 (Binary Search)
+// TC: O(logn)
+// SC: O(1)
+class Solution {
+   public:
+    int searchInsert(vector<int>& nums, int target) {
+        int n = nums.size();
+
+        int s = 0;
+        int e = n - 1;
+        int ans = n;
+
+        while (s <= e) {
+            int mid = s + (e - s) / 2;
+
+            if (nums[mid] >= target) {
+                ans = mid;
+                e = mid - 1;
+            } else {
+                s = mid + 1;
+            }
+        }
+        return ans;
+    }
+};
+
 int main() {
     vector<int> nums = {1, 3, 5, 6};
     int target = 0;
-    SolutionBruteForce sol;
+    Solution sol;
     cout << "ans -->" << sol.searchInsert(nums, target) << endl;
 }
