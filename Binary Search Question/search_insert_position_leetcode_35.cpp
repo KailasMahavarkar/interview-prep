@@ -10,36 +10,27 @@ using namespace std;
     Similarities   : None
 */
 
-// Approach-1 (Normal)
+// Approach-1 (BruteForce)
 // TC : O(1)
-// SC : O(nlogn)
-class Solution {
+// SC : O(n)
+class SolutionBruteForce {
    public:
     int searchInsert(vector<int>& nums, int target) {
-        int s = 0;
-        int e = nums.size() - 1;
+        int n = nums.size();
 
-        while (s <= e) {
-            int mid = s + (e - s) / 2;
-
-            if (nums[mid] == target) {
-                return mid;
-            }
-
-            if (nums[mid] > target) {
-                e = mid - 1;
-            } else {
-                s = mid + 1;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] >= target) {
+                return i;
             }
         }
 
-        return s;
+        return n;
     }
 };
 
 int main() {
     vector<int> nums = {1, 3, 5, 6};
-    int target = 5;
-    Solution sol;
+    int target = 0;
+    SolutionBruteForce sol;
     cout << "ans -->" << sol.searchInsert(nums, target) << endl;
 }

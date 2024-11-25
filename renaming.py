@@ -1,6 +1,6 @@
 import os
 problem_name = "69. Sqrt(x)"
-problem_link = 'https://leetcode.com/problems/sqrtx/description/'
+problem_link = 'https://leetcode.com/problems/sqrt(x)/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

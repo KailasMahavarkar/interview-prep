@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
    public:
     char nextGreatestLetter(vector<char>& letters, char target) {
@@ -14,6 +17,13 @@ class Solution {
             }
         }
 
-        return letters[s % letters.size()];
+        return s > letters.size() : letters[0] : letters[s];
     }
 };
+
+int main() {
+    vector<char> arr = {'x', 'x', 'y', 'y'};
+    char target = 'z';
+    Solution sol;
+    cout << "ans -->" << sol.nextGreatestLetter(arr, target) << endl;
+}
