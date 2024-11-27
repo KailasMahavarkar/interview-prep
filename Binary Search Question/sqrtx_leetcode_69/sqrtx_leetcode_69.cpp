@@ -1,12 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+class SolutionBruteForce {
+   public:
+    int mySqrt(int x) {
+        int i = 0;
+
+        while (i < x) {
+            if ((long long)i * i > x) {
+                break;
+            }
+            i++;
+        }
+
+        return i - 1;
+    }
+};
+
 class Solution {
    public:
     int mySqrt(int x) {
         if (x < 2) return x;
 
-        int s = 1, e = x / 2;
+        int s = 0, e = x;
         int result = 0;
 
         while (s <= e) {
@@ -26,6 +42,6 @@ class Solution {
 
 int main() {
     int x = 8;
-    Solution sol;
+    SolutionBruteForce sol;
     cout << "ans -->" << sol.mySqrt(x) << endl;
 }
