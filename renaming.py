@@ -1,6 +1,6 @@
 import os
-problem_name = "69. Sqrt(x)"
-problem_link = 'https://leetcode.com/problems/sqrt(x)/description/'
+problem_name = "153. Find Minimum in Rotated Sorted Array"
+problem_link = 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
