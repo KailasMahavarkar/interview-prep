@@ -1,5 +1,3 @@
-import java.util.*;
-
 /*
     Problem Link   : https://leetcode.com/problems/search-insert-position/description/
     Company Tags   : None
