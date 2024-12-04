@@ -1,6 +1,6 @@
 import os
-problem_name = "81. Search in Rotated Sorted Array II"
-problem_link = 'https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/'
+problem_name = "154. Find Minimum in Rotated Sorted Array II"
+problem_link = 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False

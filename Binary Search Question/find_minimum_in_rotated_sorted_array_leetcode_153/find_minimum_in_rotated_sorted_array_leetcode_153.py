@@ -3,7 +3,7 @@ class Solution:
         n = len(nums)
         s, e = 0, n - 1
 
-        while s <= e:
+        while s < e:
             if nums[s] <= nums[e]:
                 return nums[s]
 
