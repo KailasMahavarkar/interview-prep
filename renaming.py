@@ -1,6 +1,6 @@
 import os
-problem_name = "852. Peak Index in a Mountain Array"
-problem_link = 'https://leetcode.com/problems/peak-index-in-a-mountain-array/description/'
+problem_name = "162. Find Peak Element"
+problem_link = 'https://leetcode.com/problems/find-peak-element/description/'
 companies_str = ''
 obsidian = False
 create_cpp = False
