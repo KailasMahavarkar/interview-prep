@@ -5,9 +5,9 @@ using namespace std;
 /*
     Problem Link   : https://leetcode.com/problems/find-peak-element/description/
     Company Tags   : None
-    Youtube Link   : None
+    Youtube Link   : https://youtu.be/m4QAns43QSg
     Custom  Link   : None
-    Similarities   : None
+    Similarities   : LC 852. Peak Index in a Mountain Array
 */
 
 // Approach-1 (Normal)
