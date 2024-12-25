@@ -3,90 +3,89 @@ using namespace std;
 
 class SegmentTree {
    public:
-    vector<int> st;
+    vector<int> tree;
+    vector<int> nums;
     int n;
 
-    int constructSt(vector<int>& nums, int l, int r, int si) {
-        if (l > r)
-            return 0;
+    SegmentTree(vector<int>& input) {
+        n = input.size();
+        nums = input;
+        tree.resize(4 * n, 0);
+        buildTree(0, 0, n - 1);
+    }
+
+   private:
+    void buildTree(int idx, int l, int r) {
         if (l == r) {
-            st[si] = nums[l];
-            return st[si];
-        }
-        int mid = l + (r - l) / 2;
-
-        st[si] = constructSt(nums, l, mid, 2 * si + 1) + constructSt(nums, mid + 1, r, 2 * si + 2);
-
-        return st[si];
-    }
-
-    int getSum(int ss, int se, int qs, int qe, int si) {
-        if (ss >= qs && se <= qe)
-            return st[si];
-
-        if (se < qs || ss > qe)
-            return 0;
-
-        int mid = ss + (se - ss) / 2;
-
-        return getSum(ss, mid, qs, qe, 2 * si + 1) + getSum(mid + 1, se, qs, qe, 2 * si + 2);
-    }
-
-    void updateSt(int ss, int se, int idx, int diff, int si) {
-        if (idx < ss || idx > se)
+            tree[idx] = nums[l];
             return;
-
-        st[si] += diff;
-
-        if (ss != se) {
-            int mid = ss + (se - ss) / 2;
-            updateSt(ss, mid, idx, diff, 2 * si + 1);
-            updateSt(mid + 1, se, idx, diff, 2 * si + 2);
         }
+
+        int mid = l + (r - l) / 2;
+        buildTree(2 * idx + 1, l, mid);
+        buildTree(2 * idx + 2, mid + 1, r);
+        tree[idx] = tree[2 * idx + 1] + tree[2 * idx + 2];
     }
 
-    SegmentTree(vector<int>& nums) {
-        n = nums.size();
-        int seg_size = 4 * n;
-        st.resize(seg_size);
-        int si = 0;
-        constructSt(nums, 0, n - 1, si);
+    void updateTree(int pos, int val, int l, int r, int idx) {
+        if (l == r) {
+            tree[idx] = val;
+            return;
+        }
+
+        int mid = l + (r - l) / 2;
+        if (pos <= mid) {
+            updateTree(pos, val, l, mid, 2 * idx + 1);
+        } else {
+            updateTree(pos, val, mid + 1, r, 2 * idx + 2);
+        }
+
+        tree[idx] = tree[2 * idx + 1] + tree[2 * idx + 2];
     }
 
-    int getSum(int qs, int qe) {
-        return getSum(0, n - 1, qs, qe, 0);
+    int queryTree(int idx, int l, int r, int s, int e) {
+        // Actual query is (s, e)
+        // l -> current left where l is lying
+        // r -> current right where r is lying
+        
+        // Case 1: Out of bounds (no overlap)
+        if (l > e || r < s) {
+            return 0;
+        }
+
+        // Case 2: Completely within range
+        if (l >= s && r <= e) {
+            return tree[idx];
+        }
+
+        // Case 3: Overlapping range
+        int mid = l + (r - l) / 2;
+        int leftQuery = queryTree(2 * idx + 1, l, mid, s, e);
+        int rightQuery = queryTree(2 * idx + 2, mid + 1, r, s, e);
+        return leftQuery + rightQuery;
     }
 
-    void update(int idx, int val) {
-        int diff = val - st[idx];
-        updateSt(0, n - 1, idx, diff, 0);
+   public:
+    void update(int pos, int val) {
+        updateTree(pos, val, 0, n - 1, 0);
+    }
+
+    int query(int s, int e) {
+        return queryTree(0, 0, n - 1, s, e);
     }
 };
 
 int main() {
-    vector<int> nums{1, 3, 5};
-    SegmentTree segTree(nums);
+    vector<int> input = {1, 2, 3, 4};
+    SegmentTree segTree(input);
+    cout << "Initial range sum [0, 3]: " << segTree.query(0, 3) << endl;
+    segTree.update(0, 11);
+    cout << "Updated range sum [0, 3]: " << segTree.query(0, 3) << endl;
 
-    // This is my segment tree
-    for (int i = 0; i < 4 * nums.size(); i++) {
-        cout << segTree.st[i] << " ";
+    for (auto& x : segTree.tree) {
+        cout << x << " ";
     }
     cout << endl;
-
-    // Range queries (O(log(n))
-    cout << segTree.getSum(0, 1) << endl;  // output : 4
-    cout << segTree.getSum(1, 2) << endl;  // output : 8
-
-    // Update array
-    int idx = 1;
-    int val = 4;
-
-    // Update value
-    segTree.update(idx, val);
-
-    // Range queries (O(log(n))
-    cout << segTree.getSum(0, 1) << endl;  // output : 4
-    cout << segTree.getSum(1, 2) << endl;  // output : 8
 
     return 0;
 }

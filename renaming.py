@@ -1,5 +1,5 @@
 import os
-problem_name = "373. Find K Pairs with Smallest Sums"
+problem_name = "307. Range Sum Query - Mutable"
 is_leetcode = True
 companies_str = ''
 obsidian = False
