@@ -1,6 +1,6 @@
 import os
-problem_name = "162. Find Peak Element"
-problem_link = 'https://leetcode.com/problems/find-peak-element/description/'
+problem_name = "373. Find K Pairs with Smallest Sums"
+is_leetcode = True
 companies_str = ''
 obsidian = False
 create_cpp = False
@@ -11,6 +11,19 @@ root_path = os.path.abspath(os.path.dirname(__file__))
 obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
 obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
 leetcode_path = os.path.join(root_path, 'leetcode')
+
+def question_to_link(str):
+    if len(str.split(".")) != 2:
+        return str
+
+    question = str.split(".")[1]
+
+    dynamic = question.replace(' ', '-').lower()
+    if dynamic[0] == '-':
+        dynamic = dynamic[1:]
+
+    link = f"https://leetcode.com/problems/{dynamic}/description/"
+    return link
 
 
 def file_format_writer(problem_name, problem_link, companies_str):
@@ -53,6 +66,10 @@ int main(){"{"}
 
     '''
 
+if is_leetcode:
+    problem_link = question_to_link(problem_name)
+else:
+    problem_link = "None"
 
 if not obsidian_path:
     print("Obsidian Path does not exist")

@@ -2,43 +2,51 @@
 using namespace std;
 #pragma GCC optimize("O3,unroll-loops")
 
-void backtrack(const string &s, int idx, vector<string> &curr, vector<vector<string>> &result) {
-    // Adding current list of substrings to the result
-    result.push_back(curr);
-
-    // Loop through the string starting from the given index
-    for (int i = idx; i < s.size(); i++) {
-        if (i == idx) {
-            // Generate substrings and add them to the current list
-            curr.push_back(s.substr(idx, i - idx + 1));
-
-            // Recursively call the backtrack function to continue the process
-            backtrack(s, i + 1, curr, result);
-
-            // Remove the last added substring to backtrack and explore other possibilities
-            curr.pop_back();
-        }
-    }
-}
-
-vector<vector<string>> allSubstrings(const string &s) {
-    vector<vector<string>> result;
-    vector<string> curr;
-    backtrack(s, 0, curr, result);
-    return result;
-}
-
-int main() {
-    string s = "bac";
-    vector<vector<string>> result = allSubstrings(s);
-
-    // Print all substrings
-    for (const auto &subset : result) {
-        for (const auto &str : subset) {
-            cout << "\"" << str << "\" ";
+class Solution {
+   public:
+    void printHeap(priority_queue<int, vector<int>, greater<int>> heap) {
+        cout << "heap: ";
+        while (heap.size() > 0) {
+            cout << heap.top() << " ";
+            heap.pop();
         }
         cout << endl;
     }
 
+    vector<int> solve(vector<int>& nums) {
+        priority_queue<int, vector<int>, greater<int>> heap;
+
+        auto pushToHeap = [&](int num) {
+            while (heap.size() >= 3) {
+                heap.pop();
+            }
+            heap.push(num);
+            printHeap(heap);
+        };
+
+        pushToHeap(10);
+        pushToHeap(20);
+        pushToHeap(30);
+        pushToHeap(40);
+        pushToHeap(50);
+        pushToHeap(60);
+        pushToHeap(70);
+        pushToHeap(80);
+        pushToHeap(90);
+        pushToHeap(100);
+
+        return {-1, -1};
+    }
+};
+
+int main() {
+    vector<int> nums = {5, 2, 6, 1};
+
+    Solution sol;
+    vector<int> ans = sol.solve(nums);
+    for (int x : ans) {
+        cout << x << " ";
+    }
+    cout << endl;
     return 0;
 }
