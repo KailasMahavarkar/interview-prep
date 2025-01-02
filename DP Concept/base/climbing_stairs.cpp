@@ -47,7 +47,7 @@ class SolutionBottomUp {
     }
 };
 
-// Method 2: bottom up (optimized)
+// Method 3: bottom up (optimized)
 class Solution {
    public:
     int climbStairs(int n) {

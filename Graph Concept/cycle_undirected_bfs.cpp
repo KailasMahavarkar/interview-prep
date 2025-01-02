@@ -22,10 +22,10 @@ class Solution {
                 // if child is already visited we have cycle
                 if (visited[child]) {
                     return true;
-                } else {
-                    que.push({child, curr});
-                    visited[child] = true;
-                }
+                } 
+
+                que.push({child, curr});
+                visited[child] = true;
             }
         }
 

@@ -41,7 +41,6 @@ class SolutionMemo {
             result = max(result, dp[n][m]);
         } else {
             dp[n][m] = 0;
-
             return dp[n][m];
         }
     }
@@ -56,30 +55,6 @@ class SolutionMemo {
 class Solution {
    public:
     int result = 0;
-    vector<vector<int>> dp;
-    int LCS(string s1, string s2, int n, int m) {
-        // when either string1 or string2 is empty
-        if (n == 0 || m == 0) {
-            return 0;
-        }
-
-        // check subproblem in memo
-        if (dp[n][m] != -1) {
-            return dp[n][m];
-        }
-
-        LCS(s1, s2, n - 1, m);
-        LCS(s1, s2, n, m - 1);
-
-        if (s1[n - 1] == s2[m - 1]) {
-            dp[n][m] = 1 + LCS(s1, s2, n - 1, m - 1);
-            result = max(result, dp[n][m]);
-        } else {
-            dp[n][m] = 0;
-        }
-
-        return dp[n][m];
-    }
     int longestCommonSubstr(string S1, string S2, int n, int m) {
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, -1));
 

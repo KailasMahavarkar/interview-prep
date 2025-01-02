@@ -5,85 +5,130 @@ class SegmentTree {
    public:
     vector<int> tree;
     vector<int> nums;
+    vector<int> lazy;
     int n;
 
     SegmentTree(vector<int>& input) {
-        n = input.size();
         nums = input;
+        n = input.size();
         tree.resize(4 * n, 0);
+        lazy.resize(4 * n, 0);
         buildTree(0, 0, n - 1);
     }
 
    private:
-    void buildTree(int idx, int l, int r) {
-        if (l == r) {
-            tree[idx] = nums[l];
+    void buildTree(int nodeIdx, int nodeStart, int nodeEnd) {
+        if (nodeStart == nodeEnd) {
+            tree[nodeIdx] = nums[nodeStart];
             return;
         }
 
-        int mid = l + (r - l) / 2;
-        buildTree(2 * idx + 1, l, mid);
-        buildTree(2 * idx + 2, mid + 1, r);
-        tree[idx] = tree[2 * idx + 1] + tree[2 * idx + 2];
+        int mid = nodeStart + (nodeEnd - nodeStart) / 2;
+        buildTree(2 * nodeIdx + 1, nodeStart, mid);
+        buildTree(2 * nodeIdx + 2, mid + 1, nodeEnd);
+        tree[nodeIdx] = tree[2 * nodeIdx + 1] + tree[2 * nodeIdx + 2];
     }
 
-    void updateTree(int pos, int val, int l, int r, int idx) {
-        if (l == r) {
-            tree[idx] = val;
+    void updateTree(int nodeIdx, int nodeStart, int nodeEnd, int pos, int val) {
+        if (nodeStart == nodeEnd) {
+            tree[nodeIdx] = val;
             return;
         }
 
-        int mid = l + (r - l) / 2;
+        int mid = nodeStart + (nodeEnd - nodeStart) / 2;
+
         if (pos <= mid) {
-            updateTree(pos, val, l, mid, 2 * idx + 1);
+            updateTree(2 * nodeIdx + 1, nodeStart, mid, pos, val);
         } else {
-            updateTree(pos, val, mid + 1, r, 2 * idx + 2);
+            updateTree(2 * nodeIdx + 2, mid + 1, nodeEnd, pos, val);
         }
-
-        tree[idx] = tree[2 * idx + 1] + tree[2 * idx + 2];
+        tree[nodeIdx] = tree[2 * nodeIdx + 1] + tree[2 * nodeIdx + 2];
     }
 
-    int queryTree(int idx, int l, int r, int s, int e) {
-        // Actual query is (s, e)
-        // l -> current left where l is lying
-        // r -> current right where r is lying
-        
-        // Case 1: Out of bounds (no overlap)
-        if (l > e || r < s) {
+    void lazyUpdateTree(int nodeIdx, int val, int queryStart, int queryEnd, int nodeStart, int nodeEnd) {
+        int leftIndex = 2 * nodeIdx + 1;
+        int rightIndex = 2 * nodeIdx + 2;
+
+        if (lazy[nodeIdx] != 0) {
+            tree[nodeIdx] += (nodeEnd - nodeStart + 1) * lazy[nodeIdx];
+
+            if (nodeStart != nodeEnd) {  // not a leaf node
+                lazy[leftIndex] += lazy[nodeIdx];
+                lazy[rightIndex] += lazy[nodeIdx];
+            }
+            lazy[nodeIdx] = 0;
+        }
+
+        // If the current node range is completely outside the query range
+        // qs----qe           qs------qe
+        //          ns-----ne
+        if (nodeStart > nodeEnd || nodeStart > queryEnd || nodeEnd < queryStart) {
+            return;
+        }
+
+        // If the current node range is completely inside the query range
+        // qs------------qe
+        //     ns----ne
+        if (nodeStart >= queryStart && nodeEnd <= queryEnd) {
+            tree[nodeIdx] += (nodeEnd - nodeStart + 1) * val;
+
+            if (nodeStart != nodeEnd) {
+                lazy[leftIndex] += val;
+                lazy[rightIndex] += val;
+            }
+            return;
+        }
+
+        int mid = (nodeStart + nodeEnd) / 2;
+        lazyUpdateTree(leftIndex, val, queryStart, queryEnd, nodeStart, mid);
+        lazyUpdateTree(rightIndex, val, queryStart, queryEnd, mid + 1, nodeEnd);
+        tree[nodeIdx] = tree[leftIndex] + tree[rightIndex];
+    }
+
+    int queryTree(int nodeIdx, int queryStart, int queryEnd, int nodeStart, int nodeEnd) {
+        //                 qs------------------qe
+        //    ns-------ne                         ns------ne
+        if (queryStart > nodeEnd || queryEnd < nodeStart) {
             return 0;
         }
 
-        // Case 2: Completely within range
-        if (l >= s && r <= e) {
-            return tree[idx];
+        //                 qs------------------qe
+        //                     ns-------ne
+        if (queryStart <= nodeStart && queryEnd >= nodeEnd) {
+            return tree[nodeIdx];
         }
 
-        // Case 3: Overlapping range
-        int mid = l + (r - l) / 2;
-        int leftQuery = queryTree(2 * idx + 1, l, mid, s, e);
-        int rightQuery = queryTree(2 * idx + 2, mid + 1, r, s, e);
-        return leftQuery + rightQuery;
+        int mid = nodeStart + (nodeEnd - nodeStart) / 2;
+        int leftSum = queryTree(2 * nodeIdx + 1, queryStart, queryEnd, nodeStart, mid);
+        int rightSum = queryTree(2 * nodeIdx + 2, queryStart, queryEnd, mid + 1, nodeEnd);
+        return leftSum + rightSum;
     }
 
    public:
-    void update(int pos, int val) {
-        updateTree(pos, val, 0, n - 1, 0);
+    void update(int idx, int val) {
+        updateTree(0, 0, n - 1, idx, val);
     }
 
-    int query(int s, int e) {
-        return queryTree(0, 0, n - 1, s, e);
+    void updateRange(int queryStart, int queryEnd, int newValue) {
+        lazyUpdateTree(0, newValue, queryStart, queryEnd, 0, n - 1);
+    }
+
+    int query(int queryStart, int queryEnd) {
+        return queryTree(0, queryStart, queryEnd, 0, n - 1);
     }
 };
 
 int main() {
-    vector<int> input = {1, 2, 3, 4};
-    SegmentTree segTree(input);
-    cout << "Initial range sum [0, 3]: " << segTree.query(0, 3) << endl;
-    segTree.update(0, 11);
-    cout << "Updated range sum [0, 3]: " << segTree.query(0, 3) << endl;
+    vector<int> nums = {1, 2, 3, 4, 5};
+    SegmentTree segTree(nums);
+
+    segTree.updateRange(0, 4, 10);
+    // cout << segTree.query(0, 2) << endl;
+    // segTree.update(0, 10);
+    // cout << segTree.query(0, 2) << endl;
 
     for (auto& x : segTree.tree) {
-        cout << x << " ";
+        cout << x << ",";
     }
     cout << endl;
 

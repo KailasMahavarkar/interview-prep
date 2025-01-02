@@ -1,5 +1,5 @@
 import os
-problem_name = "307. Range Sum Query - Mutable"
+problem_name = "146. LRU Cache"
 is_leetcode = True
 companies_str = ''
 obsidian = False

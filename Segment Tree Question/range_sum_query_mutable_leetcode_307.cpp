@@ -26,50 +26,59 @@ class NumArray {
         buildTree(0, 0, n - 1);
     }
 
-    void buildTree(int idx, int l, int r) {
-        if (l == r) {
-            tree[idx] = nums[l];
+    void buildTree(int nodeIdx, int ns, int ne) {
+        if (ns == ne) {
+            tree[nodeIdx] = nums[ns];
             return;
         }
 
-        int mid = l + (r - l) / 2;
-        buildTree(2 * idx + 1, l, mid);
-        buildTree(2 * idx + 2, mid + 1, r);
-        tree[idx] = tree[2 * idx + 1] + tree[2 * idx + 2];
+        int mid = ns + (ne - ns) / 2;
+        buildTree(2 * nodeIdx + 1, ns, mid);
+        buildTree(2 * nodeIdx + 2, mid + 1, ne);
+        tree[nodeIdx] = tree[2 * nodeIdx + 1] + tree[2 * nodeIdx + 2];
     }
 
-    void updateTree(int idx, int l, int r, int pos, int val) {
-        if (l == r) {
-            tree[idx] = val;
+    void updateTree(int nodeIdx, int ns, int ne, int pos, int val) {
+        if (ns == ne) {
+            tree[nodeIdx] = val;
             return;
         }
 
-        int mid = l + (r - l) / 2;
+        int mid = ns + (ne - ns) / 2;
+
         if (pos <= mid) {
-            updateTree(2 * idx + 1, l, mid, pos, val);
+            updateTree(2 * nodeIdx + 1, ns, mid, pos, val);
         } else {
-            updateTree(2 * idx + 2, mid + 1, r, pos, val);
+            updateTree(2 * nodeIdx + 2, mid + 1, ne, pos, val);
         }
-
-        tree[idx] = tree[2 * idx + 1] + tree[2 * idx + 2];
+        tree[nodeIdx] = tree[2 * nodeIdx + 1] + tree[2 * nodeIdx + 2];
     }
 
-    int queryTree(int idx, int l, int r, int s, int e) {
-        if (l > e || r < s) return 0;
-        if (l >= s && r <= e) return tree[idx];
+    int queryTree(int nodeIdx, int qs, int qe, int ns, int ne) {
+        //                 qs------------------qe
+        //    ns-------ne                         ns------ne
+        if (qs > ne || qe < ns) {
+            return 0;
+        }
 
-        int mid = l + (r - l) / 2;
-        int leftSum = queryTree(2 * idx + 1, l, mid, s, e);
-        int rightSum = queryTree(2 * idx + 2, mid + 1, r, s, e);
+        //                 qs------------------qe
+        //                       ns-------ne
+        if (qs <= ns && qe >= ne) {
+            return tree[nodeIdx];
+        }
+
+        int mid = ns + (ne - ns) / 2;
+        int leftSum = queryTree(2 * nodeIdx + 1, qs, qe, ns, mid);
+        int rightSum = queryTree(2 * nodeIdx + 2, qs, qe, mid + 1, ne);
         return leftSum + rightSum;
     }
 
-    void update(int index, int val) {
-        updateTree(0, 0, n - 1, index, val);
+    void update(int idx, int val) {
+        updateTree(0, 0, n - 1, idx, val);
     }
 
-    int sumRange(int left, int right) {
-        return queryTree(0, 0, n - 1, left, right);
+    int sumRange(int qs, int qe) {
+        return queryTree(0, qs, qe, 0, n - 1);
     }
 };
 

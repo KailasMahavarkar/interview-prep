@@ -8,20 +8,21 @@ class Solution {
         vector<int> result(V, INT_MAX);
 
         result[S] = 0;
-        pq.push({0, S});  // souce se source tak pohoch ne me 0 lag rha h
+        pq.push({0, S});
 
         while (!pq.empty()) {
-            int cost = pq.top().first;
-            int node = pq.top().second;
+            pair<int, int> top = pq.top();
+            int weight = top.first;
+            int node = top.second;
             pq.pop();
 
             for (auto &x : adj[node]) {
-                int subnode = x[0];
-                int curr_cost = x[1];
+                int sub_node = x[0];
+                int wt = x[1];
 
-                if (cost + curr_cost < result[subnode]) {
-                    result[subnode] = cost + curr_cost;
-                    pq.push({cost + curr_cost, subnode});
+                if (weight + wt < result[sub_node]) {
+                    result[sub_node] = weight + wt;
+                    pq.push({wt + weight, sub_node});
                 }
             }
         }

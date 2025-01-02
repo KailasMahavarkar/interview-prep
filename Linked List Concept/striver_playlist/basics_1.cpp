@@ -26,7 +26,6 @@ ListNode* vectorToLinkedList(vector<int> arr) {
 
 int main() {
     vector<int> arr = {3, 1, 2, 0};
-
     ListNode* head = vectorToLinkedList(arr);
 
     while (head) {

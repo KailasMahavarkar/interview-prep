@@ -1,18 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// cycle can only be possible if 
-// 1) current is in inRecursion
-// 2) we get true as answer from child dfs calls 
+// cycle can only be possible if
+// 1) current is in recursionStack
+// 2) we get true as answer from child dfs calls
 
 class Solution {
    public:
     vector<bool> visited;
-    vector<bool> inRecursion;
+    vector<bool> recursionStack;
     bool isCycleDFS(int curr, vector<int> adj[]) {
         // mark visited
         visited[curr] = true;
-        inRecursion[curr] = true;
+        recursionStack[curr] = true;
 
         for (int &child : adj[curr]) {
             // if not visited then we check for cycle in DFS
@@ -23,18 +23,18 @@ class Solution {
             }
 
             // visited and it is in current recursion
-            if (inRecursion[child]) {
+            if (recursionStack[child]) {
                 return true;
             }
         }
 
-        inRecursion[curr] = false;
+        recursionStack[curr] = false;
         return false;
     }
 
     bool isCyclic(int V, vector<int> adj[]) {
         visited.resize(V, false);
-        inRecursion.resize(V, false);
+        recursionStack.resize(V, false);
 
         // we are assuming graphs are component based
         for (int i = 0; i < V; i++) {
