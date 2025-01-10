@@ -10,10 +10,10 @@ class Trie {
    public:
     trieNode* root;
     Trie() {
-        root = getNode();
+        root = makeNode();
     }
 
-    trieNode* getNode() {
+    trieNode* makeNode() {
         trieNode* newNode = new trieNode();
         newNode->isEndOfWord = false;
 
@@ -31,7 +31,7 @@ class Trie {
             int idx = ch - 'a';
 
             if (crawler->children[idx] == NULL) {
-                trieNode* temp = getNode();
+                trieNode* temp = makeNode();
                 crawler->children[idx] = temp;
             }
             crawler = crawler->children[idx];

@@ -61,7 +61,7 @@ class MinHeap {
         // remove heap[0] -> which is at bottom
         size--;
 
-        // readjust heap from top
+        // re-adjust heap from top
         heapifyDown();
     }
 
