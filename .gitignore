@@ -51,3 +51,7 @@ learning.py
 
 # export java files
 *.class
+
+*
+!*/
+!*.*
