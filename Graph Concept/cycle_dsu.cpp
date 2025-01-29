@@ -8,7 +8,7 @@ class Solution {
     int find(int x) {
         if (parent[x] == x) {
             return x;
-        } 
+        }
 
         return parent[x] = find(parent[x]);
     }
@@ -41,12 +41,12 @@ class Solution {
 
         for (int u = 0; u < V; u++) {
             for (int &v : adj[u]) {
-                // 0 --> 1  | yes
-                // 1 --> 2  | yes
-                // 2 --> 1  | no
-                // 1 --> 0  | no
-                // meaning parent to child jana h
-                // tab value decreasing honi chaye
+                // parent --> child
+                // 0      -->   1  | yes
+                // 1      -->   2  | yes
+                // 2      -->   1  | no
+                // 1      -->   0  | no
+                // parent to child value should be increasing
 
                 if (u < v) {
                     if (find(u) == find(v))
