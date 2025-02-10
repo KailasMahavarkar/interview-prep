@@ -47,6 +47,4 @@ class Solution {
 };
 
 int main() {
-    Solution sol;
-    sol.networkDelayTime();
 }
