@@ -45,7 +45,7 @@ class Solution {
     }
 
     int lcm(int a, int b) {
-        return (a / gcd(a, b)) * b;  // Prevent overflow
+        return (a / gcd(a, b)) * b;  
     }
 
     int solve(int k, int l, int m, int n, int d) {
