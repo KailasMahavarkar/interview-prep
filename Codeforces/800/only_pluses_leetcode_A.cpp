@@ -30,19 +30,19 @@ class Solution {
 };
 
 int main() {
-    int t;
-    cin >> t;
+    // int t;
+    // cin >> t;
 
-    while (t--) {
-        int a, b, c;
-        cin >> a >> b >> c;
+    // while (t--) {
+    //     int a, b, c;
+    //     cin >> a >> b >> c;
 
-        Solution sol;
-        sol.solve(a, b, c);
-    }
+    //     Solution sol;
+    //     sol.solve(a, b, c);
+    // }
 
-    // Solution sol;
-    // sol.solve(2, 3, 4);
+    Solution sol;
+    sol.solve(2, 3, 4);
     return 0;
 }
 

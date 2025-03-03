@@ -1,5 +1,5 @@
 import os
-problem_name = "146. LRU Cache"
+problem_name = "A. Most Unstable Array"
 is_leetcode = True
 companies_str = ''
 obsidian = False
