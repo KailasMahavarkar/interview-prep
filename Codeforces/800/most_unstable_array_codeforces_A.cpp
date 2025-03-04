@@ -8,18 +8,26 @@ class Solution {
             // [100]
             // -> difference is always 0
             cout << 0 << endl;
-        } 
-        else if (n == 2){
+        } else if (n == 2) {
             // [0, 100]
             // -> difference is always highest number m
             cout << m << endl;
-        }
-        else {
+        } else {
             // n = 5 | m = 11
             // [0, 11, 0, 0, 0]
-            // --11--11--0--0--
-            // difference sum is 22 which is highest possible
-            // so its 2*m
+            //   11  11  0  0    -> 22
+
+            //  [3, 0, 3, 0, 4]
+            //     3  3  3  4    -> 13
+
+            // n = 5 | m = 10
+            //  [5, 0, 5, 0, 0]
+            //    5   5  5  0    -> 15
+            //
+            //  [0, 5, 0, 5, 0]
+            //     5  5  5  5    -> 20
+
+            // both cases we can see 2*m as highest answer
             cout << 2 * m << endl;
         }
     }
