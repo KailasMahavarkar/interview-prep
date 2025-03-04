@@ -1,3 +1,7 @@
+*
+!*/
+!*.*
+
 # Prerequisites
 *.d
 
@@ -51,7 +55,3 @@ learning.py
 
 # export java files
 *.class
-
-*
-!*/
-!*.*

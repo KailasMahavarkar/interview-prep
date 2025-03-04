@@ -1,7 +1,6 @@
 import os
-problem_name = "A. EhAb AnD gCd"
-is_leetcode = False
-is_codeforces = True
+problem_name = "A. Ichihime and Triangle"
+platform = 'codeforces'
 companies_str = ''
 obsidian = False
 create_cpp = False
@@ -67,7 +66,7 @@ int main(){"{"}
 
     '''
 
-if is_leetcode:
+if platform == 'leetcode':
     problem_link = question_to_link(problem_name)
 else:
     problem_link = "None"
@@ -83,7 +82,7 @@ if not obsidian_leetcode_path:
 
 
 parts = problem_name.split('.')
-p1 = "_leetcode_" + parts[0]
+p1 = f"_{platform}_" + parts[0]
 p2 = parts[1].lower().replace(" ", '_').replace("|", "").replace("__", "_")
 
 if obsidian:
