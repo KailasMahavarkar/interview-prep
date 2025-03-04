@@ -1,6 +1,7 @@
 import os
-problem_name = "A. Most Unstable Array"
-is_leetcode = True
+problem_name = "A. EhAb AnD gCd"
+is_leetcode = False
+is_codeforces = True
 companies_str = ''
 obsidian = False
 create_cpp = False
