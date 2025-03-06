@@ -1,5 +1,5 @@
 import os
-problem_name = "A. Free Ice Cream"
+problem_name = "A. Round Down the Price"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
