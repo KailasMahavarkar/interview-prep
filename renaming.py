@@ -1,6 +1,6 @@
 import os
-problem_name = "A. Round Down the Price"
-platform = 'codeforces'
+problem_name = "875. Koko Eating Bananas"
+platform = 'leetcode'
 companies_str = ''
 obsidian = False
 create_cpp = False
