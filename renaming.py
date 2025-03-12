@@ -1,6 +1,6 @@
 import os
-problem_name = "875. Koko Eating Bananas"
-platform = 'leetcode'
+problem_name = "B. Following the String"
+platform = 'codeforces'
 companies_str = ''
 obsidian = False
 create_cpp = False
@@ -11,6 +11,7 @@ root_path = os.path.abspath(os.path.dirname(__file__))
 obsidian_cpp_path = os.path.join(obsidian_path, 'cpp')
 obsidian_leetcode_path = os.path.join(obsidian_cpp_path, 'leetcode')
 leetcode_path = os.path.join(root_path, 'leetcode')
+
 
 def question_to_link(str):
     if len(str.split(".")) != 2:
@@ -41,7 +42,6 @@ def file_format_writer(problem_name, problem_link, companies_str):
                 print("Invalid Leetcode Problem")
                 exit(1)
 
-
     companies_str = companies_str.replace(
         " ", "").replace("|", ",").replace("__", "_")
     return f'''#include <bits/stdc++.h>
@@ -65,6 +65,7 @@ int main(){"{"}
 {"}"}
 
     '''
+
 
 if platform == 'leetcode':
     problem_link = question_to_link(problem_name)
@@ -134,6 +135,13 @@ for lang in [create_cpp, create_python, create_javascript]:
             print("File already exists")
 
 
-print(file_format_writer(problem_name=problem_name,problem_link=problem_link, companies_str=companies_str))
+print(file_format_writer(problem_name=problem_name, problem_link=problem_link, companies_str=companies_str))
 for x in [python, cpp, javascript]:
     print(x)
+
+
+print(file_format_writer()())
+
+
+# find sum of 10 natural numbers
+x = []
