@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Following the String"
+problem_name = "B. Bad Boy"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
