@@ -2,6 +2,24 @@
 typedef long long ll;
 using namespace std;
 
+// Approach to the question:
+// Deductions were on points... i was able to figure out the max distance anton 
+// has to travel is corner... if you draw mxn matrix... and place (i,j) riley throwing
+// two yoyo... you will notice... if anton had two pick one yoyo it will be the farthest 
+// distance... but what about two... its also the farthest distance
+// since then anthon have to travel from one end to another
+
+// Learnings from question:
+// My initial deductions to problem were correct but had one flaw
+// i considered only 2 distances... like
+// Initial  -> yoyo1
+// Initial  -> yoyo2
+// I missed a point where you have to travel from yoyo1 to yoyo2
+// so the answer is:
+// sum of all mahattan_distance()
+// i.e inital_to_yoyo1 + yoyo1_to_yoyo2 + yoyo2_to_inital
+
+
 class Solution {
    public:
     void solve(ll n, ll m, ll i, ll j) {
