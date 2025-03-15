@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Floor or Ceil"
+problem_name = "A. Oath of the Night's Watch"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
