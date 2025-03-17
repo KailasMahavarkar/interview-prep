@@ -1,5 +1,5 @@
 import os
-problem_name = "C. Two Colors"
+problem_name = "A. Distance and Axis"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
