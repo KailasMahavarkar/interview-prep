@@ -7,9 +7,10 @@ typedef long long ll;
 // Fibo(x) = Fibo(a) + Fibo(b) + Fibo(0)
 // and i was trying to find two numbers
 
-// greedy misleads... i was able to narrow down to per say
-// we dont need 'c' but i failed to narrow down further
-// its stupidly insane... you dont need 'b' terms as well
+// greedy misleads... i was able to narrow down 
+// Fibo(x) = Fibo(a) + Fibo(b) + Fibo(0)
+// we dont need 'b' terms as well (my intuition half failed)
+// its stupidly insane
 // fibo(x) = fibo(x) + fibo(0) + fibo(0) is always valid
 
 class Solution {
