@@ -2,7 +2,14 @@
 #include <vector>
 using namespace std;
 
-// codeforces: C. Two Colors
+/*
+    Problem Name   : C. Two Colors 
+    Problem Link   : https://codeforces.com/contest/2075/problem/C
+    Company Tags   : None
+    Youtube Link   : None
+    Custom  Link   : None
+    Similarities   : None
+*/
 
 class Solution {
    public:

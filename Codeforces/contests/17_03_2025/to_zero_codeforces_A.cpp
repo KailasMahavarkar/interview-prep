@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Problem Name   : A. To Zero
+    Problem Link   : https://codeforces.com/contest/2075/problem/A
+    Company Tags   : None
+    Youtube Link   : None
+    Custom  Link   : None
+    Similarities   : None
+*/
+
 class Solution {
    public:
     int solve(int n, int k) {
