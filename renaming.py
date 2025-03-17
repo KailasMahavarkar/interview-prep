@@ -1,5 +1,5 @@
 import os
-problem_name = "A. Distance and Axis"
+problem_name = "A. Hexadecimal's theorem"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
