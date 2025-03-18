@@ -1,5 +1,5 @@
 import os
-problem_name = "A. Hexadecimal's theorem"
+problem_name = "B. Not Dividing"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
@@ -138,10 +138,3 @@ for lang in [create_cpp, create_python, create_javascript]:
 print(file_format_writer(problem_name=problem_name, problem_link=problem_link, companies_str=companies_str))
 for x in [python, cpp, javascript]:
     print(x)
-
-
-print(file_format_writer()())
-
-
-# find sum of 10 natural numbers
-x = []
