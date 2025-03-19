@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Not Dividing"
+problem_name = "B. Sakurako and Water"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
