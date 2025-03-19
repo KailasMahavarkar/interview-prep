@@ -47,36 +47,35 @@ class Solution {
             }
         }
 
-        cout << answer << endl;
+        cout << (answer == INT_MAX ? 0 : answer) << endl;
     }
 };
 
 int main() {
     Solution sol;
-    // int t;
-    // cin >> t;
-    // while (t--) {
-    //     int line;
-    //     cin >> line;
+    int t;
+    cin >> t;
+    while (t--) {
+        int line;
+        cin >> line;
 
-    //     vector<vector<int>> matrix(line, vector<int>(line));
-    //     for (int i = 0; i < line; ++i) {
-    //         for (int j = 0; j < line; ++j) {
-    //             cin >> matrix[i][j];
-    //         }
-    //     }
+        vector<vector<int>> matrix(line, vector<int>(line));
+        for (int i = 0; i < line; ++i) {
+            for (int j = 0; j < line; ++j) {
+                cin >> matrix[i][j];
+            }
+        }
 
-    //     sol.solve(matrix);
-    // }
+        sol.solve(matrix);
+    }
 
-    vector<vector<int>> matrix = {
-        {1, 1, -1, -1, 3},
-        {-3, 1, 4, 4, -4},
-        {-1, -1, 3, 0, -5},
-        {4, 5, 3, -3, -1},
-        {3, 1, -3, -1, 5}};
-
-    sol.solve(matrix);
+    // vector<vector<int>> matrix = {
+    //     {1, 1, -1, -1, 3},
+    //     {-3, 1, 4, 4, -4},
+    //     {-1, -1, 3, 0, -5},
+    //     {4, 5, 3, -3, -1},
+    //     {3, 1, -3, -1, 5}};
+    // sol.solve(matrix);
 
     return 0;
 }
