@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Permutation Sort"
+problem_name = "A. Painting the Ribbon"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
@@ -49,6 +49,7 @@ using namespace std;
 #pragma GCC optimize("O3,unroll-loops")
 
 /*
+    Problem Name   : None
     Problem Link   : {problem_link}
     Company Tags   : None
     Youtube Link   : None
