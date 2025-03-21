@@ -1,5 +1,5 @@
 import os
-problem_name = "A. Make It Zero"
+problem_name = "B. Permutation Sort"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
