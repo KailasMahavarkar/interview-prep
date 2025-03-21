@@ -1,5 +1,5 @@
 import os
-problem_name = "A. Painting the Ribbon"
+problem_name = "B. Battle for Survive"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
