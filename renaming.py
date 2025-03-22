@@ -1,6 +1,6 @@
 import os
-problem_name = "1283. Find the Smallest Divisor Given a Threshold"
-platform = 'leetcode'
+problem_name = "A. Wizard of Orz"
+platform = 'codeforces'
 companies_str = ''
 obsidian = False
 create_cpp = False
