@@ -1,6 +1,6 @@
 import os
-problem_name = "B. Battle for Survive"
-platform = 'codeforces'
+problem_name = "1283. Find the Smallest Divisor Given a Threshold"
+platform = 'leetcode'
 companies_str = ''
 obsidian = False
 create_cpp = False
