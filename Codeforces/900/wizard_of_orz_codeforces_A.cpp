@@ -2,6 +2,18 @@
 using namespace std;
 #define ll long long
 
+// best solution is always to flip the 2nd panel on time t=8
+// this makes sure adjecent left and right panel will be at 9
+// 0 0 0 0 0 0 0
+// 0 8 0 0 0 0 0  <- flip 2nd panel at t=8
+// 9 8 9 0 0 0 0  <- t = 9  [adjacent panels will be flipped to 9]
+// 9 8 9 0 0 0 0  <- t = 10 [panel adjacent to 9 will increment to 10 -> but is 0 (due to recurring loop)]
+//       |
+//    this stays 0 why? 9 + 1 = 10 -> becomes 0 (recurring loop)
+// 9 8 9 0 1 0 0  <- t = 11
+// 9 8 9 0 1 2 0  <- t = 12
+// 9 8 9 0 1 2 3  <- t = 13
+
 class Solution {
    public:
     void solve(int n) {
@@ -53,15 +65,17 @@ class Solution {
 
 int main() {
     Solution sol;
-    int t, n;
-    cin >> t;
+    // int t, n;
+    // cin >> t;
 
-    while (t--) {
-        cin >> n;
-        sol.solve(n);
+    // while (t--) {
+    //     cin >> n;
+    //     sol.solve(n);
+    // }
+
+    for (int i = 0; i < 10; i++) {
+        sol.solve(i);
     }
-
-    // sol.solve(30);
 
     return 0;
 }
