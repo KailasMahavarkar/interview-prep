@@ -1,5 +1,5 @@
 import os
-problem_name = "B. MKnez's ConstructiveForces Task"
+problem_name = "B. Mark the Dust Sweeper"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
