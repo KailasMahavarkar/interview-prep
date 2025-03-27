@@ -33,11 +33,11 @@ class Solution {
         ll n = a.size();
 
         ll sum = 0;
-        bool ok = false;
+        bool activeMode = false;
         for (ll i = 0; i < n - 1; i++) {
-            if (a[i]) ok = true;
+            if (a[i]) activeMode = true;
 
-            if (ok && a[i] == 0) {
+            if (activeMode && a[i] == 0) {
                 sum++;
             } else {
                 sum += a[i];
