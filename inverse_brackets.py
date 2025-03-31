@@ -19,12 +19,12 @@ def inverse_brackets(str="", inverseQuotes=False):
     if inverseQuotes:
         if str.find('"') != -1:
             return str.replace('"', "'").strip()
-        else:
-            return str.replace("'", '"').strip()
-
+        return str.replace("'", '"').strip()
     return str.strip()
 
 
-print(inverse_brackets(
-    testcase, inverseQuotes=True
-))
+print(
+    inverse_brackets(
+        testcase, inverseQuotes=True
+    )
+)
