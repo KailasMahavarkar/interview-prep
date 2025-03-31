@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Mark the Dust Sweeper"
+problem_name = "A. Nastia and Nearly Good Numbers"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
