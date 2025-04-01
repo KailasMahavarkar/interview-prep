@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Card Game"
+problem_name = "A. Mahmoud and Longest Uncommon Subsequence"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
