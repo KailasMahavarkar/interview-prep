@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Present from Lena"
+problem_name = "B. Olya and Game with Arrays"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
