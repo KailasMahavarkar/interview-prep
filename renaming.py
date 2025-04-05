@@ -1,5 +1,5 @@
 import os
-problem_name = "B. Different Divisors"
+problem_name = "B. Present from Lena"
 platform = 'codeforces'
 companies_str = ''
 obsidian = False
