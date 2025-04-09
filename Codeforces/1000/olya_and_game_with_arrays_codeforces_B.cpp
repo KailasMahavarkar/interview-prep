@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll; 
+typedef long long ll;
+
+// Lets t
+//     [1001, 7, 1007, 5]
+//     [8, 11, 6]
+//     [2, 9]
 
 class Solution {
    public:
