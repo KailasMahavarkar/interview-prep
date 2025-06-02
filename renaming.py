@@ -1,6 +1,6 @@
 import os
-problem_name = "C. Numbers on Whiteboard"
-platform = 'codeforces'
+problem_name = "3372. Maximize the Number of Target Nodes After Connecting Trees I"
+platform = 'leetcode'
 companies_str = ''
 obsidian = False
 create_cpp = False
