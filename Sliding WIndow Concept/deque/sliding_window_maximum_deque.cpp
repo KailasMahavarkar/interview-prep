@@ -134,11 +134,14 @@ class Solution {
             // result        = [3, 3, 5, 5, 6, 7] (max = arr[7] = 7)
             // -------------------------------------------------------------------
 
+            // remove outdated element from window (not part of current widow)
             while (!windowIndexed.empty() && windowIndexed.front() <= i - k) {
                 windowIndexed.pop_front();
                 window.pop_front();
             }
 
+
+            // maintain monotonic decreasing property
             while (!windowIndexed.empty() && arr[i] >= arr[windowIndexed.back()]) {
                 windowIndexed.pop_back();
                 window.pop_back();
