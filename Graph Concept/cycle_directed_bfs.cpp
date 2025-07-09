@@ -49,7 +49,7 @@ class Solution {
 int main() {
     Solution sol;
     vector<int> arr[] = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}};
-    bool ans = sol.isCyclic(4, arr);
+    bool ans = sol.isCyclic(5, arr);
     cout << boolalpha << "contains cycle: " << ans << endl;
     return 0;
 }
