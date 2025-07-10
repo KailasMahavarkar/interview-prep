@@ -19,6 +19,11 @@ class Solution {
                 int v = edge[1];
                 int wt = edge[2];
 
+                // lets say A->B is a edge we are checking for
+                // here u -> A
+                // here v -> B
+                // we are checking if u(current source) + edge weight (wt) < v (we are about to go)
+                // then we found much shorter path... so update v (node)
                 if (result[u] != 1e8 && result[u] + wt < result[v]) {
                     result[v] = result[u] + wt;
                 }
