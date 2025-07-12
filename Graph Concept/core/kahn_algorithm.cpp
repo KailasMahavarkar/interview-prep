@@ -4,6 +4,7 @@
 #include <queue>
 #include <unordered_map>
 #include <vector>
+#include <list>
 #pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
@@ -58,7 +59,7 @@ class Solution {
 int main() {
     Solution sol;
     int V = 5;
-    vector<int> arr[V] = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}};
+    vector<int> arr[] = {{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}};
     vector<int> ans = sol.topoSort(V, arr);
 
     cout << "Topological Sorting Order: ";
