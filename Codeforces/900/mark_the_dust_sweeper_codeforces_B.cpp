@@ -1,4 +1,9 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <tuple>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 typedef long long ll;
 

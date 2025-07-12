@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <iterator>
+#include <string>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 // Form a palindrome (minimum number of insertions to make a string pallindrome)

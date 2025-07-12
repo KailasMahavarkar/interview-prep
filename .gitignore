@@ -57,3 +57,4 @@ learning.py
 *.class
 
 .env
+.vscode/

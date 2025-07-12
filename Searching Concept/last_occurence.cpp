@@ -2,6 +2,7 @@
 #include <array>
 #include <iostream>
 #include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 vector<int> binarySearch(vector<int> arr, int target) {

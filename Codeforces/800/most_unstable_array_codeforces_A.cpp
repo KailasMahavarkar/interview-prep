@@ -1,4 +1,5 @@
 #include <iostream>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 class Solution {

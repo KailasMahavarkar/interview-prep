@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <string>
+#include <utility>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 void reverse(string &str, int i, int j)

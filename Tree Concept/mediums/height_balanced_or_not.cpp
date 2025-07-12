@@ -3,6 +3,7 @@
 #include <queue>
 #include <stack>
 #include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 
 using namespace std;
 

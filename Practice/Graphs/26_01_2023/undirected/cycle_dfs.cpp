@@ -1,5 +1,9 @@
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 //{ Driver Code Starts
-#include <bits/stdc++.h>
 using namespace std;
 
 class Solution {

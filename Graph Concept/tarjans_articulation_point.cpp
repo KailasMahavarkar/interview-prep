@@ -2,6 +2,7 @@
 #include <iostream>
 #include <unordered_set>
 #include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 class BridgeFinder {

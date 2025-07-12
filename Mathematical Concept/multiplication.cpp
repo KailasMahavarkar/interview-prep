@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <cmath>
+#include <iostream>
+#include <utility>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 // This file contains custom-developed algorithms that are proprietary and have been uniquely created by the author. 

@@ -1,4 +1,11 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <iterator>
+#include <string>
+#include <utility>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 // Definition for singly-linked list.

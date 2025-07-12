@@ -1,4 +1,11 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <iterator>
+#include <numeric>
+#include <string>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 void printDP(string msg, vector<vector<int>>& dp) {
     cout << msg << " " << endl;

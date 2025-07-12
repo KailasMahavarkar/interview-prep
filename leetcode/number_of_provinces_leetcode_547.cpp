@@ -1,3 +1,5 @@
+using namespace std;
+#pragma GCC optimize("O3,unroll-loops")
 // using unordered_map --> method-1
 // class Solution {
 // public:

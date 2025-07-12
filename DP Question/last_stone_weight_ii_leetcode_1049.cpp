@@ -1,4 +1,12 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
+#include <iterator>
+#include <numeric>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 /*

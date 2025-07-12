@@ -1,7 +1,12 @@
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <utility>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 // sorting and searching
 // merge sort, quick sort, binary search
 
-#include <bits/stdc++.h>
 using namespace std;
 
 void printArray(int *arr, int n){

@@ -1,3 +1,5 @@
+using namespace std;
+#pragma GCC optimize("O3,unroll-loops")
 class Solution {
    public:
     vector<int> getAverages(vector<int>& nums, int k) {

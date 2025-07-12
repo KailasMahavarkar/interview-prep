@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <iterator>
+#include <stack>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 // Monotonic Stacks ensure that elements inside the stack are arranged

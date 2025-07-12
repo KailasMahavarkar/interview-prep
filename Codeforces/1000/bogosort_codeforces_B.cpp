@@ -1,4 +1,9 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <iterator>
+#include <tuple>
+#include <vector>
 using namespace std;
 #pragma GCC optimize("O3,unroll-loops")
 
@@ -24,7 +29,6 @@ using namespace std;
 // Approach-1 (Normal)
 // TC : O(n)
 // SC : O(1)
-#include <bits/stdc++.h>
 using namespace std;
 
 class Solution {

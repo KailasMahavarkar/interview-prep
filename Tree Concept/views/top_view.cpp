@@ -1,5 +1,12 @@
-#include <bits/stdc++.h>
-
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <iterator>
+#include <map>
+#include <queue>
+#include <utility>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 struct Node {

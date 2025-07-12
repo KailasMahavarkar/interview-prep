@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 // Example: n = 10 | m = 3 | k = 3

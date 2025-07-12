@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <cmath>
+#include <iostream>
+#include <string>
+#include <vector>
+#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 
 /*
@@ -12,7 +18,6 @@ using namespace std;
 // TC : O(n)
 // SC : O(n)
 
-#include <bits/stdc++.h>
 using namespace std;
 
 class SolutionNaive {

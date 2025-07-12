@@ -1,3 +1,5 @@
+using namespace std;
+#pragma GCC optimize("O3,unroll-loops")
 class Solution {
    public:
     int search(vector<int> &arr, int target) {

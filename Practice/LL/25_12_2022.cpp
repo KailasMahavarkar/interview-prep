@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#pragma GCC optimize("O3,unroll-loops")
 
 using namespace std;
 
