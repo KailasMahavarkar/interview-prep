@@ -18,16 +18,17 @@ class Solution {
         visited[curr] = true;
         recursionStack[curr] = true;
 
-        for (int &child : adj[curr]) {
-            // if not visited then we check for cycle in DFS
-            if (visited[child] == false) {
-                if (isCycleDFS(child, adj)) {
+        for (int &neighbour : adj[curr]) {
+            // if neighbour node is not visited we will visit
+            // if there exists a cycle from that neighbour edge we mark cycle
+            if (!visited[neighbour]) {
+                if (isCycleDFS(neighbour, adj)) {
                     return true;
                 }
             }
 
             // visited and it is in current recursion
-            if (recursionStack[child]) {
+            if (recursionStack[neighbour]) {
                 return true;
             }
         }

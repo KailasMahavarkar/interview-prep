@@ -26,14 +26,15 @@ class DSU {
 
 int main() {
     DSU sol;
+    //                    A  B  C  D  E  F  G  H
     vector<int> parent = {0, 1, 2, 3, 4, 5, 6, 7};
-    sol.unionSet(parent, 0, 1);
-    sol.unionSet(parent, 2, 3);
-    sol.unionSet(parent, 4, 5);
-    sol.unionSet(parent, 6, 7);
-    sol.unionSet(parent, 0, 2);
-    sol.unionSet(parent, 4, 6);
-    sol.unionSet(parent, 0, 4);
+    sol.unionSet(parent, 0, 1);  // A -> B
+    sol.unionSet(parent, 2, 3);  // C -> D
+    sol.unionSet(parent, 4, 5);  // E -> F
+    sol.unionSet(parent, 6, 7);  // G -> H
+    sol.unionSet(parent, 0, 2);  // A -> C
+    sol.unionSet(parent, 4, 6);  // E -> G
+    sol.unionSet(parent, 0, 4);  // A -> E
     cout << sol.find(parent, 3) << endl;
     return 0;
 }
