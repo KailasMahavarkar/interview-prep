@@ -1,25 +1,36 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "Mac",
             "includePath": [
-                "c:/cpp/**"
+                "${workspaceFolder}/**",
+                "/usr/local/include",
+                "/opt/homebrew/include",
+                "/Library/Developer/CommandLineTools/usr/include/c++/v1",
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
+                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "__cplusplus=201703L"
             ],
-            "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "C:/codingInstallations/MinGW/bin/gcc.exe",
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang++",
             "cStandard": "c17",
-            "intelliSenseMode": "${default}",
             "cppStandard": "c++17",
-            "mergeConfigurations": false,
+            "intelliSenseMode": "macos-clang-arm64",
+            "compilerArgs": [
+                "-std=c++17",
+                "-stdlib=libc++"
+            ],
             "browse": {
                 "path": [
-                    "c:/cpp/**",
-                    "${workspaceFolder}"
+                    "${workspaceFolder}/**",
+                    "/usr/local/include",
+                    "/opt/homebrew/include",
+                    "/Library/Developer/CommandLineTools/usr/include/c++/v1"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }

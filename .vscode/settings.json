@@ -108,5 +108,16 @@
         "text_encoding": "cpp",
         "thread": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.formatting": "disabled",
+    "clangd.arguments": [
+        "--std=c++17",
+        "--stdlib=libc++",
+        "--header-insertion=never",
+        "--completion-style=detailed",
+        "--function-arg-placeholders=false",
+        "--fallback-style=google"
+    ],
+    "clangd.serverCompletionRanking": true
 }
