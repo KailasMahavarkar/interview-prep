@@ -49,14 +49,9 @@ class Solution {
 };
 
 int main() {
-    // string str1 = "abcde";
-    // string str2 = "ace";
-    // Solution sol;
-    // int ans = sol.longestCommonSubsequence(str1, str2);
-    // cout << "ans --> " << ans << endl;
-
-    cout << boolalpha << (false == 0) << endl;
+    string str1 = "abcde";
+    string str2 = "ace";
+    Solution sol;
+    int ans = sol.longestCommonSubsequence(str1, str2);
+    cout << "ans --> " << ans << endl;
 }
-
-
-

@@ -13843,3 +13843,691 @@
 2025-08-02 16:17:58,406 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.gitignore (hash: ccacad4ba0cc0cc2, ratio: 1.57x)
 2025-08-02 16:18:32,565 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.gitignore (hash: 05afa4dde91f0497, ratio: 1.49x)
 2025-08-02 16:18:36,678 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.gitignore (hash: f2a082a9afa33701, ratio: 1.52x)
+2025-08-02 16:22:47,209 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.gitignore (hash: 8b438f91aee09e22, ratio: 1.52x)
+2025-08-02 16:22:57,318 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.gitignore (hash: a534a66279951824, ratio: 1.53x)
+2025-08-02 16:24:20,595 - INFO - Starting Redis File Watcher
+2025-08-02 16:24:20,601 - INFO - Loaded 9 ignore patterns
+2025-08-02 16:24:20,748 - INFO - Connected to Redis at redis-11803.c301.ap-south-1-1.ec2.redns.redis-cloud.com:11803
+2025-08-02 16:24:20,834 - INFO - Loaded 664 existing file hashes
+2025-08-02 16:24:20,834 - INFO - Starting initial file sync...
+2025-08-02 16:24:20,835 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/test.py
+2025-08-02 16:24:20,837 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/ReadMe.md
+2025-08-02 16:24:20,839 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/convert_headers.py
+2025-08-02 16:24:20,845 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/compile_flags.txt
+2025-08-02 16:24:20,846 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/renaming.py
+2025-08-02 16:24:20,848 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/count_sm.py
+2025-08-02 16:24:20,849 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/LICENSE.txt
+2025-08-02 16:24:20,850 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/header_converter.sh
+2025-08-02 16:24:20,851 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/inverse_brackets.py
+2025-08-02 16:24:20,852 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Matrix Concept/submatrix.cpp
+2025-08-02 16:24:20,853 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Matrix Concept/matrix.cpp
+2025-08-02 16:24:20,854 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Matrix Concept/subarray_sum_equals_k.cpp
+2025-08-02 16:24:20,854 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Searching Concept/last_occurence.cpp
+2025-08-02 16:24:20,855 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Searching Concept/peek_element.cpp
+2025-08-02 16:24:20,856 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Searching Concept/binary_search.cpp
+2025-08-02 16:24:20,857 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Searching Concept/search_in_rotated_sorted_array_leetcode_33.cpp
+2025-08-02 16:24:20,859 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Searching Concept/missing_element.cpp
+2025-08-02 16:24:20,860 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Searching Concept/k-diff_pairs_in_an_array_leetcode_532.cpp
+2025-08-02 16:24:20,860 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/alien_dictionary_leetcode_GFG.cpp
+2025-08-02 16:24:20,861 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/rotting_oranges_leetcode_994.cpp
+2025-08-02 16:24:20,862 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/cycle_detection_directed_bfs.cpp
+2025-08-02 16:24:20,863 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/distance_of_nearest_cell_having_1.cpp
+2025-08-02 16:24:20,863 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/number_of_islands.cpp
+2025-08-02 16:24:20,865 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/alien_dictionary.cpp
+2025-08-02 16:24:20,866 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/cycle_detection_directed_dfs.cpp
+2025-08-02 16:24:20,866 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/find_eventual_safe_states_leetcode_802.cpp
+2025-08-02 16:24:20,867 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/cycle_detection_undirected_bfs.cpp
+2025-08-02 16:24:20,867 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance_leetcode_1334.cpp
+2025-08-02 16:24:20,869 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/number_of_provinces.cpp
+2025-08-02 16:24:20,870 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/all_ancestors_of_a_node_in_a_directed_acyclic_graph_leetcode_2192.cpp
+2025-08-02 16:24:20,870 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/shortest_path_in_undirected_graph_having_unit_distance_leetcode_GFG.cpp
+2025-08-02 16:24:20,871 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/path_with_minimum_effort.cpp
+2025-08-02 16:24:20,872 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/word_ladder_leetcode_127.cpp
+2025-08-02 16:24:20,872 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/graph_path_similarity.cpp
+2025-08-02 16:24:20,873 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/parallel_course.cpp
+2025-08-02 16:24:20,874 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/swim_in_rising_water_leetcode_778.cpp
+2025-08-02 16:24:20,874 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/surrounded_regions_leetcode_130.cpp
+2025-08-02 16:24:20,875 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/course_schedule.cpp
+2025-08-02 16:24:20,876 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/number_of_enclaves_leetcode_1020.cpp
+2025-08-02 16:24:20,877 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/sequence_reconstruction_leetcode_444.cpp
+2025-08-02 16:24:20,878 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/2_color_dfs.cpp
+2025-08-02 16:24:20,879 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/2_color.cpp
+2025-08-02 16:24:20,879 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/count_unreachable_pairs.cpp
+2025-08-02 16:24:20,880 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/shortest_path_in_directed_acyclic_graph_leetcode_GFG.cpp
+2025-08-02 16:24:20,880 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/network_delay_time.cpp
+2025-08-02 16:24:20,881 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/cycle_detection_undirected.cpp
+2025-08-02 16:24:20,882 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/flood_fill.cpp
+2025-08-02 16:24:20,882 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Question/course_schedule_ii.cpp
+2025-08-02 16:24:20,883 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Two Pointer Question/append_characters_to_string_to_make_subsequence_leetcode_2486.cpp
+2025-08-02 16:24:20,883 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Google Interview Questions/minimum_area_rectangle_leetcode_939.cpp
+2025-08-02 16:24:20,884 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Google Interview Questions/separate_squares_i_leetcode_3453.cpp
+2025-08-02 16:24:20,884 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Google Interview Questions/MaximumWatchtowerProfit.cpp
+2025-08-02 16:24:20,887 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Google Interview Questions/DuplicatesBasedONProperties.cpp
+2025-08-02 16:24:20,888 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Google Interview Questions/minimum_area_rectangle_ii_leetcode_963.cpp
+2025-08-02 16:24:20,889 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Google Interview Questions/DifferWithInsertionOfOnePhase.cpp
+2025-08-02 16:24:20,889 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Concept/xor_masking.cpp
+2025-08-02 16:24:20,890 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Concept/bitset.cpp
+2025-08-02 16:24:20,890 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Matrix Question/largest_local_values_in_a_matrix_leetcode_2373.cpp
+2025-08-02 16:24:20,890 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tools/canvas_to_json.py
+2025-08-02 16:24:20,892 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/failed_test_case.txt
+2025-08-02 16:24:20,892 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/failed_test_case.py
+2025-08-02 16:24:20,893 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/make_it_zero_codeforces_A.cpp
+2025-08-02 16:24:20,893 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/following_the_string_codeforces_B.cpp
+2025-08-02 16:24:20,894 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/gorilla_and_permutation_codeforces_C.cpp
+2025-08-02 16:24:20,895 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/not_dividing_codeforces_B.cpp
+2025-08-02 16:24:20,895 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/hexadecimal's_theorem_codeforces_A.cpp
+2025-08-02 16:24:20,895 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/minimize_inversions_codeforces_B.cpp
+2025-08-02 16:24:20,895 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/permutation_sort_codeforces_B.cpp
+2025-08-02 16:24:20,896 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/mark_the_dust_sweeper_codeforces_B.cpp
+2025-08-02 16:24:20,897 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/distance_and_axis_codeforces_A.cpp
+2025-08-02 16:24:20,897 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/oath_of_the_night's_watch_codeforces_A.cpp
+2025-08-02 16:24:20,898 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/wizard_of_orz_codeforces_A.cpp
+2025-08-02 16:24:20,898 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/ban_ban_codeforces_B.cpp
+2025-08-02 16:24:20,898 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/mocha_and_math_codeforces_A.cpp
+2025-08-02 16:24:20,899 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/sakurako_and_water_codeforces_B.cpp
+2025-08-02 16:24:20,899 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/gcd_problem_codeforces_B.cpp
+2025-08-02 16:24:20,900 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/bad_boy_codeforces_B.cpp
+2025-08-02 16:24:20,901 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/construct_the_string_codeforces_B.cpp
+2025-08-02 16:24:20,901 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/dominant_piranha_codeforces_C.cpp
+2025-08-02 16:24:20,902 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/painting_the_ribbon_codeforces_A.cpp
+2025-08-02 16:24:20,902 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/battle_for_survive_codeforces_B.cpp
+2025-08-02 16:24:20,902 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/900/mknez's_constructiveforces_task_codeforces_B.cpp
+2025-08-02 16:24:20,903 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/olya_and_game_with_arrays_codeforces_B.cpp
+2025-08-02 16:24:20,904 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/two_divisors_codeforces_B.cpp
+2025-08-02 16:24:20,905 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/shoe_shuffling_codeforces_B.cpp
+2025-08-02 16:24:20,905 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/card_game_codeforces_B.cpp
+2025-08-02 16:24:20,906 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/progressive_square_codeforces_B.cpp
+2025-08-02 16:24:20,906 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/regular_bracket_sequence_codeforces_A.cpp
+2025-08-02 16:24:20,906 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/lovely_palindromes_codeforces_B.cpp
+2025-08-02 16:24:20,906 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/not_adjacent_matrix_codeforces_C.cpp
+2025-08-02 16:24:20,907 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/mahmoud_and_a_triangle_codeforces_B.cpp
+2025-08-02 16:24:20,907 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/bad_ugly_numbers_codeforces_A.cpp
+2025-08-02 16:24:20,908 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/different_divisors_codeforces_B.cpp
+2025-08-02 16:24:20,908 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/nastia_and_nearly_good_numbers_codeforces_A.cpp
+2025-08-02 16:24:20,909 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/assembly_via_remainders_codeforces_C.cpp
+2025-08-02 16:24:20,909 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/numbers_on_whiteboard_codeforces_C.cpp
+2025-08-02 16:24:20,910 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/present_from_lena_codeforces_B.cpp
+2025-08-02 16:24:20,910 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/k-divisible_sum_codeforces_A.cpp
+2025-08-02 16:24:20,911 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/sages_birthday_codeforces_D1.cpp
+2025-08-02 16:24:20,911 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/mahmoud_and_longest_uncommon_subsequence_codeforces_A.cpp
+2025-08-02 16:24:20,912 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/1000/balanced_remainders_codeforces_B.cpp
+2025-08-02 16:24:20,912 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/grasshopper_on_a_line_codeforces_A.cpp
+2025-08-02 16:24:20,913 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/anton_and_letters_codeforces_A.cpp
+2025-08-02 16:24:20,913 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/free_ice_cream_codeforces_A.cpp
+2025-08-02 16:24:20,913 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/print_a_pedestal_codeforces.cpp
+2025-08-02 16:24:20,913 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/sakurako_and_kosuke_codeforces_A.cpp
+2025-08-02 16:24:20,914 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/ehab_and_gcd_codeforces_A.cpp
+2025-08-02 16:24:20,914 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/united_we_stand_codeforces_A.cpp
+2025-08-02 16:24:20,915 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/special_permutation_codeforces_A.cpp
+2025-08-02 16:24:20,915 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/lcm_problem_codeforces_A.cpp
+2025-08-02 16:24:20,915 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/make_it_beautiful_codeforces_A.cpp
+2025-08-02 16:24:20,916 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/buy_a_shovel_codeforces_A.cpp
+2025-08-02 16:24:20,916 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/skibidus_and_amog'u_codeforces_A.cpp
+2025-08-02 16:24:20,916 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/sasha_and_the_beautiful_array_codeforces_A.cpp
+2025-08-02 16:24:20,916 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/only_pluses_codeforces_A.cpp
+2025-08-02 16:24:20,916 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/sequence_game_codeforces_B.cpp
+2025-08-02 16:24:20,917 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/ichihime_and_triangle_codeforces_A.cpp
+2025-08-02 16:24:20,917 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/round_down_the_price_codeforces_A.cpp
+2025-08-02 16:24:20,917 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/balanced_array_codeforces_B.cpp
+2025-08-02 16:24:20,918 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/queue_at_the_school_codeforces_B.cpp
+2025-08-02 16:24:20,918 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/sakurako's_exam_codeforces_A.cpp
+2025-08-02 16:24:20,918 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/cover_in_water_codeforces_A.py cover_in_water_codeforces_A.cpp
+2025-08-02 16:24:20,919 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/most_unstable_array_codeforces_A.cpp
+2025-08-02 16:24:20,919 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/800/insomnia_cure_codeforces_A.cpp
+2025-08-02 16:24:20,920 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/contests/16_03_2025/binary_matrix_codeforces_A.cpp
+2025-08-02 16:24:20,920 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/contests/16_03_2025/floor_or_ceil_codeforces_B.cpp
+2025-08-02 16:24:20,920 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/contests/17_03_2025/to_zero_codeforces_A.cpp
+2025-08-02 16:24:20,921 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Codeforces/contests/17_03_2025/two_colors_codeforces_C.cpp
+2025-08-02 16:24:20,921 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sliding Window Question/count_subarrays_with_fixed_bounds_leetcode_2444.cpp.cpp
+2025-08-02 16:24:20,922 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sliding Window Question/count_subarrays_where_max_element_appears_at_least_k_times_leetcode_2962.cpp
+2025-08-02 16:24:20,923 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sliding Window Question/length_of_longest_subarray_with_at_most_k_frequency_leetcode_2958.cpp
+2025-08-02 16:24:20,923 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sliding Window Question/maximum_difference_between_even_and_odd_frequency_ii_leetcode_3445.cpp
+2025-08-02 16:24:20,923 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Playground/xor.py
+2025-08-02 16:24:20,924 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_number_of_arrows_to_burst_balloons_leetcode_452.py
+2025-08-02 16:24:20,924 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_provinces_leetcode_547.cpp
+2025-08-02 16:24:20,925 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/validate_stack_sequences_leetcode_946.cpp
+2025-08-02 16:24:20,925 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/swap_nodes_in_pairs_leetcode_24.cpp
+2025-08-02 16:24:20,925 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/last_stone_weight_leetcode_1046.cpp
+2025-08-02 16:24:20,925 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/pacific_atlantic_water_flow_leetcode_417.py
+2025-08-02 16:24:20,926 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/copy_list_with_random_pointer_leetcode_138.cpp
+2025-08-02 16:24:20,927 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_operations_to_reduce_x_to_zero_leetcode_1658.cpp
+2025-08-02 16:24:20,927 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/partition_array_into_two_arrays_to_minimize_sum_difference_leetcode_2035.cpp
+2025-08-02 16:24:20,928 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/ipo_leetcode_502.cpp
+2025-08-02 16:24:20,929 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/largest_3-same-digit_number_in_string_leetcode_2264.cpp
+2025-08-02 16:24:20,929 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/out_of_boundary_paths_leetcode_576.cpp
+2025-08-02 16:24:20,929 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/fruit_into_baskets_leetcode_904.cpp
+2025-08-02 16:24:20,929 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_original_array_from_doubled_array_leetcode_2007.py
+2025-08-02 16:24:20,930 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/max_sum_of_rectangle_no_larger_than_k_leetcode_363.cpp
+2025-08-02 16:24:20,930 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/non-decreasing_subsequences_leetcode_491.cpp
+2025-08-02 16:24:20,931 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/orderly_queue_leetcode_899.cpp
+2025-08-02 16:24:20,931 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_deletions_to_make_character_frequencies_unique_leetcode_1647.cpp
+2025-08-02 16:24:20,932 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/partition_equal_subset_sum_leetcode_416.cpp
+2025-08-02 16:24:20,933 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/partition_list_leetcode_86.cpp
+2025-08-02 16:24:20,934 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximal_network_rank_leetcode_1615.cpp
+2025-08-02 16:24:20,934 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_the_index_of_the_first_occurrence_in_a_string_leetcode_28.cpp
+2025-08-02 16:24:20,934 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimize_deviation_in_array_leetcode_1675.cpp
+2025-08-02 16:24:20,935 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximum_sum_circular_subarray_leetcode_918.py
+2025-08-02 16:24:20,935 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/binary_tree_zigzag_level_order_traversal_leetcode_103.cpp
+2025-08-02 16:24:20,936 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_closest_node_to_given_two_nodes_leetcode_2359.cpp
+2025-08-02 16:24:20,937 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/pascal's_triangle_leetcode_118.cpp
+2025-08-02 16:24:20,937 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/subarray_sums_divisible_by_k_leetcode_974.cpp
+2025-08-02 16:24:20,937 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/edit_distance_leetcode_72.cpp
+2025-08-02 16:24:20,938 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/the_number_of_weak_characters_in_the_game_leetcode_1996.py
+2025-08-02 16:24:20,938 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/palindrome_linked_list_leetcode_234.cpp
+2025-08-02 16:24:20,939 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/set_matrix_zeroes_leetcode_73.py
+2025-08-02 16:24:20,939 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_distance_between_bst_nodes_leetcode_783.cpp
+2025-08-02 16:24:20,939 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/restore_ip_addresses_leetcode_93.py
+2025-08-02 16:24:20,940 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/simplify_path_leetcode_71.cpp
+2025-08-02 16:24:20,940 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/string_compression_leetcode_443.py
+2025-08-02 16:24:20,940 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/design_graph_with_shortest_path_calculator_leetcode_2642.cpp
+2025-08-02 16:24:20,940 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/smallest_number_in_infinite_set_leetcode_2336.cpp
+2025-08-02 16:24:20,940 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/construct_string_from_binary_tree_leetcode_606.cpp
+2025-08-02 16:24:20,941 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/bus_routes_leetcode_815.cpp
+2025-08-02 16:24:20,941 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/satisfiability_of_equality_equations_leetcode_990.cpp
+2025-08-02 16:24:20,942 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_the_town_judge_leetcode_997.py
+2025-08-02 16:24:20,942 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_size_subarray_sum_leetcode_209.cpp
+2025-08-02 16:24:20,942 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_operations_to_make_network_connected_leetcode_1319.cpp
+2025-08-02 16:24:20,942 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/sort_characters_by_frequency_leetcode_451.cpp
+2025-08-02 16:24:20,943 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_rounds_to_complete_all_tasks_leetcode_2244.py
+2025-08-02 16:24:20,943 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/eliminate_maximum_number_of_monsters_leetcode_1921.cpp
+2025-08-02 16:24:20,943 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/restore_the_array_leetcode_1416.cpp
+2025-08-02 16:24:20,943 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximum_subsequence_score_leetcode_2542.cpp
+2025-08-02 16:24:20,944 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_nodes_in_the_sub-tree_with_the_same_label_leetcode_1519.cpp
+2025-08-02 16:24:20,944 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_time_difference_leetcode_539.py
+2025-08-02 16:24:20,944 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/spiral_matrix_leetcode_54.cpp
+2025-08-02 16:24:20,945 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximum_distance_in_arrays_leetcode_624.cpp
+2025-08-02 16:24:20,945 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/reordered_power_of_2_leetcode_869.py
+2025-08-02 16:24:20,945 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/valid_palindrome_ii_leetcode_680.cpp
+2025-08-02 16:24:20,945 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/fruit_into_baskets_leetcode_904.py
+2025-08-02 16:24:20,946 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/k_radius_subarray_averages_leetcode_2090.cpp
+2025-08-02 16:24:20,946 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/course_schedule_ii_leetcode_210.cpp
+2025-08-02 16:24:20,946 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximum_ice_cream_bars_leetcode_1833.py
+2025-08-02 16:24:20,946 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_unique_binary_string_leetcode_1980.cpp
+2025-08-02 16:24:20,947 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_provinces_leetcode_547(1).cpp
+2025-08-02 16:24:20,947 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximum_length_of_pair_chain_leetcode_646.cpp
+2025-08-02 16:24:20,948 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_all_anagrams_in_a_string_leetcode_438.cpp
+2025-08-02 16:24:20,948 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/power_of_three_326.py
+2025-08-02 16:24:20,948 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/longest_subsequence_with_limited_sum_leetcode_2389.py
+2025-08-02 16:24:20,949 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/word_pattern_leetcode_290.py
+2025-08-02 16:24:20,949 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/zigzag_conversion_leetcode_6.py
+2025-08-02 16:24:20,949 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_time_to_complete_trips_leetcode_2187.cpp
+2025-08-02 16:24:20,949 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_ways_to_divide_a_long_corridor_leetcode_2147.cpp
+2025-08-02 16:24:20,950 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_provinces_leetcode_547.py
+2025-08-02 16:24:20,950 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/two_sum_leetcode_1.py
+2025-08-02 16:24:20,950 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/number_of_subsequences_that_satisfy_the_given_sum_condition_leetcode_1498.cpp
+2025-08-02 16:24:20,950 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/min_cost_to_connect_all_points_leetcode_1584.cpp
+2025-08-02 16:24:20,952 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/same_tree_leetcode_100.py
+2025-08-02 16:24:20,952 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/text_justification_leetcode_68.cpp
+2025-08-02 16:24:20,953 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/kth_missing_positive_number_leetcode_1539.cpp
+2025-08-02 16:24:20,953 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/top_k_frequent_elements_leetcode_347.cpp
+2025-08-02 16:24:20,953 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/check_if_two_string_arrays_are_equivalent_leetcode_1662.cpp
+2025-08-02 16:24:20,954 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/maximize_the_number_of_target_nodes_after_connecting_trees_i_leetcode_3372.cpp
+2025-08-02 16:24:20,955 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/count_ways_to_build_good_strings_leetcode_2466.cpp
+2025-08-02 16:24:20,955 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/continuous_subarray_sum_leetcode_523.cpp
+2025-08-02 16:24:20,955 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/search_insert_position_leetcode_35.cpp
+2025-08-02 16:24:20,955 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/course_schedule_leetcode_207.cpp
+2025-08-02 16:24:20,956 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/diagonal_traverse_ii_leetcode_1424.cpp
+2025-08-02 16:24:20,957 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/kth_largest_element_in_an_array_leetcode_215.cpp
+2025-08-02 16:24:20,957 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimize_maximum_pair_sum_in_array_leetcode_1877.cpp
+2025-08-02 16:24:20,957 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/gas_station_leetcode_134.py
+2025-08-02 16:24:20,958 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/palindrome_partitioning_leetcode_131.cpp
+2025-08-02 16:24:20,958 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_cost_to_cut_a_stick_leetcode_1547.cpp
+2025-08-02 16:24:20,958 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/painting_a_grid_with_three_different_colors_leetcode_1931.cpp
+2025-08-02 16:24:20,959 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/detect_capital_leetcode_520.py
+2025-08-02 16:24:20,960 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/permutation_in_string_leetcode_567.cpp
+2025-08-02 16:24:20,960 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/max_area_of_island_leetcode_695.cpp
+2025-08-02 16:24:20,961 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/find_the_difference_leetcode_389.cpp
+2025-08-02 16:24:20,961 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/group_anagrams_leetcode_49.cpp
+2025-08-02 16:24:20,961 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/convert_sorted_list_to_binary_search_tree_leetcode_109.cpp
+2025-08-02 16:24:20,962 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/best_time_to_buy_and_sell_stock_ii_leetcode_122.cpp
+2025-08-02 16:24:20,962 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/validate_binary_search_tree_leetcode_98.cpp
+2025-08-02 16:24:20,963 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/removing_stars_from_a_string_leetcode_2390.cpp
+2025-08-02 16:24:20,963 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/champagne_tower_leetcode_799.cpp
+2025-08-02 16:24:20,963 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/remove_duplicate_letters_leetcode_316.cpp
+2025-08-02 16:24:20,963 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/subarray_sums_divisible_by_k_leetcode_974.py
+2025-08-02 16:24:20,964 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/sliding_window_maximum_leetcode_239.cpp
+2025-08-02 16:24:20,964 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_time_to_collect_all_apples_in_a_tree_leetcode_1443.cpp
+2025-08-02 16:24:20,964 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/decoded_string_at_index_leetcode_880.cpp
+2025-08-02 16:24:20,965 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/jump_game_iv_leetcode_1345.cpp
+2025-08-02 16:24:20,965 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/longest_palindromic_substring_leetcode_5.cpp
+2025-08-02 16:24:20,966 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/minimum_fuel_cost_to_report_to_the_capital_leetcode_2477.cpp
+2025-08-02 16:24:20,966 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/count_odd_numbers_in_an_interval_range_leetcode_1523.py
+2025-08-02 16:24:20,967 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/uncrossed_lines_leetcode_1035.cpp
+2025-08-02 16:24:20,967 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/best_time_to_buy_and_sell_stock_leetcode_121.cpp
+2025-08-02 16:24:20,968 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/swapping_nodes_in_a_linked_list_leetcode_1721.cpp
+2025-08-02 16:24:20,969 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/single_element_in_a_sorted_array_leetcode_540.cpp
+2025-08-02 16:24:20,969 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/merge_k_sorted_lists_leetcode_23.cpp
+2025-08-02 16:24:20,971 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/island_perimeter_leetcode_463.cpp
+2025-08-02 16:24:20,971 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/longest_subsequence_with_limited_sum_leetcode_2389.cpp
+2025-08-02 16:24:20,972 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/linked_list_cycle_ii_leetcode_142.cpp
+2025-08-02 16:24:20,972 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/perfect_squares_leetcode_279.cpp
+2025-08-02 16:24:20,973 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/leetcode/count_subarrays_with_fixed_bounds_leetcode_2444.cpp
+2025-08-02 16:24:20,973 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/binary_search_leetcode_704.cpp
+2025-08-02 16:24:20,974 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/koko_eating_bananas_leetcode_875/koko_eating_bananas_leetcode_875.cpp
+2025-08-02 16:24:20,975 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/koko_eating_bananas_leetcode_875/koko_eating_bananas_leetcode_875.py
+2025-08-02 16:24:20,975 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/search_in_rotated_sorted_array_leetcode_33/search_in_rotated_sorted_array_leetcode_33.py
+2025-08-02 16:24:20,976 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/search_in_rotated_sorted_array_leetcode_33/search_in_rotated_sorted_array_leetcode_33.cpp
+2025-08-02 16:24:20,976 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_first_and_last_position_of_element_in_sorted_array_leetcode_34/find_first_and_last_position_of_element_in_sorted_array_leetcode_34.cpp
+2025-08-02 16:24:20,977 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_first_and_last_position_of_element_in_sorted_array_leetcode_34/find_first_and_last_position_of_element_in_sorted_array_leetcode_34.py
+2025-08-02 16:24:20,977 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/valid_perfect_square_leetcode_367/valid_perfect_square_leetcode_367.py
+2025-08-02 16:24:20,978 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/valid_perfect_square_leetcode_367/valid_perfect_square_leetcode_367.cpp
+2025-08-02 16:24:20,978 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/capacity_to_ship_packages_within_d_days_leetcode_1011/capacity_to_ship_packages_within_d_days_leetcode_1011.cpp
+2025-08-02 16:24:20,979 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/capacity_to_ship_packages_within_d_days_leetcode_1011/capacity_to_ship_packages_within_d_days_leetcode_1011.py
+2025-08-02 16:24:20,979 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/peak_index_in_a_mountain_array_leetcode_852/peak_index_in_a_mountain_array_leetcode_852.py
+2025-08-02 16:24:20,980 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/peak_index_in_a_mountain_array_leetcode_852/peak_index_in_a_mountain_array_leetcode_852.cpp
+2025-08-02 16:24:20,980 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/search_in_rotated_sorted_array_ii_leetcode_81/search_in_rotated_sorted_array_ii_leetcode_81.py
+2025-08-02 16:24:20,980 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/search_in_rotated_sorted_array_ii_leetcode_81/search_in_rotated_sorted_array_ii_leetcode_81.cpp
+2025-08-02 16:24:20,981 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_smallest_letter_greater_than_target_leetcode_744/find_smallest_letter_greater_than_target_leetcode_744.cpp
+2025-08-02 16:24:20,981 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_smallest_letter_greater_than_target_leetcode_744/find_smallest_letter_greater_than_target_leetcode_744.py
+2025-08-02 16:24:20,981 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_the_smallest_divisor_given_a_threshold_leetcode_1283/find_the_smallest_divisor_given_a_threshold_leetcode_1283.py
+2025-08-02 16:24:20,981 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_the_smallest_divisor_given_a_threshold_leetcode_1283/find_the_smallest_divisor_given_a_threshold_leetcode_1283.cpp
+2025-08-02 16:24:20,982 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_peak_element_leetcode_162/find_peak_element_leetcode_162.py
+2025-08-02 16:24:20,982 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_peak_element_leetcode_162/find_peak_element_leetcode_162.cpp
+2025-08-02 16:24:20,983 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/sqrtx_leetcode_69/sqrtx_leetcode_69.py
+2025-08-02 16:24:20,983 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/sqrtx_leetcode_69/sqrtx_leetcode_69.cpp
+2025-08-02 16:24:20,983 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/search_insert_position_leetcode_35/search_insert_position_leetcode_35.cpp
+2025-08-02 16:24:20,984 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/search_insert_position_leetcode_35/search_insert_position_leetcode_35.py
+2025-08-02 16:24:20,984 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_minimum_in_rotated_sorted_array_ii_leetcode_154/find_minimum_in_rotated_sorted_array_ii_leetcode_154.py
+2025-08-02 16:24:20,984 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_minimum_in_rotated_sorted_array_ii_leetcode_154/find_minimum_in_rotated_sorted_array_ii_leetcode_154.cpp
+2025-08-02 16:24:20,984 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_minimum_in_rotated_sorted_array_leetcode_153/find_minimum_in_rotated_sorted_array_leetcode_153.py
+2025-08-02 16:24:20,984 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Question/find_minimum_in_rotated_sorted_array_leetcode_153/find_minimum_in_rotated_sorted_array_leetcode_153.cpp
+2025-08-02 16:24:20,985 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/.claude/settings.local.json
+2025-08-02 16:24:20,985 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Question/path_with_maximum_gold_leetcode_1219.cpp
+2025-08-02 16:24:20,985 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Question/word_search_leetcode_79.cpp
+2025-08-02 16:24:20,986 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Question/palindrome_partitioning_leetcode_131.cpp
+2025-08-02 16:24:20,986 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Question/n-queens_leetcode_51.cpp
+2025-08-02 16:24:20,987 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Question/nqueen_safe.py
+2025-08-02 16:24:20,987 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Question/the_number_of_beautiful_subsets_leetcode_2597.cpp
+2025-08-02 16:24:20,988 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/sort_colors_leetcode_75.cpp
+2025-08-02 16:24:20,988 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/negative_to_left.cpp
+2025-08-02 16:24:20,989 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/intersection.cpp
+2025-08-02 16:24:20,989 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/3sum_leetcode_15.cpp
+2025-08-02 16:24:20,990 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/common_elements_3_sorted.cpp
+2025-08-02 16:24:20,990 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/single_number_leetcode_136.cpp
+2025-08-02 16:24:20,990 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/pair_sum.cpp
+2025-08-02 16:24:20,990 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/set_matrix_zeroes_leetcode_73.cpp
+2025-08-02 16:24:20,991 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/maximum_subarray_leetcode_53.cpp
+2025-08-02 16:24:20,991 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/missing_number.cpp
+2025-08-02 16:24:20,991 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/merge_sorted_array_leetcode_88.cpp
+2025-08-02 16:24:20,991 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/longest_substring_without_repeating_characters_leetcode_3.cpp
+2025-08-02 16:24:20,992 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/minimum_number_of_operations_to_make_elements_in_array_distinct_leetcode_3396.cpp
+2025-08-02 16:24:20,992 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/move_zeroes_leetcode_283.cpp
+2025-08-02 16:24:20,992 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Question/find_the_duplicate_number_leetcode_287.cpp
+2025-08-02 16:24:20,993 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/HashSet Concept/equal_row_and_column_pairs_leetcode_2352.cpp
+2025-08-02 16:24:20,993 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/Knuth–Morris–Pratt-KMP.py
+2025-08-02 16:24:20,993 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Recursion Concept/reverse_a_stack.cpp
+2025-08-02 16:24:20,994 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sorting Concept/insertion_sort.cpp
+2025-08-02 16:24:20,994 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sorting Concept/quick_sort.cpp
+2025-08-02 16:24:20,994 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sorting Concept/intertion_sort_whileloop.cpp
+2025-08-02 16:24:20,995 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sorting Concept/counting_sort.cpp
+2025-08-02 16:24:20,995 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sorting Concept/merge_sort.cpp
+2025-08-02 16:24:20,995 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sorting Concept/selection_sort.cpp
+2025-08-02 16:24:20,996 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/HashMap/hand_of_straights_leetcode_846.cpp
+2025-08-02 16:24:20,996 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/HashMap/group_anagrams_leetcode_49.cpp
+2025-08-02 16:24:20,997 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Language C++/string_concepts.cpp
+2025-08-02 16:24:20,997 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Language C++/string_concepts_2.cpp
+2025-08-02 16:24:20,997 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/minimum_number_of_refueling_stops_leetcode_871.cpp
+2025-08-02 16:24:20,998 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/sort_characters_by_frequency_leetcode_451.cpp
+2025-08-02 16:24:20,998 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/find_k_pairs_with_smallest_sums_leetcode_373/find_k_pairs_with_smallest_sums_leetcode_373.cpp
+2025-08-02 16:24:20,999 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/car_pooling_leetcode_1094/heap.py
+2025-08-02 16:24:21,001 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/car_pooling_leetcode_1094/car_pooling_leetcode_1094.cpp
+2025-08-02 16:24:21,002 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/car_pooling_leetcode_1094/car_pooling_leetcode_1094.py
+2025-08-02 16:24:21,002 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/k_closest_points_to_origin_leetcode_973/heap.py
+2025-08-02 16:24:21,005 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Question/k_closest_points_to_origin_leetcode_973/k_closest_points_to_origin_leetcode_973.py
+2025-08-02 16:24:21,005 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Question/decode_string_leetcode_394.cpp
+2025-08-02 16:24:21,005 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Question/robot_collisions_leetcode_2751.cpp
+2025-08-02 16:24:21,006 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Question/min_stack_leetcode_155.cpp
+2025-08-02 16:24:21,006 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Question/132_pattern_leetcode_456.cpp
+2025-08-02 16:24:21,007 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Question/decode_string.py
+2025-08-02 16:24:21,007 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Question/decode_string_cycle.py
+2025-08-02 16:24:21,007 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Sliding WIndow Concept/deque/sliding_window_maximum_deque.cpp
+2025-08-02 16:24:21,010 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Concept/monotonically_increasing.cpp
+2025-08-02 16:24:21,010 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Concept/validate_parenthesis.cpp
+2025-08-02 16:24:21,010 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Stack Concept/monotonically_decreasing.cpp
+2025-08-02 16:24:21,010 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Question/double_a_number_represented_as_a_linked_list_leetcode_2816.cpp
+2025-08-02 16:24:21,011 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Question/lru_cache_leetcode_146.cpp
+2025-08-02 16:24:21,012 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Question/merge_nodes_in_between_zeros_leetcode_2181.cpp
+2025-08-02 16:24:21,012 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Question/merge_sort.cpp
+2025-08-02 16:24:21,013 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Question/remove_nodes_from_linked_list_leetcode_2487.cpp
+2025-08-02 16:24:21,014 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/subsets_leetcode_78.cpp
+2025-08-02 16:24:21,014 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/subsets_ii_leetcode_90.cpp
+2025-08-02 16:24:21,015 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/combination_sum_leetcode_39.cpp
+2025-08-02 16:24:21,015 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/combination_sum_ii_leetcode_40.cpp
+2025-08-02 16:24:21,016 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/Backtracking Visualizer/backtracking_i.py
+2025-08-02 16:24:21,016 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/termicolor.py
+2025-08-02 16:24:21,017 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/combination_sum_iterative.py
+2025-08-02 16:24:21,017 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/permutations_iterative.py
+2025-08-02 16:24:21,017 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/permutations_2.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/permuations_sort.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/subset_2_recursive.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/subset_1_iterative.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/permutations_hashmap.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/combination_sum_ii_iterative.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/word_search_1.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/compate_subset_i.py
+2025-08-02 16:24:21,018 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/subset_1_recursive.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/subset_2_iterative.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/utils.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/compare_subset_ii.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/combination_sum_ii_recursive.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/combination_sum_recursive.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Backtracking Concept/visualize/permutations_recursive.py
+2025-08-02 16:24:21,019 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Segment Tree Question/count_of_smaller_numbers_after_self_leetcode_315.cpp
+2025-08-02 16:24:21,020 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Segment Tree Question/range_sum_query_mutable_leetcode_307.cpp
+2025-08-02 16:24:21,021 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Segment Tree Question/range_minimum_query.cpp
+2025-08-02 16:24:21,021 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/k_closest_point_to_origin.cpp
+2025-08-02 16:24:21,022 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/frequency_sort.cpp
+2025-08-02 16:24:21,022 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/kth_largest.cpp
+2025-08-02 16:24:21,022 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/top_k_frequent.cpp
+2025-08-02 16:24:21,023 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/kth_closest.cpp
+2025-08-02 16:24:21,023 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/min_heap.cpp
+2025-08-02 16:24:21,024 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Heap Concept/max_heap.cpp
+2025-08-02 16:24:21,025 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Question/bitwise_and_of_numbers_range_leetcode_201.cpp
+2025-08-02 16:24:21,026 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Question/number_of_wonderful_substrings_leetcode_1915.cpp
+2025-08-02 16:24:21,026 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Question/number_of_steps_to_reduce_a_number_in_binary_representation_to_one_leetcode_1404.cpp
+2025-08-02 16:24:21,027 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Question/largest_positive_integer_that_exists_with_its_negative_leetcode_2441.cpp
+2025-08-02 16:24:21,027 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Question/find_the_size_of_largest_subset_with_positive_bitwise_and.cpp
+2025-08-02 16:24:21,028 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Bit Manipulation Question/struct.py
+2025-08-02 16:24:21,028 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Question/minimum_number_of_operations_to_make_array_xor_equal_to_k_leetcode_2997.cpp
+2025-08-02 16:24:21,029 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Segment Tree/segment_tree.cpp
+2025-08-02 16:24:21,030 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Segment Tree/segment_tree_lazy_propogation.cpp
+2025-08-02 16:24:21,032 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/symmetric_tree.cpp
+2025-08-02 16:24:21,032 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/binary_tree_level_order_traversal_leetcode_102.cpp
+2025-08-02 16:24:21,033 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/maximum_binary_tree_leetcode_654.cpp
+2025-08-02 16:24:21,034 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/iterative_traversal.cpp
+2025-08-02 16:24:21,035 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/root_to_node_path.cpp
+2025-08-02 16:24:21,036 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/LCA.cpp
+2025-08-02 16:24:21,036 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/children_sum_property.cpp
+2025-08-02 16:24:21,037 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/nodes_with_distance_k.py
+2025-08-02 16:24:21,038 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/maximum_width.cpp
+2025-08-02 16:24:21,039 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/nodes_with_distance_k.cpp
+2025-08-02 16:24:21,040 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/hard/amount_to_burn_tree.cpp
+2025-08-02 16:24:21,042 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/zig_zag_traversal.cpp
+2025-08-02 16:24:21,043 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/height_of_binary_tree.cpp
+2025-08-02 16:24:21,043 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/vertical_order_traversal.cpp
+2025-08-02 16:24:21,044 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/check_children_sum.cpp
+2025-08-02 16:24:21,045 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/max_path_sum.cpp
+2025-08-02 16:24:21,046 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/height_balanced_or_not.cpp
+2025-08-02 16:24:21,046 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/boundary_traversal.cpp
+2025-08-02 16:24:21,047 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/mediums/diameter_of_tree.cpp
+2025-08-02 16:24:21,048 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/views/right_view.cpp
+2025-08-02 16:24:21,049 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/views/bottom_view.cpp
+2025-08-02 16:24:21,049 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/views/top_view.cpp
+2025-08-02 16:24:21,051 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/construct/serialize_deserialize.py
+2025-08-02 16:24:21,053 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/construct/preorder_inorder.cpp
+2025-08-02 16:24:21,054 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/construct/postorder_inorder.cpp
+2025-08-02 16:24:21,055 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/insert_in_bst.cpp
+2025-08-02 16:24:21,056 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/floor_in_bst.cpp
+2025-08-02 16:24:21,057 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/search_in_bst.cpp
+2025-08-02 16:24:21,057 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/construct_bst_from_preorder.cpp
+2025-08-02 16:24:21,059 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/validate_bst.cpp
+2025-08-02 16:24:21,060 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/lca_In_bst.cpp
+2025-08-02 16:24:21,061 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/ceil_in_bst.cpp
+2025-08-02 16:24:21,061 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/kth_smallest.cpp
+2025-08-02 16:24:21,062 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Concept/bst/delete_in_bst.cpp
+2025-08-02 16:24:21,064 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/shortest_path/dijkstras_set.cpp
+2025-08-02 16:24:21,064 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/shortest_path/01_bfs.cpp
+2025-08-02 16:24:21,066 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/shortest_path/floyd_warshall.cpp
+2025-08-02 16:24:21,066 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/shortest_path/bellman_ford.cpp
+2025-08-02 16:24:21,067 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/shortest_path/a_star.cpp
+2025-08-02 16:24:21,071 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/shortest_path/dijkstras.cpp
+2025-08-02 16:24:21,072 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/cycle_undirected_bfs.cpp
+2025-08-02 16:24:21,072 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/cycle_dsu.cpp
+2025-08-02 16:24:21,073 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/cycle_undirected_dfs.cpp
+2025-08-02 16:24:21,074 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/shortest_part_in_binary_matrix.cpp
+2025-08-02 16:24:21,075 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/dsu_by_rank.cpp
+2025-08-02 16:24:21,075 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/cycle_directed_dfs.cpp
+2025-08-02 16:24:21,076 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/dsu.cpp
+2025-08-02 16:24:21,076 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/bfs.cpp
+2025-08-02 16:24:21,076 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/bipartitie_bfs.cpp
+2025-08-02 16:24:21,077 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/cycle_directed_bfs.cpp
+2025-08-02 16:24:21,077 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/bipartitie_dfs.cpp
+2025-08-02 16:24:21,078 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/dfs.cpp
+2025-08-02 16:24:21,078 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/kahn_algorithm.cpp
+2025-08-02 16:24:21,079 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/topological_sorting.cpp
+2025-08-02 16:24:21,079 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/dsu_by_size.cpp
+2025-08-02 16:24:21,080 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/level_order_traversal.cpp
+2025-08-02 16:24:21,080 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/core/shortest_path_weighted_undirected_graph.cpp
+2025-08-02 16:24:21,081 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/minimum_spanning_tree/kruskal_algorithm.cpp
+2025-08-02 16:24:21,082 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/minimum_spanning_tree/prims_algorithm.cpp
+2025-08-02 16:24:21,082 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/bidirectional_bfs_word_ladder.cpp
+2025-08-02 16:24:21,083 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/hamiltonian_path_and_circuit.cpp
+2025-08-02 16:24:21,084 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/tarjans_scc.cpp
+2025-08-02 16:24:21,086 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/make_graph_connected.cpp
+2025-08-02 16:24:21,086 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/tarjans_bridges.cpp
+2025-08-02 16:24:21,087 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/tarjans_articulation_point.cpp
+2025-08-02 16:24:21,088 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/kosaraju_scc.cpp
+2025-08-02 16:24:21,089 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Graph Concept/advance/eular_path_and_circuit.cpp
+2025-08-02 16:24:21,091 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Leetcode Contest/7-7-2024/find_the_encryption_string.cpp
+2025-08-02 16:24:21,091 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Leetcode Contest/7-7-2024/count_submatrices_with_equal_frequency_of_x_and_y_leetcode_100359.cpp
+2025-08-02 16:24:21,091 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Leetcode Contest/7-7-2024/generate_binary_strings_without_adjacent_zeros_leetcode_100328.cpp
+2025-08-02 16:24:21,091 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/caveat_of_mid.cpp
+2025-08-02 16:24:21,092 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/binary_search_with_voids.cpp
+2025-08-02 16:24:21,092 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/search_insert_position_leetcode_35.cpp
+2025-08-02 16:24:21,093 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/caveat_of_mid.py
+2025-08-02 16:24:21,093 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/recursive/binary_search_recursive.cpp
+2025-08-02 16:24:21,093 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/recursive/binary_search_recursive.py
+2025-08-02 16:24:21,093 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/iterative/binary_search.py
+2025-08-02 16:24:21,093 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Binary Search Concept/iterative/binary_search.cpp
+2025-08-02 16:24:21,094 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/worker.py
+2025-08-02 16:24:21,099 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/config.py
+2025-08-02 16:24:21,100 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/requirements.txt
+2025-08-02 16:24:21,100 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/all_extensions.py
+2025-08-02 16:24:21,100 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/file_watcher.py
+2025-08-02 16:24:21,105 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/synced_files/.redissync_states.json
+2025-08-02 16:24:21,105 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/utils/rolling_hash.py
+2025-08-02 16:24:21,106 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/utils/ignore_parser.py
+2025-08-02 16:24:21,107 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/utils/__init__.py
+2025-08-02 16:24:21,107 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Automation/utils/crawler.py
+2025-08-02 16:24:21,108 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/cherry_pickup_ii_leetcode_1463.cpp
+2025-08-02 16:24:21,109 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/jump_game_ii_leetcode_45.cpp
+2025-08-02 16:24:21,109 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/house_robber_iii_leetcode_337.cpp
+2025-08-02 16:24:21,110 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/check_if_there_is_a_valid_partition_for_the_array_leetcode_2369.cpp
+2025-08-02 16:24:21,110 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/jump_game_leetcode_55.cpp
+2025-08-02 16:24:21,111 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/edit_distance_leetcode_72.cpp
+2025-08-02 16:24:21,112 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/knight_dialer_leetcode_935.cpp
+2025-08-02 16:24:21,113 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/minimum_falling_path_sum_ii_leetcode_1289.cpp
+2025-08-02 16:24:21,113 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/jump_game_iii_leetcode_1306.cpp
+2025-08-02 16:24:21,114 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/count_digit_groupings_of_a_number_gfg.cpp
+2025-08-02 16:24:21,114 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/make_array_strictly_increasing_leetcode_1187.cpp
+2025-08-02 16:24:21,115 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/longest_ideal_subsequence_leetcode_2370.cpp
+2025-08-02 16:24:21,115 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/grinding_geek_gfg.cpp
+2025-08-02 16:24:21,115 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/maximum_length_of_a_concatenated_string_with_unique_characters_leetcode_1239.cpp
+2025-08-02 16:24:21,116 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/furthest_building_you_can_reach_leetcode_1642.cpp
+2025-08-02 16:24:21,117 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/k_inverse_pairs_array_leetcode_629.cpp
+2025-08-02 16:24:21,118 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/flip_string_to_monotone_increasing_leetcode_926.cpp
+2025-08-02 16:24:21,119 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/maximal_square_leetcode_221.cpp
+2025-08-02 16:24:21,119 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/interleaving_string_leetcode_97.cpp
+2025-08-02 16:24:21,120 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/maximum_product_subarray_leetcode_152.cpp
+2025-08-02 16:24:21,121 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/longest_turbulent_subarray_leetcode_978.cpp
+2025-08-02 16:24:21,121 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/knight_probability_in_chessboard_leetcode_688.cpp
+2025-08-02 16:24:21,122 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/jump_game_vi_leetcode_1696.cpp
+2025-08-02 16:24:21,123 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/constrained_subsequence_sum_leetcode_1425.cpp
+2025-08-02 16:24:21,124 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/delete_operation_for_two_strings_leetcode_583.cpp
+2025-08-02 16:24:21,124 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/longest_palindromic_substring_leetcode_5.cpp
+2025-08-02 16:24:21,125 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/burst_balloons_leetcode_312.cpp
+2025-08-02 16:24:21,125 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/maximize_the_cut_segments_leetcode_gfg.cpp
+2025-08-02 16:24:21,126 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/integer_break_leetcode_343.cpp
+2025-08-02 16:24:21,126 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/frog_jump_leetcode_403.cpp
+2025-08-02 16:24:21,127 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/remove_boxes_leetcode_546.cpp
+2025-08-02 16:24:21,127 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/last_stone_weight_ii_leetcode_1049.cpp
+2025-08-02 16:24:21,128 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/lis/longest_string_chain_leetcode_1048.cpp
+2025-08-02 16:24:21,128 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/lis/max_dot_product_of_two_subsequences_leetcode_1458.cpp
+2025-08-02 16:24:21,129 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Question/2D dp/max_sum_of_rectangle_no_larger_than_k_leetcode_363.cpp
+2025-08-02 16:24:21,130 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/concept_top_down.cpp
+2025-08-02 16:24:21,130 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/concept_bottom_up.cpp
+2025-08-02 16:24:21,130 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lis/longest_increasing_subsequence.cpp
+2025-08-02 16:24:21,131 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lis/longest_decreasing_subsequence.cpp
+2025-08-02 16:24:21,132 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/print_longest_common_subsequence.cpp
+2025-08-02 16:24:21,132 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/longest_common_subsequence_bottom_up.cpp
+2025-08-02 16:24:21,133 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/longest_common_substring.cpp
+2025-08-02 16:24:21,134 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/sequence_pattern_matching.cpp
+2025-08-02 16:24:21,134 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/longest_common_subsequence.cpp
+2025-08-02 16:24:21,135 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/min_num_ins_del_str_atob.cpp
+2025-08-02 16:24:21,136 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/print_shortest_common_supersequence.cpp
+2025-08-02 16:24:21,136 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/maximum_length_of_repeated_subarray.cpp
+2025-08-02 16:24:21,137 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/longest_repeating_subsequence.cpp
+2025-08-02 16:24:21,138 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/lcs/shortest_common_subsequence.cpp
+2025-08-02 16:24:21,138 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/knapsack.cpp
+2025-08-02 16:24:21,140 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/number_of_subsequences_that_satisfy_the_given_sum_condition.cpp
+2025-08-02 16:24:21,140 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/target_sum.cpp
+2025-08-02 16:24:21,141 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/partition_array_into_two_arrays_to_minimize_sum_difference.cpp
+2025-08-02 16:24:21,142 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/partitions_with_given_difference.cpp
+2025-08-02 16:24:21,143 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/subset_sum.cpp
+2025-08-02 16:24:21,144 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/knapsack/partition_equal_subset_sum.cpp
+2025-08-02 16:24:21,145 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/pallindromic_lcs/min_num_of_del_to_make_str_a_pallindrome.cpp
+2025-08-02 16:24:21,146 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/pallindromic_lcs/longest_palindromic_subsequence.cpp
+2025-08-02 16:24:21,146 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/pallindromic_lcs/min_num_of_ins_to_make_str_a_pallindrome.cpp
+2025-08-02 16:24:21,147 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/unbounded_knapsack/unbounded_knapsack.cpp
+2025-08-02 16:24:21,147 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/unbounded_knapsack/rod_cutting_problem.cpp
+2025-08-02 16:24:21,148 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/unbounded_knapsack/coin_change_max_ways.cpp
+2025-08-02 16:24:21,148 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/problems/min_cost_climbing_stairs.cpp
+2025-08-02 16:24:21,148 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/problems/nstairs.cpp
+2025-08-02 16:24:21,149 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/problems/45_jump_game_ii.cpp
+2025-08-02 16:24:21,149 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/problems/55_jump_game.cpp
+2025-08-02 16:24:21,149 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/base/climbing_stairs.cpp
+2025-08-02 16:24:21,150 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/base/fibonacci.cpp
+2025-08-02 16:24:21,150 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/base/house_robber_ii.cpp
+2025-08-02 16:24:21,151 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/base/house_robber.cpp
+2025-08-02 16:24:21,152 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/matrix_chain_multiplication/pallindrome_partitioning.cpp
+2025-08-02 16:24:21,152 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/DP Concept/matrix_chain_multiplication/mcm.cpp
+2025-08-02 16:24:21,153 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Design Data Structure/trie.cpp
+2025-08-02 16:24:21,154 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Design Data Structure/array.cpp
+2025-08-02 16:24:21,154 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Design Data Structure/encode_and_decode_tinyurl.cpp
+2025-08-02 16:24:21,155 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Design Data Structure/timer_wheel.py
+2025-08-02 16:24:21,155 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Design Data Structure/lru.cpp
+2025-08-02 16:24:21,156 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Design Data Structure/hashset.cpp
+2025-08-02 16:24:21,157 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/settings.json
+2025-08-02 16:24:21,158 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/c_cpp_properties.json
+2025-08-02 16:24:21,159 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/tasks.json
+2025-08-02 16:24:21,159 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/vectors.cpp
+2025-08-02 16:24:21,159 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/test.cpp
+2025-08-02 16:24:21,160 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Tree/5_9_2022/basics_of_tree.cpp
+2025-08-02 16:24:21,160 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Tree/5_9_2022/tempCodeRunnerFile.cpp
+2025-08-02 16:24:21,161 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Tree/4_9_2022/basics_of_tree.cpp
+2025-08-02 16:24:21,161 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Strings/subsequence_of_string.py
+2025-08-02 16:24:21,161 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/day4.cpp
+2025-08-02 16:24:21,162 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/permutation_of_number.cpp
+2025-08-02 16:24:21,162 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/day7.cpp
+2025-08-02 16:24:21,163 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/day2.cpp
+2025-08-02 16:24:21,163 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/day3.cpp
+2025-08-02 16:24:21,164 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/day1.cpp
+2025-08-02 16:24:21,164 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/powerset.cpp
+2025-08-02 16:24:21,164 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/tempCodeRunnerFile.cpp
+2025-08-02 16:24:21,165 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/subsequence_of_string.cpp
+2025-08-02 16:24:21,165 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/permutation_of_string.cpp
+2025-08-02 16:24:21,165 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/LinkedList/12_8_2022/circular.cpp
+2025-08-02 16:24:21,166 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/LinkedList/12_8_2022/tempCodeRunnerFile.cpp
+2025-08-02 16:24:21,166 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Recursion/LinkedList/11_8_2022/singly.cpp
+2025-08-02 16:24:21,167 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/LL/day1_20_12_22.cpp
+2025-08-02 16:24:21,168 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/LL/25_12_2022.cpp
+2025-08-02 16:24:21,168 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/LL/tempCodeRunnerFile.cpp
+2025-08-02 16:24:21,168 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Backtracking/rat_in_maze.cpp
+2025-08-02 16:24:21,169 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Backtracking/phone_keypad.cpp
+2025-08-02 16:24:21,170 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day7.cpp
+2025-08-02 16:24:21,171 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day6.cpp
+2025-08-02 16:24:21,172 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day2.cpp
+2025-08-02 16:24:21,174 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day3.cpp
+2025-08-02 16:24:21,175 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day1.cpp
+2025-08-02 16:24:21,176 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day10.cpp
+2025-08-02 16:24:21,176 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day11.cpp
+2025-08-02 16:24:21,177 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day12.cpp
+2025-08-02 16:24:21,177 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/tempCodeRunnerFile.cpp
+2025-08-02 16:24:21,177 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day8.cpp
+2025-08-02 16:24:21,178 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/day9.cpp
+2025-08-02 16:24:21,179 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/10_9_2022/10_9_2022.cpp
+2025-08-02 16:24:21,179 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/9_9_2022/9_9_2022.cpp
+2025-08-02 16:24:21,181 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/17_9_2022/17_9_2022.cpp
+2025-08-02 16:24:21,182 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/20_12_2022/20_12_2022.cpp
+2025-08-02 16:24:21,182 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/20_12_2022/tempCodeRunnerFile.cpp
+2025-08-02 16:24:21,182 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Sorting/29_9_2022/29_9_2022.cpp
+2025-08-02 16:24:21,183 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/DP/climb_stairs_23_12_2022.py
+2025-08-02 16:24:21,183 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/DP/minimum_cost_to_cut_a_stick_leetcode_1547.cpp
+2025-08-02 16:24:21,184 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/DP/fibonacci.py
+2025-08-02 16:24:21,184 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/25-4-2024/dfs.cpp
+2025-08-02 16:24:21,184 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/16_5_2023/undirected/bfs.cpp
+2025-08-02 16:24:21,184 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/16_5_2023/undirected/dfs.cpp
+2025-08-02 16:24:21,185 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/29_09_2023/topological_sort.cpp
+2025-08-02 16:24:21,185 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/12_07_2025/dsu.cpp
+2025-08-02 16:24:21,186 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/12_07_2025/kruskal.cpp
+2025-08-02 16:24:21,186 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/26_01_2023/topological_sort.cpp
+2025-08-02 16:24:21,186 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/26_01_2023/undirected/cycle_dfs.cpp
+2025-08-02 16:24:21,187 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/26_01_2023/undirected/bfs.cpp
+2025-08-02 16:24:21,187 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/26_01_2023/undirected/dfs.cpp
+2025-08-02 16:24:21,188 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Practice/Graphs/02-10-2023/topological_sort.cpp
+2025-08-02 16:24:21,188 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/String Question/longest_palindrome_leetcode_409.cpp
+2025-08-02 16:24:21,189 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/String Question/find_common_characters_leetcode_1002.cpp
+2025-08-02 16:24:21,189 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Concept/tribonacci_number.cpp
+2025-08-02 16:24:21,190 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Concept/binary_exponentiation.cpp
+2025-08-02 16:24:21,190 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Concept/sieve_of_eratosthenes.cpp
+2025-08-02 16:24:21,190 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Concept/gcd.cpp
+2025-08-02 16:24:21,190 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Concept/multiplication.cpp
+2025-08-02 16:24:21,192 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Mathematical Concept/lcm.cpp
+2025-08-02 16:24:21,192 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/reversal+find_middle.cpp
+2025-08-02 16:24:21,193 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/doubly.cpp
+2025-08-02 16:24:21,194 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/detect_cycle_in_ll.cpp
+2025-08-02 16:24:21,194 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/linked_list.py
+2025-08-02 16:24:21,194 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/validate_circular_ll.cpp
+2025-08-02 16:24:21,195 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/circular.cpp
+2025-08-02 16:24:21,196 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/reverse_ll_in_k_group.cpp
+2025-08-02 16:24:21,197 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/print_linked_list.cpp
+2025-08-02 16:24:21,197 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/add_2_number_ll.cpp
+2025-08-02 16:24:21,198 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/detect_cycle_linked_list.cpp
+2025-08-02 16:24:21,198 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/singly.cpp
+2025-08-02 16:24:21,200 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/printLL.py
+2025-08-02 16:24:21,200 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/linked_list_cycle.cpp
+2025-08-02 16:24:21,201 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/delete_all_occurences_of_key_dll.cpp
+2025-08-02 16:24:21,202 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/add_2_number.cpp
+2025-08-02 16:24:21,202 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/pallindromic_linked_list.cpp
+2025-08-02 16:24:21,203 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/intersection_ll.cpp
+2025-08-02 16:24:21,204 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/linked_list_cycle_ii.cpp
+2025-08-02 16:24:21,204 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/reverse_dll.cpp
+2025-08-02 16:24:21,205 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/pair_with_given_sum_dll.cpp
+2025-08-02 16:24:21,206 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/length_of_loop_ll.cpp
+2025-08-02 16:24:21,207 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/odd_even.cpp
+2025-08-02 16:24:21,207 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/basics_1.cpp
+2025-08-02 16:24:21,207 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/delete_middle_of_ll.cpp
+2025-08-02 16:24:21,208 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/basics_2.cpp
+2025-08-02 16:24:21,209 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/striver_playlist/basics_3.cpp
+2025-08-02 16:24:21,211 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/blind75/linked_list_cycle.cpp
+2025-08-02 16:24:21,211 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/blind75/reverse_linked_list.cpp
+2025-08-02 16:24:21,212 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Linked List Concept/blind75/merge_two_sorted_linked_list.cpp
+2025-08-02 16:24:21,213 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Array Concept/prefix_sum.py
+2025-08-02 16:24:21,213 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/two_sum_ii_-_input_array_is_sorted_leetcode_167.cpp
+2025-08-02 16:24:21,213 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/valid_palindrome_leetcode_125.cpp
+2025-08-02 16:24:21,214 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/3sum_leetcode_15.cpp
+2025-08-02 16:24:21,215 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/trapping_rain_water_leetcode_42.cpp
+2025-08-02 16:24:21,215 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/container_with_most_water_leetcode_11.cpp
+2025-08-02 16:24:21,216 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/longest_substring_without_repeating_characters_leetcode_3.cpp
+2025-08-02 16:24:21,216 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/longest_repeating_character_replacement_leetcode_424.cpp
+2025-08-02 16:24:21,217 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/two_pointers/minimum_window_substring_leetcode_76.cpp
+2025-08-02 16:24:21,218 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/valid_anagram_leetcode_242.cpp
+2025-08-02 16:24:21,218 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/longest_consecutive_sequence_leetcode_128.cpp
+2025-08-02 16:24:21,219 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/encode_and_decode_strings_leetcode_271.py
+2025-08-02 16:24:21,219 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/two_sum_leetcode_1.cpp
+2025-08-02 16:24:21,219 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/top_k_frequent_elements_leetcode_347.cpp
+2025-08-02 16:24:21,220 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/contains_duplicate_leetcode_217.cpp
+2025-08-02 16:24:21,220 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/group_anagrams_leetcode_49.cpp
+2025-08-02 16:24:21,220 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/valid_sudoku_leetcode_36.cpp
+2025-08-02 16:24:21,221 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Neetcode 150/arrays/product_of_array_except_self_leetcode_238.cpp
+2025-08-02 16:24:21,222 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Question/maximum_level_sum_of_a_binary_tree_leetcode_1161.cpp
+2025-08-02 16:24:21,223 - INFO - Processing file: /Users/kailasmahavakar/Documents/kailas/cpp/Tree Question/delete_leaves_with_a_given_value_leetcode_1325.cpp
+2025-08-02 16:24:21,224 - INFO - Initial sync complete: 662 files processed
+2025-08-02 16:24:21,224 - INFO - Watching source folder: /Users/kailasmahavakar/Documents/kailas/cpp
+2025-08-02 16:24:21,225 - INFO - File watcher started. Press Ctrl+C to stop.
+2025-08-03 02:14:58,858 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 0, ratio: 0.00x)
+2025-08-03 02:14:59,440 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 0, ratio: 0.00x)
+2025-08-03 02:15:12,971 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 3683bec250a6a8cf, ratio: 2.06x)
+2025-08-03 02:15:13,559 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 3683bec250a6a8cf, ratio: 2.06x)
+2025-08-03 02:15:31,699 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 605f3878fad1bb74, ratio: 2.25x)
+2025-08-03 02:15:33,080 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 605f3878fad1bb74, ratio: 2.25x)
+2025-08-03 02:15:47,191 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 6386ab87dca1d3c9, ratio: 2.05x)
+2025-08-03 02:15:47,829 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 6386ab87dca1d3c9, ratio: 2.05x)
+2025-08-03 02:15:55,942 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 79f47290eaf8d1ce, ratio: 2.06x)
+2025-08-03 02:15:57,300 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: 79f47290eaf8d1ce, ratio: 2.06x)
+2025-08-03 02:16:59,490 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/settings.json (hash: e625a4edcb3ca1f8, ratio: 3.87x)
+2025-08-03 02:17:00,144 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/settings.json (hash: e625a4edcb3ca1f8, ratio: 3.87x)
+2025-08-03 02:17:09,627 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/settings.json (hash: 09cacfea14393616, ratio: 3.93x)
+2025-08-03 02:17:10,274 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/.vscode/settings.json (hash: 09cacfea14393616, ratio: 3.93x)
+2025-08-03 02:17:31,896 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: c85cf78cbde3d4aa, ratio: 2.13x)
+2025-08-03 02:17:32,589 - INFO - Pushed /Users/kailasmahavakar/Documents/kailas/cpp/String Concept/string_basics_1.cpp (hash: c85cf78cbde3d4aa, ratio: 2.13x)

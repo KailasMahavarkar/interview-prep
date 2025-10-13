@@ -58,3 +58,8 @@ learning.py
 
 .env
 .vscode/
+.bak
+.redissync/
+.git/
+.npm/
+.DS_Store
