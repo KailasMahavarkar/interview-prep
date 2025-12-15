@@ -10,13 +10,7 @@ using namespace std;
 class Solution {
    public:
     vector<int> findArray(vector<int>& x) {
-        int max_x = *max_element(x.begin(), x.end());
-        vector<int> a;
-        a.push_back(max_x + 1);
-        for (int xi : x) {
-            a.push_back(a.back() + xi);
-        }
-        return a;
+        
     }
 };
 
@@ -40,14 +34,5 @@ int main() {
         }
         cout << endl;
     }
-
-    // vector<int> arr = {4, 2, 5, 1, 2};
-    // Solution sol;
-    // vector<int> ans = sol.findArray(arr);
-    // for (auto& x : ans) {
-    //     cout << x << " ";
-    // }
-    // cout << endl;
-
     return 0;
 }
